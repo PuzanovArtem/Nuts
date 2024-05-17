@@ -17,7 +17,32 @@ $gray-color:#8A8A8A;
 $background-color: #FFFFFF;
 
 
+$mobile: 376px;
+$s-mobile: 425px;
+$m-mobile: 560px;
+$l-mobile: 630px;
+$s-tablet: 695px;
+$m-tablet: 730px;
+$l-tablet: 767px;
+$tablet: 768px;
+$xl-tablet: 920px;
+$desktop: 992px;
+$m-desktop: 1090px;
+$l-desktop: 1290px;
+$LapTop: 1440px;
+$xl-LapTop: 1718px;
+$xxl-LapTop: 1800px;
 
+
+@mixin respond-to($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+
+///////приклад використання
+/// @include respond-to($xxl-LapTop) { }
 
 
 // Ширина полотна (макета)
