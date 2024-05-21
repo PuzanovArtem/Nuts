@@ -1,0 +1,167 @@
+.map {
+    width: 100%;
+    min-height: 710px;
+    background: #FBFBFB;
+
+    .map__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 103px;
+
+        .map__info-title {
+            letter-spacing: -1px;
+            margin: 9px 0 0 -3px;
+        }
+
+        .map__info__contacts {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 15px;
+            align-items: center;
+            justify-content: flex-end;
+            padding-top: 75px;
+
+            .map__info-title{
+                letter-spacing: -1px;
+                margin: 9px 0 0 -3px;
+            }
+
+            .middle__contacts__social {
+                display: flex;
+                gap: 10px;
+                flex-direction: row;
+                margin-left: 31px;
+                .contacts__social__item {
+                    width: 31px;
+                    height: 31px;
+                    background-color: $amazon-color;
+                    border-radius: 50%;
+
+                    img {
+                        margin: 7px;
+                    }
+                    
+                }
+            }
+
+            .middle__contacts__tel {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .contacts__tel__number {
+                    color:$amazon-color;
+                    font-size: 13px;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                }
+            }
+
+        }
+
+        .map__info__mail {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: first baseline;
+            padding-top: 45px;
+
+            a {
+                line-height: 21px;
+                letter-spacing: 0.14px;
+            }
+        }
+
+        .map__info__office {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            padding-top: 45px;
+
+            img{
+                height: 20px;
+            }
+
+            .info__office__inner {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .office__inner__address{
+                    width: 150px;
+                    line-height: 21px;
+                    letter-spacing: 0.14px;
+                }
+            }
+        }
+
+        .map__info__manufactory {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            padding-top: 40px;
+            img{
+                height: 20px;
+            }
+            .info__manufactory__inner {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .manufactory__inner__address {
+                    width: 240px;
+                    line-height: 21px;
+                    letter-spacing: 0.14px;
+                }
+            }
+        }
+        .inner-title{
+            font-family: $fontFamilyRaleway;
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 0.17px;
+            padding: 3px 0 0 0;
+
+        }
+    }
+
+}
+
+@include respond-to($m-desktop) {
+    .map__content__map {
+        iframe {
+            width: 500px;
+        }
+    }
+}
+
+
+@include respond-to($xl-tablet) {
+    .map {
+        .map__content {
+            flex-direction: column;
+            gap: 30px;
+            padding-top: 75px;
+            .map__info__contacts {
+                padding-top: 25px;
+                .middle__contacts__social{
+                    margin-left: 12px;
+                }
+            }
+            .map__info__mail,
+            .map__info__office,
+            .map__info__manufactory   {
+                padding-top: 25px;
+            }
+        }
+    }
+
+    .map__content__map {
+        padding-bottom: 50px;
+        iframe {
+            width: 100%;
+        }
+    }
+}
+
