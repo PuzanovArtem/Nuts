@@ -5,8 +5,15 @@
         <div class="container">
             <div class="header-top">
 
-<img src="/src/img/icons/telephone.svg" alt="tel" class="header-top__telephone-mob">
-<a href="tel:380447505011" class="header-main__tel header-main__tel"><span>+38 (044)</span> 750-50-11</a>
+<div class="header-top__tel-mob-wrapper">
+    <a href="tel:380447505011">
+        <img src="/src/img/icons/telephone.svg" alt="tel" class="header-top__telephone-mob">
+    </a>
+
+<a href="tel:380447505011" class="header-main__tel header-top__tel-mob"><span>+38 (044)</span> 750-50-11</a>
+</div>
+
+<a href="#" class="header-top__order-call-mob">Заказать звонок</a>
 
 <ul class="header-top__social-list">
     <li class="header-top__social-item">
@@ -67,7 +74,7 @@
                 <img src="/src/img/icons/menu.svg" alt="menu">
             </button>
 
-            <a href="#" class="header-main__logo-wrapper">
+            <a href="#" class="header-main__logo-wrapper header-main__logo-wrapper-mob">
                 <img src="/src/img/icons/logo.svg" alt="logo" class="header-main__logo-icon" width="54" height="53">
                 ОРЕХ ПРИЧЕРНОМОРЬЯ
             </a>
@@ -116,9 +123,50 @@
     <nav class="menu">
         <ul class="menu__list">
             <li class="menu__close">
+                <a href="#" class="header-main__logo-wrapper">
+                    <img src="/src/img/icons/logo.svg" alt="logo" class="header-main__logo-icon" width="54" height="53">
+                    ОРЕХ ПРИЧЕРНОМОРЬЯ
+                </a>
                 <button class="menu__close-btn">
                     <img src="/src/img/icons/close-button.svg" alt="Close cross" />
                 </button>
+            </li>
+
+            <li class="menu__social-block">
+                <ul class="header-top__login-list">
+                    <li class="header-top__login-item header-top__login-item-menu">
+                        <a href="#">
+                            <img src="/src/img/icons/man-user.svg" alt="men">
+                            Вход
+                        </a>
+                    </li>
+                
+                    <li class="header-top__login-item header-top__login-item-menu">
+                        <a href="#">
+                            Регистрация
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="header-top__social-list-menu">
+                    <li class="header-top__social-item">
+                        <a href="#">
+                            <img src="/src/img/icons/facebook.svg" alt="facebook">
+                        </a>
+                    </li>
+                
+                    <li class="header-top__social-item">
+                        <a href="#">
+                            <img src="/src/img/icons/instagram.svg" alt="instagram">
+                        </a>
+                    </li>
+                
+                    <li class="header-top__social-item">
+                        <a href="#">
+                            <img src="/src/img/icons/youtube.svg" alt="youtube">
+                        </a>
+                    </li>
+                </ul>
             </li>
     
             <li class="menu__item active">
