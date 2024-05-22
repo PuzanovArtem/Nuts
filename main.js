@@ -6,4 +6,3 @@ import './src/js/news.js';
 import './src/css/swiper.min.css';
 
 
-console.log('main')
