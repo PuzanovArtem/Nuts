@@ -16,12 +16,9 @@
     bottom: 60px;
 
     @include respond-to($m-desktop) {
-
       bottom: 25px;
     }
   }
-
-
 }
 
 .top {
@@ -147,80 +144,73 @@
     margin-right: 0;
   }
 
-    &__text-mob {
+  &__text-mob {
+    display: none;
+  }
+
+  &__tel-mob-wrapper,
+  &__order-call-mob {
+    display: none;
+  }
+
+  @include respond-to($m-desktop) {
+    &__text {
       display: none;
     }
 
-                 &__tel-mob-wrapper,
-                                 &__order-call-mob {
-                   display: none;
-                 }
+    &__text-mob {
+      display: block;
+      margin: 20px 0 10px 0;
+      text-align: center;
+    }
+  }
 
-    @include respond-to($m-desktop) {
-
-      &__text {
-        display: none;
-      }
-
-      &__text-mob {
-        display: block;
-        margin: 20px 0 10px 0;
-        text-align: center;
-        
-      }
-
-           
+  @include respond-to($m-mobile) {
+    &__social-list,
+    &__login-item {
+      display: none;
     }
 
-         @include respond-to($m-mobile) {
+    &__select,
+    &__login-item-menu {
+      display: block;
+    }
 
-          &__social-list,
-          &__login-item {
-            display: none;
-          }
+    &__social-list-menu {
+      display: flex;
+      align-items: center;
+    }
 
+    &__telephone-mob {
+      margin-right: 6px;
+    }
 
-          &__select,
-          &__login-item-menu {
-            display: block;
-          }
+    &__tel-mob-wrapper {
+      display: block;
+      display: flex;
+      align-items: center;
 
-                    &__social-list-menu {
-                      display: flex;
-                      align-items: center;
-                    }
+      span {
+        color: $amazon-color;
+      }
+    }
 
-          &__telephone-mob {
-            margin-right: 6px;
-          }
+    &__order-call-mob {
+      display: block;
+      font-family: $fontFamilyRaleway;
+      font-size: 13px;
+      line-height: 15px;
+      color: $amazon-color;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
 
-          &__tel-mob-wrapper {
-            display: block;
-            display: flex;
-            align-items: center;
-
-            span {
-                color: $amazon-color;
-              }
-          }
-
-          &__order-call-mob {
-            display: block;
-            font-family: $fontFamilyRaleway;
-            font-size: 13px;
-            line-height: 15px;
-            color: $amazon-color;
-            font-weight: 600;
-            text-decoration: underline;
-            
-          }
-        }
-
-                 @include respond-to($mobile) {
-&__tel-mob {
-  display: none;
-}
-                 }
+  @include respond-to($mobile) {
+    &__tel-mob {
+      display: none;
+    }
+  }
 }
 
 .header-main {
@@ -295,18 +285,7 @@
 
   &__btn {
     padding: 13px 22px;
-    background: $amazon-color;
-    color: $main-color;
-    font-family: $fontFamilyRaleway;
-    font-size: 13px;
     margin-right: 15px;
-    border: 1px solid $amazon-color;
-
-    &:hover {
-      background: $main-color;
-
-      color: $amazon-color;
-    }
   }
 
   &__text {
@@ -338,36 +317,32 @@
     font-size: 12px;
   }
 
-  
+  @include respond-to($m-desktop) {
+    &__social-list,
+    &__tel-wrapper,
+    &__btn,
+    &__text {
+      display: none;
+    }
+  }
 
-    @include respond-to($m-desktop) {
+  @include respond-to($m-mobile) {
+    &__logo-wrapper-mob {
+      display: block;
+      max-width: 105px;
+      text-align: center;
+      font-size: 11px;
+      line-height: 12px;
 
-      &__social-list,
-      &__tel-wrapper,
-      &__btn,
-      &__text {
-        display: none;
+      img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 29px;
+        height: 28px;
+        margin-bottom: 7px;
       }
     }
-
-         @include respond-to($m-mobile) {
-          
-          &__logo-wrapper-mob {
-            display: block;
-            max-width: 105px;
-            text-align: center;
-            font-size: 11px;
-            line-height: 12px;
-
-            img {
-              margin-right: auto;
-              margin-left: auto;
-              width: 29px;
-              height: 28px;
-              margin-bottom: 7px;
-            }
-          }
-         }
+  }
 }
 
 .menu {
@@ -401,7 +376,6 @@
     transition: color 0.3s ease;
     position: relative;
     padding-bottom: 16px;
-    
 
     &:hover,
     &.active {
@@ -409,29 +383,27 @@
     }
 
     &.active::after {
-     content: "";
-     width: 100%;
-     height: 3px;
-     background: $amazon-color;
-     position: absolute;
-     bottom: 0;
-     left: 0;
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: $amazon-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
   &__button {
     display: none;
-  
+
     position: relative;
-   
   }
 
-        &__social-block {
-          display: flex;
-          justify-content: space-between;
-          padding: 10px 11px;
-            background: rgba(245, 245, 245, 0.5);
-
-        }
+  &__social-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 11px;
+    background: rgba(245, 245, 245, 0.5);
+  }
 
   &__close {
     display: none;
@@ -461,9 +433,6 @@
     display: none;
   }
 
-  
-
- 
   @include respond-to($m-desktop) {
     &__list {
       transform: translateY(-100%);
@@ -488,13 +457,13 @@
     &__close {
       display: block;
       padding-right: 11px;
-        padding-left: 11px;
-        padding-bottom: 10px;
+      padding-left: 11px;
+      padding-bottom: 10px;
     }
 
-        &__social-block {
-          display: flex;
-        }
+    &__social-block {
+      display: flex;
+    }
 
     &__close-btn {
       position: absolute;
@@ -512,15 +481,14 @@
 
     &__item {
       padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 11px;
+      padding-bottom: 16px;
+      padding-left: 11px;
 
-    &.active {
+      &.active {
         background: $amazon-color;
         color: $main-color;
       }
     }
-   
   }
 
   @include respond-to($s-tablet) {

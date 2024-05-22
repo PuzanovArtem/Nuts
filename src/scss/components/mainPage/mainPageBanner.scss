@@ -1,0 +1,81 @@
+.main-page-baner {
+  background-image: url(/src/img/banner-main-page.jpg);
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+
+  &__wrapper {
+    padding-top: 195px;
+    margin: 0 auto;
+    text-align: center;
+    color: $main-color;
+    font-family: $fontFamilyRaleway;
+    letter-spacing: 1px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 62px;
+  }
+
+  &__subtitle {
+    font-size: 25px;
+    margin-top: 30px;
+    max-width: 680px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+
+  @include respond-to($l-desktop) {
+    &__wrapper {
+      padding-top: 164px;
+    }
+  }
+
+  @include respond-to($l-tablet) {
+    height: 500px;
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      margin-top: 25px;
+      max-width: 460px;
+    }
+
+    &__wrapper {
+      padding-top: 124px;
+    }
+  }
+
+  @include respond-to($m-mobile) {
+    height: 400px;
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      margin-top: 15px;
+      max-width: 360px;
+    }
+
+    &__btn {
+      width: 41px;
+      height: 41px;
+    }
+  }
+}
+
