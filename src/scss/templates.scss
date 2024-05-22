@@ -11,3 +11,27 @@
     line-height: 22px;
 
 }
+
+.button__white-bg{
+    width: 225px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:$amazon-color;
+    font-family: $fontFamilyRaleway;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    border: 1.5px solid $amazon-color;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 0 auto;
+    align-self: center;
+
+    &:hover{
+        background-color: $amazon-color;
+        color: $main-color;
+    }
+}
