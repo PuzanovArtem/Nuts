@@ -1,0 +1,256 @@
+
+.benefit {
+    margin-top: 82px;
+    margin-bottom: 95px;
+
+    .benefit__headline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 33px;
+        margin: 0 auto;
+        width: 600px;
+
+        .benefit__headline__title {
+            
+            letter-spacing: 0.45px;
+        }
+
+        .benefit__headline__sub-title {
+            text-align: center;
+            letter-spacing: 0.18px;
+        }
+
+    }
+
+    .benefit__inner {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .benefit__inner__item {
+            position: relative;
+            width: 410px;
+            .benefit__item-bg{
+                width: 410px;
+                height: 525px;
+            }
+            .benefit__item__slogan {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                top: 186px;
+                left: 60px;
+                width: 300px;
+                height: 150px;
+
+                .benefit__slogan__name {
+                    color: $main-color;
+                    font-family: $fontFamilyRaleway;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 800;
+                    line-height: normal;
+                    letter-spacing: 0.4px;
+                }
+            }
+
+            .benefit__item__hover {
+                display: none;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                background: rgba(51, 125, 90, 0.95);
+
+                .benefit__item__slogan {
+                    top: 90px;
+                    left: 65px;
+                    gap: 5px;
+                }
+
+                .benefit__item__article {
+                    position: absolute;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    top: 250px;
+                    left: 40px;
+                    width: 330px;
+
+                    .benefit__hover__text {
+                        color:$main-color;
+                        text-align: center;
+                        font-family: $fontFamilyRaleway;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 23px;
+                        letter-spacing: 0.18px;
+                    }
+
+                    .benefit__hover__text2 {
+                        color:$main-color;
+                        text-align: center;
+                        font-family: $fontFamilyRaleway;
+                        font-size: 18px;
+                        font-weight: 600;
+                        line-height: 25px;
+                        letter-spacing: 0.18px;
+                    }
+                }
+            }
+
+            &:hover {
+                .benefit__item__hover {
+                    display: block;
+                }
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                background: rgba(0, 0, 0, 0.20);
+            }
+        }
+    }
+
+
+}
+
+
+@include respond-to($l-desktop) {
+    .benefit{
+        .benefit__inner{
+            .benefit__inner__item {
+                max-width: 300px;
+                width: 100%;
+                .benefit__item-bg {
+                    max-width: 300px;
+                    width: 100%;
+                }
+                .benefit__item__slogan {
+                    left: 0;
+                    top: 120px;
+                }
+                .benefit__item__hover{
+                    .benefit__item__slogan {
+                        left: auto;
+                        top: auto;
+                    }
+                    .benefit__item__article {
+                        left: 3px;
+                        top: 150px;
+                        width: 98%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@include respond-to($xl-tablet) {
+    .benefit {
+        .benefit__headline {
+            width: 100%;
+        }
+        .benefit__inner {
+            gap: 10px;
+            .benefit__inner__item {
+                .benefit__item-bg {
+                    height: auto;
+                    object-fit: cover;
+                }
+                .benefit__item__slogan{
+                    .benefit__slogan__name {
+                        font-size: 35px;
+                    }
+                }
+                .benefit__item__hover {
+                    .benefit__item__slogan {
+                        width: 100%;
+                    }
+                    .benefit__item__article{
+                        .benefit__hover__text2 {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@include respond-to($xm-tablet) {
+
+    .benefit {
+        .benefit__headline{
+            .benefit__headline__title{
+                font-size: 35px;
+            }
+            .benefit__headline__sub-title {
+                font-size: 16px;
+            }
+        }
+        .benefit__inner {
+            flex-direction: column;
+            align-items: center;
+
+            
+            
+        }
+    }
+}
+
+@include respond-to($m-mobile) {
+    
+
+    .benefit {
+        .benefit__headline {
+            .benefit__headline__title {
+                text-align: center;
+            }
+        }
+
+        .benefit__inner {
+            flex-direction: column;
+            align-items: center;
+
+            .benefit__inner__item {
+                .benefit__item__slogan {
+                    left: 0;
+                    top: 80px;
+                }
+
+                .benefit__slogan__name{
+                    font-size: 28px;
+                }
+            }
+            
+        }
+    }
+
+   
+}
+
+@include respond-to($s-mobile){
+    .benefit {
+        .benefit__headline{
+            .benefit__headline__title{
+                font-size: 28px;
+            }
+            .benefit__headline__sub-title {
+                font-size: 16px;
+            }
+        }
+    }
+}
