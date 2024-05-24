@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/img/icons/logo-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/customersPage/customersPage.scss">
     <title>Login</title>
   </head>
   <body>
     {{> _header }}
     <main>
-      
-      
+      {{> customersPage/_customerPageBanner}}
+      {{> customersPage/_customerPageAbout}}
+      {{> customersPage/_customerPageMenu }}
+      <!-- {{> _mainPageNumber }}
+      {{> _eko additionalClass='eko-customers'}}
+      {{> _map }} -->
     </main>
-    {{> _footer }}
-    
+    <!-- {{> _footer }} -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script type="module" src="/customersPage/customersPage.js"></script>
   </body>
 </html>

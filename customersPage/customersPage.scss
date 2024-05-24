@@ -3,3 +3,13 @@
 @import '@/scss/vars.scss';
 @import '@/scss/extends.scss';
 
+
+@import '/src/scss/components/header.scss';
+@import '/src/scss/components/customersPage/customerPageBanner.scss';
+@import '/src/scss/components/customersPage/customerPageAbout.scss';
+@import '/src/scss/components/customersPage/customerPageMenu.scss';
+@import '/src/scss/components/mainPageNumber.scss';
+@import '@/scss/components/eko.scss';
+@import '@/scss/components/map.scss';
+
+@import '@/scss/components/footer.scss';
