@@ -22,7 +22,15 @@ export default defineConfig({
    }),
    handlebars({
     partialDirectory: resolve(__dirname, 'src/partials'),
+    mainPagepartialDirectory: resolve(__dirname, 'src/partials/mainPage'),
+    aboutPagepartialDirectory: resolve(__dirname, 'src/partials/aboutPage'),
     customersPagepartialDirectory: resolve(__dirname, 'src/partials/customersPage'),
+    catalogPagepartialDirectory: resolve(__dirname, 'src/partials/catalogePage'),
+    galleryPagepartialDirectory: resolve(__dirname, 'src/partials/galleryPage'),
+    newPagepartialDirectory: resolve(__dirname, 'src/partials/newPage'),
+    newsPagepartialDirectory: resolve(__dirname, 'src/partials/newsPage'),
+    paymentPagepartialDirectory: resolve(__dirname, 'src/partials/paymentPage'),
+    productPagepartialDirectory: resolve(__dirname, 'src/partials/productPage'),
    }),
   ],
   build: {
@@ -31,6 +39,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         customersPage: resolve(__dirname, 'customersPage/index.html')
+        
       }
     }
   },
