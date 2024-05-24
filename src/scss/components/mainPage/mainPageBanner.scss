@@ -11,6 +11,8 @@
 
   &__wrapper {
     padding-top: 195px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin: 0 auto;
     text-align: center;
     color: $main-color;
@@ -77,5 +79,54 @@
       height: 41px;
     }
   }
+}
+
+.main-page-thesis {
+  background-image: url(/src/img/main-page-thesis.jpg);
+position: relative;
+height: 740px;
+
+.main-page-baner__wrapper {
+  padding-top: 240px;
+}
+
+  .main-page-baner__title {
+    font-size: 45px;
+    max-width: 1145px;
+    margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+  .main-page-baner__subtitle {
+   font-style: italic;
+   font-size: 24px;
+   position: absolute;
+   bottom: 200px;
+   letter-spacing: 0;
+   left: 50%;
+   transform: translateX(-50%);
+  }
+  
+.main-page-baner__btn {
+  margin-top: 80px;
+}
+
+@include respond-to($m-desktop) {
+height: 540px;
+
+.main-page-baner__title {
+    font-size: 25px;
+}
+    .main-page-baner__wrapper {
+        padding-top: 140px;
+      }
+
+            .main-page-baner__subtitle {
+              bottom: 50px;
+              font-size: 14px;
+            }
+  
+}
 }
 
