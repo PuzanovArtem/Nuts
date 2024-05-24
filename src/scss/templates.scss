@@ -1,7 +1,7 @@
 .popup {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
@@ -27,11 +27,12 @@
         position: absolute;
         top: 10px;
         right: 10px;
+        transition: color .3s ease;
     }
 
     &__close-btn:hover,
     &__close-btn:focus {
-        color: $main-color;
+        color:gray;
         text-decoration: none;
         cursor: pointer;
     }
@@ -63,6 +64,7 @@
      font-family: $fontFamilyRaleway;
      font-size: 13px;
      border: 1px solid $amazon-color;
+
 
      &:hover {
          background: $main-color;

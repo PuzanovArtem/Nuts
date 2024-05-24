@@ -40,6 +40,15 @@ $xxl-LapTop: 1800px;
     }
 }
 
+@mixin gray-line {
+    content: "";
+        width: 100%;
+        height: 1px;
+        background: $dark-color;
+        opacity: 6%;
+        position: absolute;
+}
+
 
 ///////приклад використання
 /// @include respond-to($xxl-LapTop) { }
