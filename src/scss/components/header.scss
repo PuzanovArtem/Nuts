@@ -67,7 +67,7 @@
   }
 
   &__login-item {
-    margin-right: 22px;
+    margin-right: 25px;
     position: relative;
     padding-bottom: 5px;
 
@@ -235,6 +235,7 @@
     display: flex;
     align-items: center;
     margin-right: 34px;
+    margin-bottom: 4px;
   }
 
   &__social-item:not(:last-child) {
@@ -268,6 +269,7 @@
     flex-direction: column;
     font-size: 13px;
     margin-right: 95px;
+    margin-bottom: 5px;
 
     span {
       color: $amazon-color;
@@ -370,7 +372,7 @@
     // letter-spacing: 1px;
     transition: color 0.3s ease;
     position: relative;
-    padding-bottom: 16px;
+    padding-bottom: 14px;
 
     &:hover,
     &.active {

@@ -28,7 +28,7 @@
   }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 45px;
   }
 
   &__subtitle {
@@ -49,7 +49,7 @@
     width: 170px;
 
     margin: 0;
-    margin-top: 45px;
+    margin-top: 50px;
   }
 
   &__img {
@@ -67,10 +67,11 @@
     cursor: pointer;
     position: absolute;
     bottom: 0;
-    top: auto;
+    top: auto !important;
     z-index: 5;
     background: $amazon-color;
-    width: 70px;
+    width: 70px !important;
+    height: 58px !important;
     transition: background 0.3s ease;
 
     &:hover {

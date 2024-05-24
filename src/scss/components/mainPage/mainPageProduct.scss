@@ -15,7 +15,7 @@
 
   &__list {
     display: grid;
-    margin-bottom: 69px;
+    margin-bottom: 75px;
     gap: 47px 30px;
     grid-template-columns: repeat(auto-fit, minmax(410px, 1fr));
   }
@@ -43,7 +43,7 @@
     // height: 35px;
     cursor: pointer;
     position: absolute;
-    top: 63%;
+    top: 63% !important;
     transform: translateY(-50%);
     z-index: 10;
 
@@ -57,7 +57,7 @@
 
     &.main-page-product__swiper-button-zoom {
       left: 50%;
-      top: 44%;
+      top: 44% !important;
       transform: translateX(-50%);
     }
 
@@ -247,8 +247,8 @@ position: relative;
   }
 
   &__btn {
-    width: 190px !important;
-    height: 55px !important;
+    width: 200px !important;
+   
    
   }
 
