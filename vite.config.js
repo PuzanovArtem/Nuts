@@ -22,6 +22,7 @@ export default defineConfig({
    }),
    handlebars({
     partialDirectory: resolve(__dirname, 'src/partials'),
+    customersPagepartialDirectory: resolve(__dirname, 'src/partials/customersPage'),
    }),
   ],
   build: {
