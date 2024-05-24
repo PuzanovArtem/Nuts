@@ -1,4 +1,498 @@
-.header__title{
-    font-size: 35px ;
-    color: red;
+@import "@/scss/general.scss";
+@import "@/scss/reset.scss";
+@import "@/scss/vars.scss";
+@import "@/scss/extends.scss";
+
+.header {
+  position: relative;
+
+  &::after {
+   @include gray-line;
+    bottom: 60px;
+
+    @include respond-to($m-desktop) {
+      bottom: 25px;
+    }
+  }
+}
+
+.top {
+  padding: 10px 0;
+  background: rgba(245, 245, 245, 0.5);
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__social-list,
+  &__social-list-menu {
+    display: flex;
+    align-items: center;
+  }
+
+  &__social-item {
+    margin-right: 18px;
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: brightness(0) saturate(100%) invert(72%) sepia(24%) saturate(526%)
+        hue-rotate(48deg) brightness(91%) contrast(85%);
+    }
+  }
+
+  &__social-item:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  &__text {
+    color: $amazon-color;
+    transition: color 0.3s ease;
+    margin-left: 180px;
+
+    &:hover {
+      color: $olivine-color;
+    }
+  }
+
+  &__login-list,
+  &__login-item a {
+    display: flex;
+    align-items: center;
+  }
+
+  &__login-item a img {
+    margin-right: 5px;
+  }
+
+  &__login-item {
+    margin-right: 22px;
+    position: relative;
+    padding-bottom: 5px;
+
+    &:not(:last-child):hover::after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background: $olivine-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__custom-select {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+  }
+
+  &__header-top__select {
+    background-color: white;
+    font-family: $fontFamilyRaleway;
+    padding: 10px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+
+  &__select-items {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: 100%;
+    z-index: 99;
+    display: none;
+  }
+
+  &__select-items div {
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background: $dark-color;
+      opacity: 6%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__select-items div:hover {
+    background-color: $amazon-color;
+  }
+
+  &__select-arrow {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  &__login-item:nth-last-child(1) {
+    margin-right: 0;
+  }
+
+  &__text-mob {
+    display: none;
+  }
+
+  &__tel-mob-wrapper,
+  &__order-call-mob {
+    display: none;
+  }
+
+  @include respond-to($m-desktop) {
+    &__text {
+      display: none;
+    }
+
+    &__text-mob {
+      display: block;
+      margin: 20px 0 10px 0;
+      text-align: center;
+    }
+  }
+
+  @include respond-to($m-mobile) {
+    &__social-list,
+    &__login-item {
+      display: none;
+    }
+
+    &__select,
+    &__login-item-menu {
+      display: block;
+    }
+
+    &__social-list-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    &__telephone-mob {
+      margin-right: 6px;
+    }
+
+    &__tel-mob-wrapper {
+      display: block;
+      display: flex;
+      align-items: center;
+
+      span {
+        color: $amazon-color;
+      }
+    }
+
+    &__order-call-mob {
+      display: block;
+      font-family: $fontFamilyRaleway;
+      font-size: 13px;
+      line-height: 15px;
+      color: $amazon-color;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+  }
+
+  @include respond-to($mobile) {
+    &__tel-mob {
+      display: none;
+    }
+  }
+}
+
+.header-main {
+  padding-top: 17px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo-wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 210px;
+    font-family: $fontFamilyRaleway;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: start;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    align-items: center;
+    margin-right: 34px;
+  }
+
+  &__social-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  &__social-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+
+  &__social-item {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background: $amazon-color;
+    transition: background 0.3s ease;
+  }
+
+  &__social-item:hover {
+    background: $olivine-color;
+  }
+
+  &__social-icon {
+    margin: 7px auto;
+  }
+
+  &__tel-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+    margin-right: 95px;
+
+    span {
+      color: $amazon-color;
+    }
+  }
+
+  &__tel:hover {
+    color: $amazon-color;
+  }
+
+  &__btn {
+    padding: 13px 22px;
+    margin-right: 15px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 14px;
+    color: $gray-color;
+    max-width: 184px;
+    margin-right: 30px;
+  }
+
+  &__busket-wrapper {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__busket-wrapper::after {
+    content: "0";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: $olivine-color;
+    position: absolute;
+    top: -6px;
+    right: -5px;
+    color: $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  @include respond-to($m-desktop) {
+    &__social-list,
+    &__tel-wrapper,
+    &__btn,
+    &__text {
+      display: none;
+    }
+  }
+
+  @include respond-to($m-mobile) {
+    &__logo-wrapper-mob {
+      display: block;
+      max-width: 105px;
+      text-align: center;
+      font-size: 11px;
+      line-height: 12px;
+
+      img {
+        margin-right: auto;
+        margin-left: auto;
+        width: 29px;
+        height: 28px;
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+.menu {
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &__button {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+    gap: 40px;
+  }
+
+  &__item {
+    font-family: $fontFamilyRaleway;
+    font-size: 15px;
+    // letter-spacing: 1px;
+    transition: color 0.3s ease;
+    position: relative;
+    padding-bottom: 16px;
+
+    &:hover,
+    &.active {
+      color: $amazon-color;
+    }
+
+    &.active::after {
+      content: "";
+      width: 100%;
+      height: 3px;
+      background: $amazon-color;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  &__button {
+    display: none;
+
+    position: relative;
+  }
+
+  &__social-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 11px;
+    background: rgba(245, 245, 245, 0.5);
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &--close {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -5px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: background-color 0.3s ease;
+    // height: 0;
+    // overflow: hidden;
+  }
+
+  &--close {
+    &.menu--open {
+      display: block;
+    }
+  }
+
+  &__social-block {
+    display: none;
+  }
+
+  @include respond-to($m-desktop) {
+    &__list {
+      transform: translateY(-100%);
+      position: absolute;
+      top: -40px;
+      right: 0;
+      width: 100%;
+      background-color: $main-color;
+      color: $gray-color;
+      display: block;
+      padding-top: 14px;
+      transition: transform 0.5s ease;
+      z-index: 2;
+    }
+
+    &__list {
+      &--open {
+        transform: translateY(0%);
+      }
+    }
+
+    &__close {
+      display: block;
+      padding-right: 11px;
+      padding-left: 11px;
+      padding-bottom: 10px;
+    }
+
+    &__social-block {
+      display: flex;
+    }
+
+    &__close-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    &__button {
+      display: flex;
+      // position: absolute;
+      //     right: 0;
+      //     top: 25px;
+      margin-top: 0;
+    }
+
+    &__item {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-left: 11px;
+
+      &.active {
+        background: $amazon-color;
+        color: $main-color;
+      }
+    }
+  }
+
+  @include respond-to($s-tablet) {
+    &__line {
+      width: 30px;
+    }
+
+    &__item {
+      font-size: 15px;
+    }
+  }
 }

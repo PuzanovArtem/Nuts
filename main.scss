@@ -3,7 +3,12 @@
 @import '@/scss/vars.scss';
 @import '@/scss/extends.scss';
 @import '@/scss/templates.scss';
+@import '/src/scss/components/header.scss';
 
+@import '/src/scss/components/mainPage/mainPageBanner.scss';
+@import '/src/scss/components/mainPage/mainPageProduct.scss';
+@import '/src/scss/components/mainPage/mainPageAbout.scss';
+@import '/src/scss/components/mainPage/mainPageNumber.scss';
 
 @import '@/scss/components/benefit.scss';
 @import '@/scss/components/eko.scss';

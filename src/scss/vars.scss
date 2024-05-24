@@ -17,7 +17,7 @@ $gray-color:#8A8A8A;
 $background-color: #FFFFFF;
 
 
-$mobile: 376px;
+$mobile: 359px;
 $s-mobile: 425px;
 $m-mobile: 560px;
 $l-mobile: 630px;
@@ -39,6 +39,15 @@ $xxl-LapTop: 1800px;
     @media only screen and (max-width: $breakpoint) {
         @content;
     }
+}
+
+@mixin gray-line {
+    content: "";
+        width: 100%;
+        height: 1px;
+        background: $dark-color;
+        opacity: 6%;
+        position: absolute;
 }
 
 
