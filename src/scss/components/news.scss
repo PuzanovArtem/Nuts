@@ -11,10 +11,10 @@
     }
 
     .news__swiper {
-        padding-top: 90px;
+        padding-top: 84px;
 
         .news__swiper__slide {
-            margin-top: 65px;
+            margin-top: 67px;
             width: 408px !important;
             background:$main-color;
             display: flex;
@@ -26,8 +26,6 @@
 
                 .content__bigbox__desc {
                     display: flex;
-                    margin-top: 21px;
-                    margin-bottom: 24px;
                     margin: 21px 0 24px 0;
                     width: 408px;
                     flex-direction: column;
@@ -82,9 +80,7 @@
                 }
             }
 
-            &:nth-child(1){
-                margin-left: 5px;
-            }
+            
         }
 
         .news__swiper__btnprev {
@@ -173,18 +169,68 @@
         }
     }
 }
+@include respond-to($s-mobile) {
+    
 
+    .news {
+        .news__swiper {
+            .news__swiper__slide {
+
+                width: 360px !important;
+                margin-right: 80px !important;
+                .content__smlbox__item {
+                    .content__bigbox__desc {
+                        width: 360px;
+                        padding: 0 8px;
+                        .bigbox__desc__text {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        .news__button{
+            margin-top: 35px;
+        }
+    }
+}
+@media (max-width:376px) {
+    
+
+    .news {
+        .news__swiper {
+            .news__swiper__slide {
+
+                width: 345px !important;
+                margin-right: 60px !important;
+                .content__smlbox__item {
+                    .content__bigbox__desc {
+                        width: 345px;
+                        padding: 0 8px;
+                        .bigbox__desc__text {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 @include respond-to($mobile) {
     
 
     .news {
         .news__swiper {
             .news__swiper__slide {
+
+                width: 335px !important;
+                margin-right: 80px !important;
                 .content__smlbox__item {
                     .content__bigbox__desc {
+                        width: 335px;
+                        padding: 0 8px;
                         .bigbox__desc__text {
                             width: 100%;
-                            max-width: 350px;
                         }
                     }
                 }
@@ -198,17 +244,15 @@
     .news {
         .news__swiper {
             .news__swiper__slide {
+
+                width: 300px !important;
+                margin-right: 50px !important;
                 .content__smlbox__item {
                     .content__bigbox__desc {
-                        width: 100%;
-                        margin-left: 30px;
-
+                        width: 300px;
+                        padding: 0 7px;
                         .bigbox__desc__text {
                             width: 100%;
-                            max-width: 320px;
-                        }
-                        .bigbox__desc__slogan {
-                            font-size: 13px;
                         }
                     }
                 }
