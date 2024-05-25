@@ -1,0 +1,116 @@
+.customer-page-about {
+  margin-top: 81px;
+
+  .customer-page-about-inner {
+    display: flex;
+    justify-content: space-between;
+
+    .customer-page-about__inner-title {
+      font-family: $fontFamilyRaleway;
+      font-size: 45px;
+      font-weight: 800;
+      line-height: normal;
+      letter-spacing: 0px;
+      max-width: 450px;
+    }
+
+    .customer-page-about__inner-article {
+      max-width: 380px;
+      padding-top: 10px;
+
+      .customer-page-about__inner-text1 {
+        font-family: $fontFamilyRaleway;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 330px;
+        /* 150% */
+      }
+
+      .customer-page-about__inner-text2 {
+        padding-top: 25px;
+        font-family: $fontFamilyRaleway;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .customer-page-about__inner-text3 {
+        color: #1a2f3f;
+        max-width: 320px;
+        font-family: $fontFamilyRaleway;
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .customer-page-about__inner-text4 {
+        max-width: 300px;
+        padding-top: 25px;
+        font-family: $fontFamilyRaleway;
+        font-size: 16px;
+        line-height: 24px;
+        /* 150% */
+      }
+    }
+  }
+}
+
+@include respond-to($m-desktop) {
+  .customer-page-about{
+    .customer-page-about-inner {
+      align-items: flex-start;
+
+      .customer-page-about__inner-title {
+        max-width: 300px;
+        font-size: 35px;
+      }
+    }
+  }
+}
+
+
+@include respond-to($xl-tablet) {
+  .customer-page-about {
+    .customer-page-about-inner {
+      flex-direction: column;
+      margin: 0 auto;
+      max-width: 600px;
+      text-align: center;
+      .customer-page-about__inner-title {
+        max-width: 900px;
+        width: 100%;
+      }
+
+      .customer-page-about__inner-article {
+        max-width: 900px;
+        width: 100%;
+        .customer-page-about__inner-text1,
+        .customer-page-about__inner-text2,
+        .customer-page-about__inner-text3,
+        .customer-page-about__inner-text4 {
+          max-width: 900px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to($m-mobile) {
+    .customer-page-about{
+      .customer-page-about-inner {
+        .customer-page-about__inner-title {
+            font-size: 35px;
+        }
+  
+        .customer-page-about__inner-article {
+
+          .customer-page-about__inner-text1,
+          .customer-page-about__inner-text2,
+          .customer-page-about__inner-text3,
+          .customer-page-about__inner-text4 {
+            max-width: 900px;
+            width: 100%;
+          }
+        }
+      }
+    }
+}
