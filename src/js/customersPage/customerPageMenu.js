@@ -1,4 +1,4 @@
-const swiperstore = new Swiper('.swiper__store', {
+const swiperstore = new Swiper('.swiper__menu', {
    direction: 'horizontal',
    slidesPerView: 2,
  
