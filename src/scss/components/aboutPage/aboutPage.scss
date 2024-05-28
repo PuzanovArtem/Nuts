@@ -10,7 +10,6 @@
     gap: 42px;
 
     grid-template-columns: 342px 1fr 453px;
-    gap: 20px;
     grid-template-areas: "photo content block";
   }
 
@@ -159,37 +158,35 @@
     }
 
     &__photo {
-        height: auto;
+      height: auto;
     }
 
-        &-w {
-           
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
+    &-w {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 
-                &__block-title {
-                    font-size: 22px;
-                        margin-bottom: 20px;
-                        text-align: center;
-                }
+    &__block-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
 
-                                &__name {
-                                    
-                                    font-size: 22px;
-                                    text-align: center;
-                                }
-                
-                                &__text {
-                                    font-size: 14px;
-                                    text-align: center;
-                                    margin-right: auto;
-                                    margin-left: auto;
-                                }
+    &__name {
+      font-size: 22px;
+      text-align: center;
+    }
 
-                                                                &__quote {
-                                                                    margin-right: auto;
-                                                                    margin-left: auto;
-                                                                }
+    &__text {
+      font-size: 14px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__quote {
+      margin-right: auto;
+      margin-left: auto;
+    }
   }
 }
