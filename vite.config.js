@@ -38,8 +38,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        customersPage: resolve(__dirname, 'customersPage/index.html')
-        
+        customersPage: resolve(__dirname, 'customersPage/index.html'),
+        paymentPage: resolve(__dirname, 'paymentPage/index.html')
       }
     }
   },
