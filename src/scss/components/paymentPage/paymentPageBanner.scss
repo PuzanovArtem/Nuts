@@ -1,0 +1,103 @@
+.payment-page-baner {
+    background-image: url(/src/img/paymentPageBanner.png);
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+
+    .payment-page-baner__links {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        position: absolute;
+        top: 34px;
+        left: 315px;
+        z-index: 2;
+
+        .payment-page-baner__link-page{
+            color: $main-color;
+            font-family: $fontFamilyRaleway;
+            font-size: 13px;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: 0.28px;
+        }
+    }
+
+    &__wrapper {
+        padding-top: 115px;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: 0 auto;
+      text-align: center;
+      color: $main-color;
+      font-family: $fontFamilyRaleway;
+      letter-spacing: 1px;
+    }
+  
+    &__title {
+      font-weight: 700;
+      font-size: 62px;
+    }
+  
+    &__subtitle {
+      font-size: 25px;
+      margin-top: 30px;
+      max-width: 680px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  
+    &__btn {
+      margin-top: 40px;
+    }
+  
+    @include respond-to($l-desktop) {
+      &__wrapper {
+        padding-top: 164px;
+      }
+    }
+  
+    @include respond-to($l-tablet) {
+      
+  
+      &__title {
+        font-size: 42px;
+      }
+  
+      &__subtitle {
+        font-size: 18px;
+        margin-top: 25px;
+        max-width: 460px;
+      }
+  
+      &__wrapper {
+        padding-top: 124px;
+      }
+    }
+  
+    @include respond-to($m-mobile) {
+      
+  
+      &__title {
+        font-size: 22px;
+      }
+  
+      &__subtitle {
+        font-size: 14px;
+        margin-top: 15px;
+        max-width: 360px;
+      }
+  
+      &__btn {
+        width: 41px;
+        height: 41px;
+      }
+    }
+  }
+  
