@@ -1,17 +1,105 @@
-
+.menu__content {
+  margin-top: 130px;
+  margin-bottom: 90px;
+}
 .menu {
-    margin-top: 130px;
-    margin-bottom: 90px;
-  
-    .menu__headline--nav {
+  .menu__headline--nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1320px;
+    padding: 0 10px;
+    margin: 0 auto;
+
+    .menu__tab--button {
+      cursor: pointer;
+      width: 350px;
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      max-width: 1320px;
-      padding: 0 10px;
-      margin: 0 auto;
-  
-      .menu__tab--button {
+      gap: 25px;
+      align-items: center;
+      text-align: left;
+      border: none;
+      background: none;
+      font-family: $fontFamilyRaleway;
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 23px;
+      letter-spacing: 0.2px;
+
+      &.active .color {
+        path {
+          fill: red; // Цвет заполнения иконки для активной вкладки
+        }
+      }
+    }
+
+    .color {
+      width: 45px;
+    }
+  }
+
+  .menu__line {
+    background: rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 1px;
+    margin-top: 24px;
+  }
+
+  .menu__tab--content {
+    display: none;
+    margin-top: 55px;
+    justify-content: space-between;
+
+    &.active {
+      display: flex;
+    }
+
+    .menu__content--inner {
+      display: flex;
+      padding-top: 48px;
+      flex-direction: column;
+      gap: 25px;
+      max-width: 430px;
+
+      .menu__content--article {
+        font-family: $fontFamilyRaleway;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+      }
+
+      .write__to--us {
+        margin-top: 10px;
+        border: 1.5px solid $amazon-color;
+        background: $amazon-color;
+        color: $main-color;
+        font-family: $fontFamilyRaleway;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.28px;
+        width: 188px;
+        height: 52px;
+      }
+    }
+  }
+
+  #menu-tab {
+    display: flex;
+  }
+
+  .swiper__menu {
+    display: none;
+
+    .swiper__menu--slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .menu__slide--title {
+        margin: 0 auto;
+        margin-bottom: 20px;
+
         cursor: pointer;
         width: 350px;
         display: flex;
@@ -25,204 +113,109 @@
         font-weight: 800;
         line-height: 23px;
         letter-spacing: 0.2px;
-        
-        &.active .color {
-          path {
-            fill: red; // Цвет заполнения иконки для активной вкладки
-          }
+
+        svg {
+          width: 45px;
         }
       }
-  
-      .color {
-        width: 45px;
+
+      img {
+        aspect-ratio: 3/2;
+        max-width: 400px;
+        height: auto;
+        object-fit: cover;
       }
-    }
-  
-    .menu__line {
-      background: rgba(0, 0, 0, 0.08);
-      width: 100%;
-      height: 1px;
-      margin-top: 24px;
-    }
-  
-    .menu__tab--content {
-      display: none;
-      margin-top: 55px;
-      justify-content: space-between;
-  
-      &.active {
+
+      .main__slide--text {
         display: flex;
-      }
-  
-      .menu__content--inner {
-        display: flex;
-        padding-top: 48px;
         flex-direction: column;
-        gap: 25px;
-        max-width: 430px;
-  
+        max-width: 400px;
+        width: 100%;
+        margin-top: 20px;
+        text-align: left;
+
         .menu__content--article {
           font-family: $fontFamilyRaleway;
           font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
           line-height: 24px;
           letter-spacing: -0.2px;
         }
-  
+
         .write__to--us {
           margin-top: 10px;
-          border: 1.5px solid $amazon-color;
-          background:$amazon-color;
-          color:$main-color;
-          font-family: $fontFamilyRaleway;
-          font-size: 14px;
           font-weight: 700;
-          line-height: normal;
           letter-spacing: 0.28px;
           width: 188px;
           height: 52px;
         }
       }
     }
-  
-    #menu-tab {
-      display: flex;
-    }
-
-    .swiper__menu {
-                display: none;
-        
-                .swiper__menu--slide {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-        
-                    .menu__slide--title {
-                        margin: 0 auto;
-                        margin-bottom: 20px;
-        
-                        cursor: pointer;
-                        width: 350px;
-                        display: flex;
-                        gap: 25px;
-                        align-items: center;
-                        text-align: left;
-                        border: none;
-                        background: none;
-                        font-family: $fontFamilyRaleway;
-                        font-size: 20px;
-                        font-weight: 800;
-                        line-height: 23px;
-                        letter-spacing: 0.2px;
-        
-                        svg {
-                            width: 45px;
-                        }
-                    }
-        
-                    img {
-                        aspect-ratio: 3/2;
-                        max-width: 400px;
-                        height: auto;
-                        object-fit: cover;
-                    }
-        
-                    .main__slide--text {
-                        display: flex;
-                        flex-direction: column;
-                        max-width: 400px;
-                        width: 100%;
-                        margin-top: 20px;
-                        text-align: left;
-        
-                        .menu__content--article {
-                            font-family: $fontFamilyRaleway;
-                            font-size: 16px;
-                            font-style: normal;
-                            font-weight: 500;
-                            line-height: 24px;
-                            letter-spacing: -0.2px;
-                        }
-        
-                        .write__to--us {
-                            margin-top: 10px;
-                            font-weight: 700;
-                            letter-spacing: 0.28px;
-                            width: 188px;
-                            height: 52px;
-                        }
-                    }
-                }
-            }
-
+  }
 }
 
 .menu__tab--content {
-    display: none;
+  display: none;
 }
 .menu__tab--content.active {
-    display: flex;
+  display: flex;
 }
 
+@include respond-to($m-desktop) {
+  .menu__content--img {
+    aspect-ratio: 3/2;
+    height: auto;
+    max-width: 500px;
+    width: 100%;
+    object-fit: contain;
+  }
+}
 
+@include respond-to($desktop) {
+  .menu {
+    .menu__headline--nav {
+      align-items: flex-start;
+    }
 
-
-@media screen and (max-width: 1100px) {
-    .menu__content--img {
-      aspect-ratio: 3/2;
-      height: auto;
-      max-width: 500px;
+    .menu__tab--button {
+      font-size: 15px;
       width: 100%;
-      object-fit: contain;
     }
+  }
 }
-  
-  @media screen and (max-width: 1000px) {
-    .menu {
-      .menu__headline--nav {
-        align-items: flex-start;
-      }
-  
-      .menu__tab--button {
-        font-size: 15px;
-        width: 100%;
-      }
-    }
-  }
-  
-  @media screen and (max-width: 900px) {
-    .menu {
-        margin-bottom: 0;
 
-      .menu__headline--nav {
-        display: none;
-      }
-  
-      .menu__tab--button {
-        max-width: 200px;
-        gap: 5px;
-      }
-  
-      .menu__tab--content .menu__content--inner {
-        padding-top: 0;
-      }
-  
-      .menu__tab--content {
-        flex-direction: column-reverse;
-      }
-  
-      .menu__content--img {
-        display: none;
-      }
-  
-      .menu__tab--content .menu__content--inner {
-        display: none;
-      }
-  
-      .swiper__menu {
-        display: block;
-      }
-  
-      
+@include respond-to($xl-tablet) {
+  .menu {
+    margin-bottom: 0;
+
+    .menu__headline--nav {
+      display: none;
+    }
+
+    .menu__tab--button {
+      max-width: 200px;
+      gap: 5px;
+    }
+
+    .menu__tab--content .menu__content--inner {
+      padding-top: 0;
+    }
+
+    .menu__tab--content {
+      flex-direction: column-reverse;
+    }
+
+    .menu__content--img {
+      display: none;
+    }
+
+    .menu__tab--content .menu__content--inner {
+      display: none;
+    }
+
+    .swiper__menu {
+      display: block;
     }
   }
-  
+}
