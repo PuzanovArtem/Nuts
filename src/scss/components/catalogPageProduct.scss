@@ -1,0 +1,8 @@
+.catalog-page-product {
+
+background: black;
+
+    &__item.hidden {
+        display: none;
+    }
+}

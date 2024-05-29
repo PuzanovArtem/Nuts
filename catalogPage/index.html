@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/img/icons/logo-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/catalogPage/catalogPage.scss">
+    <title>About us</title>
+  </head>
+  <body>
+     <div class="wrapper">
+    {{> _header }}
+    <main>
+      {{> secondaryBanner title="Каталог продукции" }}
+      {{> _filter }}
+      {{> catalogPageProduct }}
+       {{> _news }}
+      {{> _map }}
+    </main>
+    {{> _footer }}
+    
+
+     </div>
+
+     <script type="module" src="/main.js"></script>
+    <script type="module" src="/catalogPage/catalogPage.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </body>
+</html>
