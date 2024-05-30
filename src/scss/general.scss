@@ -12,6 +12,10 @@ html {
 		color: $blue-whale-color;
 }
 
+body.no-scroll {
+	overflow: hidden;
+}
+
 .wrapper{
 	// overflow: hidden;
 	font-family: $fontFamilyBase;

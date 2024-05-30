@@ -10,7 +10,7 @@
 
         <li class="main-page-product__item">
             <img src="/src/img/icons/sale-product.svg" alt="sale" class="main-page-product__item-sale">
-          <div class="swiper-container">
+          <div class="swiper-container swiper-container-product">
             <div class="swiper-wrapper">
               <div class="swiper-slide"><img
                   src="/src/img/productMPfirst.jpg"
@@ -71,14 +71,14 @@
 
           </div>
 
-          <div id="popupProduct" class="popup">
+          {{!-- <div id="popupProduct" class="popup">
             <div class="popup__content">
               <span class="popup__close-btn">&times;</span>
 
               <img src="/src/img/productMPfirst.jpg" alt="nuts" />
 
             </div>
-          </div>
+          </div> --}}
 
           <div class="main-page-product__item-info">
             <h3 class="main-page-product__item-info-title">Грецкий орех</h3>
@@ -113,7 +113,7 @@
 
     <li class="main-page-product__item">
         <img src="/src/img/icons/new-product.svg" alt="sale" class="main-page-product__item-sale">
-        <div class="swiper-container">
+        <div class="swiper-container swiper-container-product">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="/src/img/productMPfirst.jpg" class="productMPfirst" width="108" height="234" alt="Image 1" />
                 </div>
@@ -134,15 +134,7 @@
                     alt="arrow" width="23" height="23" class="main-page-product__btn-arrow" /></div>
     
         </div>
-    
-        <div id="popupProduct" class="popup">
-            <div class="popup__content">
-                <span class="popup__close-btn">&times;</span>
-    
-                <img src="/src/img/productMPfirst.jpg" alt="nuts" />
-    
-            </div>
-        </div>
+
     
         <div class="main-page-product__item-info">
             <h3 class="main-page-product__item-info-title">Грецкий орех</h3>
@@ -177,7 +169,7 @@
     </li>
 
         <li class="main-page-product__item">
-            <div class="swiper-container">
+            <div class="swiper-container swiper-container-product">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/src/img/productMPfirst.jpg" class="productMPfirst" width="108" height="234" alt="Image 1" />
                     </div>
@@ -199,14 +191,14 @@
         
             </div>
         
-            <div id="popupProduct" class="popup">
+            {{!-- <div id="popupProduct" class="popup">
                 <div class="popup__content">
                     <span class="popup__close-btn">&times;</span>
         
                     <img src="/src/img/productMPfirst.jpg" alt="nuts" />
         
                 </div>
-            </div>
+            </div> --}}
         
             <div class="main-page-product__item-info">
                 <h3 class="main-page-product__item-info-title">Грецкий орех</h3>
@@ -241,7 +233,7 @@
         </li>
 
         <li class="main-page-product__item">
-            <div class="swiper-container">
+            <div class="swiper-container swiper-container-product">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/src/img/productMPsecond.jpg" class="productMPsecond" width="243" height="191" alt="Image 1" />
                     </div>
@@ -263,14 +255,14 @@
         
             </div>
         
-            <div id="popupProduct" class="popup">
+            {{!-- <div id="popupProduct" class="popup">
                 <div class="popup__content">
                     <span class="popup__close-btn">&times;</span>
         
                     <img src="/src/img/productMPfirst.jpg" alt="nuts" />
         
                 </div>
-            </div>
+            </div> --}}
         
             <div class="main-page-product__item-info">
                 <h3 class="main-page-product__item-info-title">Грецкий орех</h3>
@@ -305,7 +297,7 @@
         </li>
 
         <li class="main-page-product__item">
-            <div class="swiper-container">
+            <div class="swiper-container swiper-container-product">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/src/img/productMPsecond.jpg" class="productMPsecond" width="243" height="191"
                             alt="Image 1" />
@@ -330,14 +322,14 @@
         
             </div>
         
-            <div id="popupProduct" class="popup">
+            {{!-- <div id="popupProduct" class="popup">
                 <div class="popup__content">
                     <span class="popup__close-btn">&times;</span>
         
                     <img src="/src/img/productMPfirst.jpg" alt="nuts" />
         
                 </div>
-            </div>
+            </div> --}}
         
             <div class="main-page-product__item-info">
                 <h3 class="main-page-product__item-info-title">Грецкий орех</h3>
@@ -372,7 +364,7 @@
         </li>
 
         <li class="main-page-product__item">
-            <div class="swiper-container">
+            <div class="swiper-container swiper-container-product">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="/src/img/productMPsecond.jpg" class="productMPsecond" width="243" height="191"
                             alt="Image 1" />
@@ -397,14 +389,14 @@
         
             </div>
         
-            <div id="popupProduct" class="popup">
+            {{!-- <div id="popupProduct" class="popup">
                 <div class="popup__content">
                     <span class="popup__close-btn">&times;</span>
         
                     <img src="/src/img/productMPfirst.jpg" alt="nuts" />
         
                 </div>
-            </div>
+            </div> --}}
         
             <div class="main-page-product__item-info">
                 <h3 class="main-page-product__item-info-title">Грецкий орех</h3>
@@ -439,6 +431,35 @@
         </li>
 
       </ul>
+
+    <div id="popupProduct" class="popup">
+        <div class="popup__content">
+            <span class="popup__close-btn">&times;</span>
+            <div class="swiper-container swiper-container-popup gallery-top">
+                <div class="swiper-wrapper swiper-wrapper-popup">
+                    <div class="swiper-slide swiper-slide-popup"><img src="/src/img/productMPfirst.jpg" alt="nuts" /></div>
+                    <div class="swiper-slide swiper-slide-popup"><img src="/src/img/productMPfirst.jpg" alt="nuts" /></div>
+                    <div class="swiper-slide swiper-slide-popup"><img src="/src/img/productMPfirst.jpg" alt="nuts" /></div>
+    
+                </div>
+    
+            <div class="swiper-button-next main-page-product__swiper-button-next"><img src="/src/img/icons/right-arrow.svg"
+                    alt="arrow" width="23" height="23" class="main-page-product__btn-arrow" /></div>
+            
+            <div class="swiper-button-prev main-page-product__swiper-button-prev"><img src="/src/img/icons/left-arrow.svg"
+                    alt="arrow" width="23" height="23" class="main-page-product__btn-arrow" /></div>
+            </div>
+            <div class="swiper-container swiper-container-popup gallery-thumbs">
+                <div class="swiper-wrapper swiper-wrapper-popup">
+                    <div class="swiper-slide swiper-slide-popup"><img src="/src/img/productMPfirst.jpg" alt="nuts" /></div>
+                    <div class="swiper-slide swiper-slide-popup"><img src="/src/img/productMPfirst.jpg" alt="nuts" /></div>
+                    <div class="swiper-slide swiper-slide-popup"><img src="/src/img/productMPfirst.jpg" alt="nuts" /></div>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
 
       <a href="/catalogPage/index.html" class="main-page-product__btn button__white-bg">Перейти в магазин</a>
     </div>

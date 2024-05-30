@@ -1,4 +1,4 @@
-const swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container-product', {
         // Optional parameters
         loop: true,
 
@@ -14,16 +14,26 @@ const swiper = new Swiper('.swiper-container', {
             prevEl: '.swiper-button-prev',
         },
 
-        // Responsive breakpoints
-        // breakpoints: {
-        //     640: {
-        //         slidesPerView: 1,
-        //     },
-        //     768: {
-        //         slidesPerView: 2,
-        //     },
-        //     1024: {
-        //         slidesPerView: 3,
-        //     },
-        // },
+       
+});
+    
+ document.addEventListener('DOMContentLoaded', () => {
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
     });
+
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+    });
+});

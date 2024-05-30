@@ -50,10 +50,10 @@
 
     &__content {
         background-color: #fefefe;
-        margin: 15% auto;
-        height: 60%;
+        margin: 5% auto;
+        height: 80%;
         border: 1px solid rgb(0, 0, 0);
-        width: 60%;
+        width: 40%;
         position: relative;
     }
 
@@ -66,6 +66,7 @@
         top: 10px;
         right: 10px;
         transition: color .3s ease;
+        z-index: 100;
     }
 
     &__close-btn:hover,
@@ -87,12 +88,22 @@
     @include respond-to($m-desktop) {
         &__content {
 
-            height: 50%;
+            height: 80%;
 
-            width: 70%;
+            width: 60% !important;
             position: relative;
         }
     }
+
+        @include respond-to($l-mobile) {
+            &__content {
+    
+                height: 40%;
+    
+                width: 70% !important;
+                position: relative;
+            }
+        }
 }
 
 .main--btn {
