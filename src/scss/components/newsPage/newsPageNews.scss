@@ -1,0 +1,111 @@
+.news-page-news{
+    margin-top: 50px;
+
+    .news__content {
+        margin-top: 65px;
+        margin-bottom: 100px;
+
+        .news__content-smlbox {
+            margin-top: 61px;
+            display: flex;
+            gap: 30px;
+
+            .content__smlbox-item {
+
+                .content__page-news-desc {
+                    display: flex;
+                    margin-top: 22px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 5px;
+
+                    .page-news__desc-data {
+                        color: $gray-color;
+                        font-size: 13px;
+                        line-height: 22px;
+                        letter-spacing: 0.13px;
+                    }
+
+                    .page-news__desc-slogan {
+                        font-family: $fontFamilyRaleway;
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0.1px;
+                    }
+
+
+                    .page-news__desc-text {
+                        font-family:$fontFamilyRaleway;
+                        font-size: 14px;
+                        line-height: 20px;
+                        letter-spacing: 0.14px;
+                        width: 350px;
+                    }
+
+                    .page-news__desc-link {
+                        display: flex;
+                        margin-top: 20px;
+                        align-items: center;
+                        font-family: $fontFamilyRaleway;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 20px;
+                        letter-spacing: 0.14px;
+                        gap: 10px;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1160px) {
+    .news-page-news {
+      .news__content {
+        margin-top: 0;
+        .news__content-smlbox {
+            flex-wrap: wrap;
+            gap: 0;
+            justify-content: space-between;
+            .content__smlbox-item:last-child {
+                display: none;
+            }
+        }
+      }
+    }
+  }
+
+
+  @include respond-to($xm-tablet){
+    .news-page-news{
+        .news__content {
+            .news__content-smlbox {
+                gap: 30px;
+                .content__smlbox-item {
+                    max-width: 850px;
+                    width: 100%;
+            
+                    img {
+                        aspect-ratio: 3/2;
+                        width: 100%;
+                        max-width: 850px;
+                    }
+                    .content__page-news-desc {
+                        .page-news__desc-text {
+                            max-width: 850px;
+                            width: 100%;
+                        }
+                    }
+                    &:last-child {
+                        display: block;
+                    }
+                }
+               
+            }
+        }
+    }
+
+
+}
