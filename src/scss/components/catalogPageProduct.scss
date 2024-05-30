@@ -1,8 +1,12 @@
 .catalog-page-product {
 
-background: black;
+
 
     &__item.hidden {
         display: none;
     }
+
+        &__wrapper {
+            padding-top: 80px;
+        }
 }
