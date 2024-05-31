@@ -1,5 +1,5 @@
 .news-page-banner {
-  margin-top: 50px;
+  margin-top: 33px;
 
   .page__navigation {
     text-align: left;
@@ -38,7 +38,7 @@
 
   .news__content {
     margin-top: 65px;
-    margin-bottom: 100px;
+    
 
     .news__content-banner {
       display: flex;
@@ -46,11 +46,11 @@
 
       .content__banner-desc {
         display: flex;
-        margin-top: 73px;
+        margin-top: 69px;
         flex-direction: column;
         align-items: flex-start;
         width: 390px;
-        gap: 18px;
+        
 
         .banner__desc-data {
           color:$gray-color;
