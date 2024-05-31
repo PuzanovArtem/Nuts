@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/img/icons/logo-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/cardProductPage/cardProductPage.scss">
+    <title>Card Product</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      {{> _header }}
+      <main>
+        {{> breadcrumb firstPage = "Главная" secondPage = "Карточка товара"}}
+      {{> cardProductPageInfo }}
+      {{> cardProductPageSub }}
+      {{> _map }}
+      </main>
+      {{> _footer }}
+    </div>
+    
+    <script type="module" src="/cardProductPage/cardProductPage.js"></script>
+    <script type="module" src="/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  </body>
+</html>
