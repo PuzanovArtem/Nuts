@@ -3,21 +3,20 @@
   margin-bottom: 80px;
   .pay__headline--nav {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    max-width: 1055px;
+   
+    
     margin: 0 auto;
     .tab-button {
       cursor: pointer;
       display: flex;
       align-items: center;
-      gap: 13px;
-      border: none;
-      background: none;
+     width: 33.33%;
+     justify-content: center;
+     margin: 0 auto;
       font-family: $fontFamilyRaleway;
       font-size: 20px;
       font-weight: 800;
-      line-height: 23px;
+      line-height: 1.15;
       /* 115% */
       letter-spacing: 0.2px;
     }

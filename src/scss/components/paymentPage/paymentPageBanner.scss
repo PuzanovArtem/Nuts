@@ -56,11 +56,21 @@
     &__btn {
       margin-top: 40px;
     }
-  
+
+    @include respond-to($xxl-LapTop) {
+      .payment-page-baner__links {
+        left: 200px;
+      }
+    }
+
+
+
+
     @include respond-to($l-desktop) {
       &__wrapper {
         padding-top: 164px;
       }
+      
     }
   
     @include respond-to($l-tablet) {
@@ -100,4 +110,8 @@
       }
     }
   }
-  
+  @media (max-width:1800px){
+    .payment-page-baner__links {
+      left: 0px;
+    }
+  }

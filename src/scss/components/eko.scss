@@ -107,27 +107,6 @@
         }
     }
 }
-@include respond-to($tablet){
-    .eko-about{
-        .eko__inner {
-            height: 540px;
-            .eko__inner__title {
-                margin: 43px 0 0 -5px;
-                font-size: 35px;
-                font-weight: 800;
-            }
-    
-            .eko__inner__subtitle {
-                margin: 20px 0 0 20px;
-                font-size: 18px;
-                font-weight: 500;
-                line-height: 35px;
-                letter-spacing: 0.22px;
-            }
-        }
-        
-    }
-}
 
 .eko-customers{
     background-image: url(/src/img/eko-customers.png);
@@ -172,6 +151,29 @@
         }
     }
 }
+@include respond-to($tablet){
+    .eko-about{
+        .eko__inner {
+            height: 540px;
+            .eko__inner__title {
+                margin: 43px 0 0 -5px;
+                font-size: 35px;
+                font-weight: 800;
+            }
+    
+            .eko__inner__subtitle {
+                margin: 20px 0 0 20px;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 35px;
+                letter-spacing: 0.22px;
+            }
+        }
+        
+    }
+}
+
+
 @include respond-to($tablet){
     .eko-customers{
         .eko__inner {

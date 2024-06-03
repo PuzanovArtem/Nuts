@@ -40,7 +40,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         customersPage: resolve(__dirname, 'customersPage/index.html'),
         paymentPage: resolve(__dirname, 'paymentPage/index.html'),
-        newsPage: resolve(__dirname, 'newsPage/index.html')
+        newsPage: resolve(__dirname, 'newsPage/index.html'),
+        newPage: resolve(__dirname, 'newPage/index.html')
       }
     }
   },
