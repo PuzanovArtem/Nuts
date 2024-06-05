@@ -1,7 +1,7 @@
 .catalog-page-history {
 
     &__text-wrapper {
-        overflow: scroll;
+        overflow-y: scroll;
         height: 300px;
        max-width: 530px; 
     }
@@ -49,23 +49,25 @@
     
         ::-webkit-scrollbar-thumb {
             background: $amazon-color;
-            border-radius: 6px;
+            border-radius: 8px;
             height: 34px;
+            border: 2px solid $amazon-color;
         }
     
         ::-webkit-scrollbar-thumb:hover {
             background: $olivine-color;
         }
     
-        /* Стилізація для Mozilla Firefox */
+       
         * {
             scrollbar-width: thin;
-            scrollbar-color: $amazon-color $olivine-color;
+           
         }
     
-        /* Додаткове налаштування для різних станів */
+       
         * {
-            scrollbar-color: $amazon-color $olivine-color;
+            scrollbar-color: $amazon-color #d4d4d4;
+
         }
 
                 @include respond-to($m-desktop) {

@@ -18,10 +18,10 @@ const swiper = new Swiper('.swiper-container-card', {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
+
    
     const navItems = document.querySelectorAll('.card-product-sub__item');
-
+const sections = document.querySelectorAll(".card-product-sub__wrapper")
     
     navItems.forEach(item => {
         item.addEventListener('click', () => {
@@ -30,6 +30,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
            
             item.classList.add('active');
+
+             sections.forEach(section => section.classList.remove('active'));
+
+            
+            const target = item.getAttribute('data-target');
+            document.getElementById(target).classList.add('active');
         });
     });
-});
+
+
+//////// nav
+    

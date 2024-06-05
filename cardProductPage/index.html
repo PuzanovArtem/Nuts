@@ -13,16 +13,17 @@
       {{> _header }}
       <main>
         {{> breadcrumb firstPage = "Главная" secondPage = "Карточка товара"}}
-      {{> cardProductPageInfo }}
-      {{> cardProductPageSub }}
+      {{> productPage/cardProductPageInfo }}
+      {{> productPage/cardProductPageSub }}
       {{> _map }}
       </main>
       {{> _footer }}
     </div>
     
+     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+         <script type="module" src="/catalogPage/catalogPage.js"></script>
     <script type="module" src="/cardProductPage/cardProductPage.js"></script>
     <script type="module" src="/main.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+   
   </body>
 </html>

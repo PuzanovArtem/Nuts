@@ -83,14 +83,11 @@ position: relative;
       width: 55px;
       height: 55px;
     }
-
-    &:hover {
-      &__btn-arrow {
-        filter: brightness(0) saturate(100%) invert(72%) sepia(24%)
-          saturate(526%) hue-rotate(48deg) brightness(91%) contrast(85%);
-      }
-    }
   }
+
+&__btn-arrow:hover {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(24%) saturate(526%) hue-rotate(48deg) brightness(91%) contrast(85%);
+}
 
   .swiper-button-next::after,
   .swiper-button-prev::after {
@@ -265,6 +262,7 @@ position: relative;
       height: 300px;
       margin-left: auto;
       margin-right: auto;
+      
     
     }
   
@@ -298,6 +296,18 @@ position: relative;
     .gallery-thumbs .swiper-slide-thumb-active {
       opacity: 1;
     }
+
+        &__popup-content {
+          border: 5px solid $olivine-color;
+        }
+
+        &__gallery-top {
+        background: rgba(196, 196, 196, 0.1) !important;
+        }
+
+        .swiper-slide-popup-thumb {
+          border: 2px solid rgba(196, 196, 196, 0.4);
+        }
 
      @include respond-to($xl-tablet) {
       &__list {
