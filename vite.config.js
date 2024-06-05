@@ -42,8 +42,8 @@ export default defineConfig({
         aboutPage: resolve(__dirname, 'aboutPage/index.html'),
         catalogPage: resolve(__dirname, 'catalogPage/index.html'),
         cardProductPage: resolve(__dirname, 'cardProductPage/index.html'), 
-        registrationPage: resolve(__dirname, 'registration/registration.html')
-        
+        registrationPage: resolve(__dirname, 'registration/registration.html'),
+        galleryPage: resolve(__dirname, 'galleryPage/index.html'),
         customersPage: resolve(__dirname, 'customersPage/index.html'),
         paymentPage: resolve(__dirname, 'paymentPage/index.html'),
         newsPage: resolve(__dirname, 'newsPage/index.html'),
