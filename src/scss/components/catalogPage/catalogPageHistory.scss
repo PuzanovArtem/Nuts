@@ -1,0 +1,99 @@
+.catalog-page-history {
+
+    &__text-wrapper {
+        overflow-y: scroll;
+        height: 300px;
+       max-width: 530px; 
+    }
+
+        .main-page-about__block {
+            padding-bottom: 52px;
+        }
+
+    .main-page-about__wrapper-info {
+        max-width: 569px;
+        margin-top: -4px;
+    }
+
+    .main-page-about__subtitle-third {
+        display: block;
+    }
+
+    .main-page-about__title {
+        line-height: 50px;
+        margin-bottom: 0;
+    }
+
+        .main-page-about__subtitle {
+            max-width: 490px;
+            padding-right: 10px;
+
+            
+        }
+
+    &__subtitle {
+        font-family: $fontFamilyRaleway;
+        font-size: 24px;
+        line-height: 50px;
+        margin-bottom: 17px;
+    }
+
+        ::-webkit-scrollbar {
+            width: 12px;
+            height: 12px;
+        }
+    
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+    
+        ::-webkit-scrollbar-thumb {
+            background: $amazon-color;
+            border-radius: 8px;
+            height: 34px;
+            border: 2px solid $amazon-color;
+        }
+    
+        ::-webkit-scrollbar-thumb:hover {
+            background: $olivine-color;
+        }
+    
+       
+        * {
+            scrollbar-width: thin;
+           
+        }
+    
+       
+        * {
+            scrollbar-color: $amazon-color #d4d4d4;
+
+        }
+
+                @include respond-to($m-desktop) {
+
+                    .main-page-about__subtitle {
+                        max-width: 90%;
+                        margin-right: auto;
+                        margin-left: auto;
+padding-right: 0;
+                    }
+                   
+                    .main-page-about__wrapper-info {
+                        max-width: 760px;
+                    }
+
+                                         &__text-wrapper {
+                                            max-width: 100%;
+                                         }
+
+                                                                                  .main-page-about__title {
+                                                                                      line-height: 40px;
+                                                                                      font-size: 25px;
+                                                                                  }
+
+                                                                                                                                                                          .main-page-about__block {
+                                                                                                                                                                            padding-bottom: 50px;
+                                                                                                                                                                          }
+                }
+}

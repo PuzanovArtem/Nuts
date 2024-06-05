@@ -12,6 +12,17 @@
 
 }
 
+.auth-title {
+    font-family: $fontFamilyRaleway;
+        font-size: 32px;
+        font-weight: 800;
+
+        @include respond-to($s-mobile) {
+              
+                    font-size: 26px;  
+            }
+}
+
 .button__white-bg{
     width: 225px;
     height: 52px;
@@ -50,10 +61,10 @@
 
     &__content {
         background-color: #fefefe;
-        margin: 15% auto;
-        height: 60%;
+        margin: 5% auto;
+        height: 80%;
         border: 1px solid rgb(0, 0, 0);
-        width: 60%;
+        width: 40%;
         position: relative;
     }
 
@@ -66,6 +77,7 @@
         top: 10px;
         right: 10px;
         transition: color .3s ease;
+        z-index: 100;
     }
 
     &__close-btn:hover,
@@ -87,12 +99,22 @@
     @include respond-to($m-desktop) {
         &__content {
 
-            height: 50%;
+            height: 80%;
 
-            width: 70%;
+            width: 60% !important;
             position: relative;
         }
     }
+
+        @include respond-to($l-mobile) {
+            &__content {
+    
+                height: 40%;
+    
+                width: 70% !important;
+                position: relative;
+            }
+        }
 }
 
 .main--btn {
@@ -108,4 +130,99 @@
          background: $main-color;
          color: $amazon-color;
      }
+ }
+
+ ////input
+ 
+ .form {
+    &-group input::placeholder {
+            font-size: 14px;
+            color: $blue-whale-color;
+            font-weight: 600;
+        }
+    
+        &-group input {
+            background-color: white;
+            font-family: $fontFamilyRaleway;
+            padding: 16px 17px;
+            font-size: 14px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+
+        
+    
+        &-group input:focus {
+    
+    
+            border: 1px solid $olivine-color;
+            outline: none;
+        }
+    
+        &-group input:hover {
+            background-color: rgba(51, 125, 90, 0.1);
+    
+            border: 1px solid $olivine-color;
+    
+        }
+ }
+
+ ///// checkbox
+
+ .checkbox {
+    &__group {
+     display: flex;
+     align-items: center;
+ }
+
+ &__group input[type="checkbox"] {
+     margin-right: 10px;
+ }
+
+ &__group {
+     font-size: 13px;
+     color: rgba(138, 138, 138, 1);
+     margin-bottom: 30px;
+ }
+
+ &__group a {
+     color: #006400;
+     text-decoration: none;
+     margin-left: 5px;
+ }
+
+ &__group a:hover {
+     text-decoration: underline;
+ }
+
+ &__group input {
+     display: none;
+ }
+
+ &__group span {
+
+     height: 14px;
+     width: 14px;
+     border: 1px solid $amazon-color;
+     display: inline-block;
+     position: relative;
+     background-color: #FFF;
+     border-radius: 2px;
+     padding: 3px;
+     margin-right: 5px;
+ }
+
+ 
+ }
+
+ [type=checkbox]:checked+span:before {
+     content: '';
+     position: absolute;
+     background-color: $amazon-color;
+     width: 8px;
+     height: 8px;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #FFF;
  }

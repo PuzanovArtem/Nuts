@@ -2,7 +2,7 @@
 
 .main-page-about {
   .swiper-container {
-    width: 80%;
+    width: 100%;
     max-width: 700px;
     height: 472px;
     overflow: hidden;
@@ -20,6 +20,7 @@
   &__wrapper {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
   }
 
   &__wrapper-info {
@@ -43,6 +44,11 @@
 
   &__subtitle-second {
     margin-top: 27px;
+  }
+
+  &__subtitle-third {
+    margin-top: 27px;
+    display: none;
   }
 
   &__btn {
@@ -145,7 +151,7 @@
 
     &__swiper-button-next,
     &__swiper-button-prev {
-      width: 40px;
+      width: 40px !important;
 
       img {
         width: 14px;
@@ -161,4 +167,44 @@
       height: 31px;
     }
   }
+}
+
+
+.about-page {
+  .swiper-slide-first,
+  .main-page-about__btn {
+    display: none;
+  }
+
+.main-page-about__subtitle-third {
+  display: block;
+}
+
+.main-page-about__block {
+  background: $main-color;
+  padding-top: 100px;
+}
+
+.main-page-about__wrapper-info {
+  max-width: 460px;
+  margin-top: 25px;
+}
+
+@include respond-to($xm-tablet) {
+
+  .main-page-about__block {
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+}
+
+@include respond-to($m-desktop) {
+
+  .main-page-about__wrapper-info {
+    max-width: 860px;
+    
+  }
+
+ 
+}
 }

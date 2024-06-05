@@ -1,0 +1,156 @@
+.card-product-sub {
+  padding-top: 92px;
+  padding-bottom: 83px;
+
+  &__nav {
+    position: relative;
+  }
+
+  &__nav::after {
+    @include gray-line;
+    bottom: 0;
+  }
+
+  &__list {
+    display: flex;
+    overflow: auto;
+  }
+
+  &__item {
+    font-family: $fontFamilyRaleway;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+    width: 114px;
+    padding-bottom: 20px;
+    width: 33.33%;
+    
+
+    &:hover {
+      font-weight: 800;
+    }
+
+    &.active {
+      font-weight: 800;
+    }
+
+    &.active::after {
+      @include gray-line;
+      background: $amazon-color;
+
+      height: 3px;
+      opacity: 1;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__wrapper {
+    margin-top: 51px;
+    display: none;
+    align-items: center;
+  }
+
+  &__content {
+    font-size: 15px;
+    line-height: 25px;
+    margin-left: 60px;
+    margin-top: 9px;
+  }
+
+  &__text {
+    margin-bottom: 12px;
+  }
+
+  &__text-top {
+    margin-bottom: 36px;
+  }
+
+  &__text-title {
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  &__content-item-text {
+    margin-bottom: 4px;
+    position: relative;
+    padding-left: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: $olivine-color;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+
+  &__wrapper.active {
+    display: flex;
+  }
+
+    //  ::-webkit-scrollbar {
+    //    width: 12px;
+    //    height: 12px;
+    //  }
+  
+    //  ::-webkit-scrollbar-track {
+    //    background: #f1f1f1;
+    //  }
+  
+    //  ::-webkit-scrollbar-thumb {
+    //    background: $gray-color;
+    //    border-radius: 8px;
+    //    border: 1px solid $gray-color;
+    //  }
+  
+    //  ::-webkit-scrollbar-thumb:hover {
+    //    background: $olivine-color;
+    //  }
+  
+  
+     * {
+       scrollbar-color: $gray-color #d4d4d4;
+       scrollbar-width: none;
+  
+     }
+
+  @include respond-to($m-desktop) {
+    &__wrapper {
+      img {
+        display: none;
+      }
+
+      margin-top: 25px;
+    }
+
+    &__content {
+      margin-left: 0;
+    }
+  }
+
+  @include respond-to($m-mobile) {
+
+    &__content {
+      font-size: 14px;
+      line-height: 22px;
+    }
+
+    &__item {
+      justify-self: center;
+    flex: 0 0 auto;
+
+    }
+
+    padding-bottom: 30px;
+  }
+}

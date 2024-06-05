@@ -1,0 +1,229 @@
+<section class="registration">
+    <div class="container">
+        <div class="registration__wrapper">
+            <div class="registration__form-wrapper registration__form-wrapper-sec">
+<h3 class="registration__title">Регистрация</h3>
+<h4 class="registration__subtitle">1. Контактные данные</h4>
+
+<ul class="registration__nav-list">
+    <li class="registration__nav-item active" data-target = "fisface">Физическое лицо</li>
+    <li class="registration__nav-item" data-target = "yurface">Юридическое лицо</li>
+</ul>
+
+<div class="registration__form-container form-container">
+    <form>
+        <div class="registration__form-group form-group">
+            <input type="text" id="fio" name="fio" placeholder="ФИО*" required>
+        </div>
+        <div class="registration__form-group form-group">
+            <input type="email" id="email" name="email" placeholder="Email*" required>
+        </div>
+        <div class="registration__form-group form-group">
+            <input type="tel" id="phone" name="phone" placeholder="Телефон*" required>
+        </div>
+    </form>
+</div>
+
+
+<h4 class="registration__subtitle">2. Адрес</h4>
+
+<div class="registration__form-container">
+    <form >
+        <div class="select">
+        <div class="header-top__custom-select filter__custom-select">
+            <div class="header-top__select-selected filter__select-selected">Страна</div>
+            <div class="header-top__select-items filter__select-items">
+                <div data-value="nut1" class="filter__select-item">Україна</div>
+                <div data-value="nut2" class="filter__select-item">Польща</div>
+                <div data-value="nut3" class="filter__select-item">Франція</div>
+            </div>
+            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+        </div>
+        </div>
+        
+        <div class="select">
+        <div class="header-top__custom-select filter__custom-select filter__custom-select-second">
+            <div class="header-top__select-selected filter__select-selected filter__select-selected-second">Область</div>
+            <div class="header-top__select-items filter__select-items filter__select-items-second">
+                <div data-value="nut1" class="filter__select-item">Одеська</div>
+                <div data-value="nut2" class="filter__select-item">Київська</div>
+                <div data-value="nut3" class="filter__select-item">Львівська</div>
+            </div>
+            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+        </div>
+        </div>
+
+        <div class="registration__form-group form-group">
+            <input type="city" id="city" name="city" placeholder="Город*" required>
+        </div>
+        <div class="registration__form-group form-group">
+            <input type="address" id="address" name="address" placeholder="Адрес" required>
+        </div>
+    </form>
+</div>
+
+
+<h4 class="registration__subtitle">3. Пароль</h4>
+
+<div class="registration__form-container form-container" >
+    <form>
+        <div class="registration__form-group form-group">
+            <input type="password" id="password" name="password" placeholder="Пароль*" required>
+        </div>
+        <div class="registration__form-group form-group">
+            <input type="password-rep" id="password-rep" name="password-rep" placeholder="Подтвердите пароль*" required>
+        </div>
+
+        <div class="registration__forg-group-wrapper">
+        <label class="checkbox__group form-group">
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <span></span>
+            Я согласен с <a href="#">Условиями регистрации</a>
+        </label>
+        <button type="submit" class="registration__submit-button main--btn">Продолжить</button>
+        </div>
+
+    </form>
+</div>
+
+            </div>
+        
+<div class="registration__upload-wrapper hidden active" id="fisface">
+    <div class="registration__upload">
+        <div class="upload__container" onclick="document.getElementById('fileInput').click();">
+            <div class="upload__text">Загрузить фото</div>
+            <img id="uploadedImage" src="/src/img/load-img.png" alt="Uploaded Image">
+            <input type="file" id="fileInput" accept="image/*" onchange="loadFile(event)">
+        </div>
+
+        <label class="checkbox__group form-group">
+            <input type="checkbox" id="agreement" name="agreement" required>
+            <span></span>
+        Являюсь ФОП
+        </label>
+    </div>
+</div>
+
+<div class="registration__upload-wrapper registration__upload-wrapper-sec hidden" id="yurface">
+   
+   <div class="registration__upload">
+    <div class="upload__container" onclick="document.getElementById('fileInput').click();">
+        <div class="upload__text">Загрузить фото</div>
+        <img id="uploadedImage" src="/src/img/load-img.png" alt="Uploaded Image">
+        <input type="file" id="fileInput" accept="image/*" onchange="loadFile(event)">
+    </div>
+    <div>
+        <input type="radio" id="huey" name="option" value="1" checked />
+        <label for="huey">Юр. лицо</label>
+    </div>
+    
+    <div>
+        <input type="radio" id="dewey" name="option" value="2" />
+        <label for="dewey">ФОП</label>
+    </div>
+   </div>
+
+<div class="registration__content1" id="content1">
+
+    <h4 class="registration__subtitle registration__subtitle-sec">1. Реквизиты</h4>
+
+    <div class="registration__form-group form-group registration__form-group-sec">
+        <input type="okp" id="okp" name="okp" placeholder="ОКПО">
+    </div>
+
+<h4 class="registration__subtitle">2. Юридический адрес</h4>
+
+<div class="registration__form-container">
+    <form>
+        <div class="select">
+        <div class="header-top__custom-select filter__custom-select">
+            <div class="header-top__select-selected filter__select-selected">Страна</div>
+            <div class="header-top__select-items filter__select-items">
+                <div data-value="nut1" class="filter__select-item">Україна</div>
+                <div data-value="nut2" class="filter__select-item">Польща</div>
+                <div data-value="nut3" class="filter__select-item">Франція</div>
+            </div>
+            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+        </div>
+        </div>
+
+<div class="select">
+        <div class="header-top__custom-select filter__custom-select filter__custom-select-second">
+            <div class="header-top__select-selected filter__select-selected filter__select-selected-second">Область
+            </div>
+            <div class="header-top__select-items filter__select-items filter__select-items-second">
+                <div data-value="nut1" class="filter__select-item">Одеська</div>
+                <div data-value="nut2" class="filter__select-item">Київська</div>
+                <div data-value="nut3" class="filter__select-item">Львівська</div>
+            </div>
+            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+        </div>
+</div>
+
+        <div class="registration__form-group form-group">
+            <input type="city" id="city" name="city" placeholder="Город*" required>
+        </div>
+        <div class="registration__form-group form-group">
+            <input type="address" id="address" name="address" placeholder="Адрес">
+        </div>
+        <div class="registration__form-group form-group">
+            <input type="address" id="address" name="address" placeholder="Индекс">
+        </div>
+    </form>
+</div>
+</div>
+
+<div class="registration__content1" id="content2" style="display: none;">
+
+    <h4 class="registration__subtitle registration__subtitle-sec">1. Реквизиты</h4>
+
+    <div class="registration__form-group form-group registration__form-group-sec">
+        <input type="okp" id="okp" name="okp" placeholder="ЕДРПО">
+    </div>
+
+    <h4 class="registration__subtitle">2. Юридический адрес</h4>
+
+    <div class="registration__form-container">
+        <form>
+            <div class="select">
+                <div class="header-top__custom-select filter__custom-select">
+                    <div class="header-top__select-selected filter__select-selected">Страна</div>
+                    <div class="header-top__select-items filter__select-items">
+                        <div data-value="nut1" class="filter__select-item">Україна</div>
+                        <div data-value="nut2" class="filter__select-item">Польща</div>
+                        <div data-value="nut3" class="filter__select-item">Франція</div>
+                    </div>
+                    <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+                </div>
+            </div>
+
+            <div class="select">
+                <div class="header-top__custom-select filter__custom-select filter__custom-select-second">
+                    <div class="header-top__select-selected filter__select-selected filter__select-selected-second">
+                        Область
+                    </div>
+                    <div class="header-top__select-items filter__select-items filter__select-items-second">
+                        <div data-value="nut1" class="filter__select-item">Одеська</div>
+                        <div data-value="nut2" class="filter__select-item">Київська</div>
+                        <div data-value="nut3" class="filter__select-item">Львівська</div>
+                    </div>
+                    <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+                </div>
+            </div>
+
+            <div class="registration__form-group form-group">
+                <input type="city" id="city" name="city" placeholder="Город*" required>
+            </div>
+            <div class="registration__form-group form-group">
+                <input type="address" id="address" name="address" placeholder="Адрес">
+            </div>
+           
+        </form>
+    </div>
+</div>
+
+</div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,43 @@
+.login {
+  &__wrapper {
+    width: 410px;
+    margin: 50px auto 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    font-size: 13px;
+    color: $amazon-color;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $olivine-color;
+    }
+  }
+  
+  
+
+  &__link-wrapper {
+    margin: 15px auto 15px auto;
+    text-align: center;
+  }
+
+  &__password-wrapper {
+      margin-top: 0;
+  }
+
+  &__registration {
+    text-decoration: underline;
+  }
+
+  @include respond-to($s-mobile) {
+    &__wrapper {
+      width: 100%;
+      padding: 0 15px;
+    }
+  }
+}

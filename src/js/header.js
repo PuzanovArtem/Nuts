@@ -47,3 +47,20 @@ menuShadow.addEventListener('click', (event) => {
         console.log("close");
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+   
+    const navItems = document.querySelectorAll('.menu__item');
+
+    
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+           
+            navItems.forEach(nav => nav.classList.remove('active'));
+
+           
+            item.classList.add('active');
+        });
+    });
+});

@@ -1,0 +1,192 @@
+.about-page-history {
+  &-w {
+    background: #fbfbfb;
+    padding-top: 100px;
+    padding-bottom: 90px;
+  }
+
+  &__wrapper {
+    display: grid;
+    gap: 42px;
+
+    grid-template-columns: 342px 1fr 453px;
+    grid-template-areas: "photo content block";
+  }
+
+  &__content {
+    margin-top: 31px;
+    grid-area: content;
+  }
+
+  &__photo {
+    height: 493px;
+    margin-right: 0;
+    margin-left: auto;
+    grid-area: photo;
+  }
+
+  &__name {
+    font-family: $fontFamilyRaleway;
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 18px;
+    max-width: 320px;
+  }
+
+  &__quote-wrapper {
+    display: flex;
+    margin-bottom: 60px;
+
+    img {
+      margin-right: 9px;
+    }
+  }
+
+  &__quote {
+    font-size: 15px;
+    line-height: 18px;
+    font-style: italic;
+    margin-top: 20px;
+  }
+
+  &__btn {
+    margin-left: 0;
+    width: 188px;
+  }
+
+  &__block {
+    padding: 30px 45px;
+    background: $amazon-color;
+    color: #fbfbfb;
+    // width: 453px;
+    height: 493px;
+    width: 100%;
+    grid-area: block;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      bottom: -20px;
+      right: -85px;
+      max-width: calc(100% + 85px);
+      /* Щоб зображення не виходило за межі контейнера */
+      height: auto;
+    }
+  }
+
+  &__block-title {
+    font-family: $fontFamilyRaleway;
+    color: $main-color;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  &__block-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__block-text-second,
+  &__block-text-third {
+    margin-top: 15px;
+  }
+
+  @include respond-to($xl-LapTop) {
+    &__wrapper {
+      grid-template-columns: 342px 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+      grid-template-areas:
+        "photo content"
+        "block block";
+    }
+
+    &__block-text {
+      font-size: 22px;
+      line-height: 32px;
+    }
+
+    &__block-title {
+      margin-bottom: 65px;
+    }
+  }
+
+  @include respond-to($m-desktop) {
+    &__block-text {
+      font-size: 19px;
+      line-height: 22px;
+    }
+  }
+
+  @include respond-to($xm-tablet) {
+    &__block-text {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    &__wrapper {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+      gap: 20px;
+      grid-template-areas:
+        "photo"
+        "content"
+        "block";
+    }
+
+    &__photo {
+      margin-right: auto;
+    }
+
+    &__block-title {
+      margin-bottom: 35px;
+    }
+
+    &__block {
+      padding: 20px 20px;
+      height: auto;
+    }
+
+    &__btn {
+      margin-left: auto;
+    }
+
+    &__photo {
+      height: auto;
+    }
+
+    &-w {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    &__block-title {
+      font-size: 22px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    &__name {
+      font-size: 22px;
+      text-align: center;
+    }
+
+    &__text {
+      font-size: 14px;
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    &__quote {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

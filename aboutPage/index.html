@@ -6,16 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/aboutPage/aboutPage.scss">
-    <title>Login</title>
+    <title>About us</title>
   </head>
   <body>
+     <div class="wrapper">
     {{> _header }}
     <main>
-      
-      
+      {{> _mainPageBanner title = "Орех Причерноморья" subtitle ="Единственный в Украине сад совместного 
+выращивание фундука и грецкого ореха" additionalClass = "about-page-banner"}}
+      {{> mainPage/_mainPageAbout additionalClassAbout = "about-page"}}
+      {{> aboutPage/_aboutPageHistory }}
+       {{> _mainPageNumber }}
+       {{> aboutPage/_aboutPageGallery }}
+       {{> _eko additionalClass='eko-about'}}
+       {{> _news }}
+      {{> _map }}
     </main>
     {{> _footer }}
     
+
+     </div>
+
+     <script type="module" src="/main.js"></script>
     <script type="module" src="/aboutPage/aboutPage.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>

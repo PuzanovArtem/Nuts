@@ -88,6 +88,10 @@
     width: 40px;
   }
 
+    &__custom-select.is-active .header-top__select-items {
+      display: block;
+    }
+
   &__header-top__select {
     background-color: white;
     font-family: $fontFamilyRaleway;
@@ -104,6 +108,7 @@
     width: 100%;
     z-index: 99;
     display: none;
+  
   }
 
   &__select-items div {
@@ -125,6 +130,7 @@
 
   &__select-items div:hover {
     background-color: $amazon-color;
+    color: $main-color;
   }
 
   &__select-arrow {
