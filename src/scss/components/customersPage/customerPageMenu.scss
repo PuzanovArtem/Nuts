@@ -161,7 +161,29 @@
 .menu__tab--content.active {
   display: flex;
 }
+@media(max-width:1200px){
+  .menu {
+    .menu__headline--nav {
+  
+      .menu__tab--button {
+        gap: 15px;
+        font-size: 17px;
+      }
+    }
+  } 
+}
 
+@media(max-width:1200px){
+  .menu {
+    .menu__headline--nav {
+  
+      .menu__tab--button {
+        gap: 10px;
+        font-size: 16px;
+      }
+    }
+  } 
+}
 @include respond-to($m-desktop) {
   .menu__content--img {
     aspect-ratio: 3/2;
