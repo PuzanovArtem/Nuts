@@ -33,6 +33,7 @@ export default defineConfig({
     productPagepartialDirectory: resolve(__dirname, 'src/partials/productPage'),
     checkoutPagepartialDirectory: resolve(__dirname, 'src/partials/checkout'),
     errorPagePagepartialDirectory: resolve(__dirname, 'src/partials/errorPage'),
+    basketPagePagepartialDirectory: resolve(__dirname, 'src/partials/basketPage'),
    }),
   ],
   build: {
@@ -50,7 +51,8 @@ export default defineConfig({
         newsPage: resolve(__dirname, 'newsPage/index.html'),
         newPage: resolve(__dirname, 'newPage/index.html'),
         checkout: resolve(__dirname, 'checkout/index.html'),
-        error: resolve(__dirname, 'errorPage/index.html')
+        error: resolve(__dirname, 'errorPage/index.html'),
+        basket: resolve(__dirname, 'basketPage/index.html')
       }
     }
   },
