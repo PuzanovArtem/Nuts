@@ -31,6 +31,8 @@ export default defineConfig({
     newsPagepartialDirectory: resolve(__dirname, 'src/partials/newsPage'),
     paymentPagepartialDirectory: resolve(__dirname, 'src/partials/paymentPage'),
     productPagepartialDirectory: resolve(__dirname, 'src/partials/productPage'),
+    checkoutPagepartialDirectory: resolve(__dirname, 'src/partials/checkout'),
+    errorPagePagepartialDirectory: resolve(__dirname, 'src/partials/errorPage'),
    }),
   ],
   build: {
@@ -46,7 +48,9 @@ export default defineConfig({
         galleryPage: resolve(__dirname, 'galleryPage/index.html'),
         paymentPage: resolve(__dirname, 'paymentPage/index.html'),
         newsPage: resolve(__dirname, 'newsPage/index.html'),
-        newPage: resolve(__dirname, 'newPage/index.html')
+        newPage: resolve(__dirname, 'newPage/index.html'),
+        checkout: resolve(__dirname, 'checkout/index.html'),
+        error: resolve(__dirname, 'errorPage/index.html')
       }
     }
   },

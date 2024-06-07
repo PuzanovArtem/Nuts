@@ -1,0 +1,79 @@
+.checkout-banner {
+  background-image: url(/src/img/checkout-banner.png);
+  width: 100%;
+  max-width: 1920px;
+  margin: -3px auto 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 518px;
+  position: relative;
+  &__wrapper {
+    padding: 205px 15px 0;
+    margin: 0 auto;
+    text-align: center;
+    color: $main-color;
+    font-family: $fontFamilyRaleway;
+    letter-spacing: 1px;
+  }
+
+  &__title {
+    letter-spacing: 0;
+  }
+
+  &__subtitle {
+    font-family: $fontFamilyRaleway;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0;
+    max-width: 430px;
+    margin: 19px auto 0;
+  }
+
+  &__btn {
+    margin-top: 40px;
+  }
+
+  @include respond-to($l-desktop) {
+    &__wrapper {
+      padding-top: 164px;
+    }
+  }
+
+  @include respond-to($l-tablet) {
+    height: 400px;
+
+    &__title {
+      font-size: 42px;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      margin-top: 25px;
+      max-width: 460px;
+    }
+
+    &__wrapper {
+      padding-top: 124px;
+    }
+  }
+
+  @include respond-to($m-mobile) {
+    height: 300px;
+
+    &__title {
+      font-size: 22px;
+    }
+
+    &__subtitle {
+      font-size: 14px;
+      margin-top: 15px;
+      max-width: 360px;
+    }
+
+    &__btn {
+      width: 41px;
+      height: 41px;
+    }
+  }
+}
