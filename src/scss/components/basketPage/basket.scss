@@ -10,9 +10,8 @@
 
         .swiper__link {
             color: #8A8A8A;
-            font-family: Raleway;
+            font-family: $fontFamilyRaleway;
             font-size: 14px;
-            font-style: normal;
             font-weight: 600;
             line-height: normal;
             letter-spacing: 0.28px;
@@ -25,13 +24,10 @@
         gap: 190px;
 
         .avatar__headline--title {
-            color: #1A2F3F;
-            font-family: Raleway;
+            font-family: $fontFamilyRaleway;
             font-size: 32px;
-            font-style: normal;
             font-weight: 800;
             line-height: 32px;
-            /* 100% */
             letter-spacing: 0px;
         }
 
@@ -40,13 +36,9 @@
             flex-direction: column;
 
             .avatar__manager--name {
-                color: #1A2F3F;
-                font-family: Raleway;
+                font-family: $fontFamilyRaleway;
                 font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
                 line-height: 32px;
-                /* 200% */
                 letter-spacing: 0.16px;
             }
 
@@ -56,12 +48,8 @@
                 align-items: center;
                 gap: 10px;
                 color: #337D5A;
-                font-family: Montserrat;
-                font-size: 14px;
-                font-style: normal;
                 font-weight: 600;
                 line-height: 32px;
-                /* 228.571% */
                 letter-spacing: 0.14px;
             }
         }
@@ -92,10 +80,8 @@
             }
             .basket__line--item {
                 display: flex;
-                color: #1A2F3F;
-                font-family: Raleway;
+                font-family: $fontFamilyRaleway;
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 700;
                 line-height: 32px;
                 /* 200% */
@@ -126,14 +112,8 @@
             }
 
             .basket__line2--item2 {
-                color: #1A2F3F;
                 width: 200px;
-                font-family: Montserrat;
-                font-size: 14px;
-                font-style: normal;
-                font-weight: 500;
                 line-height: 32px;
-                /* 228.571% */
 
                 
             }
@@ -146,14 +126,7 @@
 
                 .basket__line2--item {
                     width: 80px;
-                    color: #1A2F3F;
-                    font-family: Montserrat;
-                    font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
                     line-height: 32px;
-
-                    /* 228.571% */
 
                     &:nth-child(2){
                         margin: 0 0 0 -24px;
@@ -169,13 +142,7 @@
                             width: 44px;
                             height: 28px;
                             border: 1px solid rgba(0, 0, 0, 0.15);
-                            color: #1A2F3F;
-                            font-family: Montserrat;
-                            font-size: 14px;
-                            font-style: normal;
-                            font-weight: 500;
                             line-height: 32px;
-                            /* 228.571% */
                             margin: 0 6px;
                         }
 
@@ -208,14 +175,11 @@
             width: 249px;
             height: 50px;
             border: 2px solid #337D5A;
-            background: none;
             color: #337D5A;
-            font-family: Raleway;
+            font-family: $fontFamilyRaleway;
             font-size: 16px;
-            font-style: normal;
             font-weight: 700;
             line-height: 17px;
-            /* 106.25% */
         }
 
         .make__order {
@@ -229,14 +193,10 @@
     margin-right: 7px;
                 
                 .make__price--text {
-                    color: #1A2F3F;
-                    font-family: Raleway;
+                    font-family: $fontFamilyRaleway;
                     font-size: 18px;
-                    font-style: normal;
                     font-weight: 700;
                     line-height: 32px;
-                    /* 177.778% */
-                    // margin-right: 15px;
                 }
 
                 .make__price--price {
@@ -245,22 +205,15 @@
 
                     .make__price--nubmer {
                         color: #337D5A;
-                        font-family: Montserrat;
                         font-size: 22px;
-                        font-style: normal;
                         font-weight: 700;
                         line-height: 32px;
-                        /* 145.455% */
                     }
 
                     .make__price--text {
                         color: #337D5A;
-                        font-family: Montserrat;
-                        font-size: 14px;
-                        font-style: normal;
                         font-weight: 600;
                         line-height: 32px;
-                        /* 228.571% */
                     }
                 }
 
@@ -271,26 +224,21 @@
                 height: 50px;
                 border: 0.5px solid #337D5A;
                 background: #337D5A;
-                color: #FFF;
-                font-family: Raleway;
+                color: $main-color;
+                font-family: $fontFamilyRaleway;
                 font-size: 16px;
-                font-style: normal;
                 font-weight: 700;
                 line-height: 17px;
-                /* 106.25% */
             }
         }
     }
 
     .basket__slogan {
         margin-top: 60px;
-        color: #1A2F3F;
-        font-family: Raleway;
+        font-family: $fontFamilyRaleway;
         font-size: 28px;
-        font-style: normal;
         font-weight: 800;
         line-height: 32px;
-        /* 114.286% */
         letter-spacing: 0.28px;
         text-align: center;
     }
@@ -303,12 +251,10 @@
 
         .basket__link--item {
             color: #337D5A;
-            font-family: Raleway;
+            font-family: $fontFamilyRaleway;
             font-size: 18px;
-            font-style: normal;
             font-weight: 600;
             line-height: 32px;
-            /* 177.778% */
             letter-spacing: 0.18px;
 
             &:hover {
@@ -319,13 +265,11 @@
         }
 
         .or {
-            color: #1A2F3F;
-            font-family: Raleway;
+            font-family:$fontFamilyRaleway;
             font-size: 18px;
             font-style: normal;
             font-weight: 500;
             line-height: 32px;
-            /* 177.778% */
             letter-spacing: 0.18px;
         }
     }
