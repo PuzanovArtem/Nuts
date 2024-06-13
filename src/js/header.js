@@ -49,7 +49,7 @@ menuShadow.addEventListener('click', (event) => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
+
    
     const navItems = document.querySelectorAll('.menu__item');
 
@@ -63,4 +63,24 @@ document.addEventListener('DOMContentLoaded', () => {
             item.classList.add('active');
         });
     });
-});
+
+
+
+
+// var popup = document.getElementById("popup");
+// var btn = document.querySelector(".header-main__busket-wrapper");
+// var span = document.getElementsByClassName("close")[0];
+
+// btn.onclick = function() {
+//     popup.style.display = "block";
+// }
+
+// span.onclick = function() {
+//     popup.style.display = "none";
+// }
+
+// window.onclick = function(event) {
+//     if (event.target == popup) {
+//         popup.style.display = "none";
+//     }
+// }

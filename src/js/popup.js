@@ -34,20 +34,20 @@ window.addEventListener('click', function(event) {
 
 
 
-var popup = document.getElementById("popup");
-var btn = document.querySelector(".header-main__busket-wrapper");
-var span = document.getElementsByClassName("close")[0];
+// var popup = document.getElementById("popup");
+// var btn = document.querySelector(".header-main__busket-wrapper");
+// var span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
-    popup.style.display = "block";
-}
+// btn.onclick = function() {
+//     popup.style.display = "block";
+// }
 
-span.onclick = function() {
-    popup.style.display = "none";
-}
+// span.onclick = function() {
+//     popup.style.display = "none";
+// }
 
-window.onclick = function(event) {
-    if (event.target == popup) {
-        popup.style.display = "none";
-    }
-}
+// window.onclick = function(event) {
+//     if (event.target == popup) {
+//         popup.style.display = "none";
+//     }
+// }

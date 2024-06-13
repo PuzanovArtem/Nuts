@@ -1,22 +1,31 @@
-const selected = document.querySelector('.filter__select-selected');
-            const items = document.querySelector('.filter__select-items');
 
-            selected.addEventListener('click', function () {
-                items.style.display = items.style.display === 'block' ? 'none' : 'block';
-            });
 
-            items.addEventListener('click', function (event) {
-                if (event.target && event.target.matches('div[data-value]')) {
-                    selected.textContent = event.target.textContent;
-                    items.style.display = 'none';
-                }
-            });
+document.addEventListener('DOMContentLoaded', function () {
+  const selected = document.querySelector('.filter__select-selected');
+  const items = document.querySelector('.filter__select-items');
 
-            document.addEventListener('click', function (event) {
-                if (!event.target.closest('.filter__custom-select')) {
-                    items.style.display = 'none';
-                }
-            });
+  if (selected && items) {
+    selected.addEventListener('click', function () {
+      items.style.display = items.style.display === 'block' ? 'none' : 'block';
+    });
+
+    items.addEventListener('click', function (event) {
+      if (event.target && event.target.matches('div[data-value]')) {
+        selected.textContent = event.target.textContent;
+        items.style.display = 'none';
+      }
+    });
+
+    document.addEventListener('click', function (event) {
+      if (!event.target.closest('.filter__custom-select')) {
+        items.style.display = 'none';
+      }
+    });
+  } else {
+    console.error('Elements not found: .filter__select-selected or .filter__select-items');
+  }
+});
+
 
 const select = document.querySelector('.filter__select-selected-second');
             const item = document.querySelector('.filter__select-items-second');
