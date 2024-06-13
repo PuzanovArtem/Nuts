@@ -1,0 +1,104 @@
+.sidebar {
+  font-family: $fontFamilyRaleway;
+position: relative;
+
+&__wrapper {
+    width: 250px;
+   
+}
+
+  &__title {
+    margin-bottom: 70px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 800;
+    margin-bottom: 23px;
+  }
+
+  &__list-first {
+    margin-bottom: 40px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  &__item {
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      color: $amazon-color;
+    }
+  }
+
+  &__item.active {
+    color: $amazon-color;
+    text-decoration: underline;
+  }
+
+ .openbtn,
+ .closebtn {
+    display: none;
+}
+
+
+
+  @include respond-to($desktop) {
+    &__wrapper {
+      height: 100%;
+    
+      width: 0;
+     
+      position: fixed;
+     
+      z-index: 1;
+     
+      top: 0;
+      left: 0;
+      background-color: $olivine-color;
+      color: $main-color;
+      overflow-x: hidden;
+      
+      transition: 0.5s;
+      
+      padding: 60px 0;
+     
+    }
+
+    
+    &__wrapper .closebtn {
+      position: absolute;
+      top: 0;
+      right: 15px;
+      font-size: 36px;
+      margin-left: 50px;
+      display: block;
+    }
+
+   
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: rgba(51, 125, 90, 0.5);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      display: block;
+      transition: opacity .3s ease;
+      position: absolute;
+      right: 0;
+    }
+
+   
+    #main {
+      transition: margin-left 0.5s;
+     
+      
+    }
+  }
+}
+
+ 

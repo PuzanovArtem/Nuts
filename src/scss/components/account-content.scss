@@ -1,0 +1,384 @@
+.address-setting {
+  display: none;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 474px 1fr;
+    justify-content: space-between;
+    gap: 46px;
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+
+  &__select {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .header-top__select-items div {
+    padding: 15px 17px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .header-top__select-items {
+    top: 45px;
+  }
+
+  .filter__select-selected {
+    font-size: 14px;
+  }
+
+  &__tel-text {
+    font-family: $fontFamilyRaleway;
+    font-size: 16px;
+  }
+
+  &__tel {
+    display: flex;
+    align-items: center;
+    color: $amazon-color;
+    margin-top: 8px;
+
+    img {
+      margin-right: 8px;
+    }
+  }
+
+  &__pic {
+    position: relative;
+    color: $main-color;
+    align-self: flex-end;
+  }
+
+  &__pic-title-wrapper {
+    position: absolute;
+    top: 49%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: $main-color;
+  }
+
+  &__pic-title {
+    margin-bottom: 15px;
+    line-height: 1;
+  }
+
+  &__pic-subtitle {
+    width: 270px;
+    line-height: 1.6;
+    margin: 0 auto;
+  }
+
+  .registration__subtitle-sec {
+    margin-top: 50px;
+  }
+
+  .registration__form-group-sec {
+    margin-top: 26px;
+  }
+
+  &__subtitle-form {
+    margin-top: 33px;
+  }
+
+  .registration__form-container {
+    margin-top: 27px;
+  }
+
+  &__submit-button {
+    padding: 17px 71px;
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 17px;
+  }
+
+  &__submit-button-wrapper {
+    text-align: end;
+  }
+
+  .registration__form-group input {
+    margin-bottom: 14px;
+  }
+
+  @include respond-to($LapTop) {
+    &__wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @include respond-to($l-desktop) {
+    &__wrapper {
+      grid-template-columns: 1fr;
+      margin-left: 0;
+    }
+
+    &__pic,
+    &__pic-title-wrapper {
+      display: none;
+    }
+  }
+
+  @include respond-to($m-mobile) {
+    &__submit-button {
+      width: 100%;
+    }
+  }
+}
+
+.account-content.active {
+  display: block;
+}
+
+.upload {
+  &__container {
+    width: 131px;
+    height: 170px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    margin: 30px 0 0 0;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__container:hover .upload-text {
+    color: #fff;
+  }
+
+  &__container input[type="file"] {
+    display: none;
+  }
+
+  &__text {
+    position: absolute;
+    text-align: center;
+    text-decoration: dashed;
+  }
+}
+
+.contact-info {
+  display: none;
+
+  &__wrapper {
+    margin-left: 80px;
+    margin-top: 10px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: 474px 1fr;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 60px;
+  }
+
+  .registration__form-group input {
+    margin-bottom: 11px;
+  }
+
+  @include respond-to($LapTop) {
+    &__wrapper {
+      margin-left: 0;
+    }
+  }
+
+  @include respond-to($xm-tablet) {
+    &__form {
+      grid-template-columns: 1fr;
+    }
+
+    &__form-wrapper {
+      order: 2;
+    }
+  }
+
+  @include respond-to($m-mobile) {
+    &__submit-button {
+      width: 100%;
+    }
+  }
+}
+
+.order-history {
+  overflow: hidden;
+  display: none;
+
+  &__container {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  .contact-info__wrapper {
+    margin-left: 40px;
+  }
+
+  .address-setting__tel-text,
+  .address-setting__tel {
+    margin-left: 40px;
+  }
+
+  &__order-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+    margin-top: 70px;
+    overflow-x: scroll;
+  }
+
+  &__order-table th,
+  &__order-table td {
+    white-space: nowrap;
+    padding: 20px 8px;
+    text-align: center;
+  }
+
+  &__order-table th {
+    background: rgba(251, 251, 251, 1);
+    cursor: pointer;
+    position: relative;
+    padding-right: 20px;
+    font-family: $fontFamilyRaleway;
+    font-size: 16px;
+  }
+
+  &__order-table th::after {
+    content: "";
+    background-image: url(/src/img/icons/th-arrow.svg);
+    width: 10px;
+    height: 8px;
+    position: absolute;
+    margin-left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  &__order-table tr:hover {
+    background: rgba(51, 125, 90, 0.1);
+
+    .icon-eye {
+      filter: brightness(0) saturate(100%) invert(63%) sepia(3%) saturate(99%)
+        hue-rotate(139deg) brightness(86%) contrast(89%);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    // background-size: contain;
+  }
+
+  .icon-eye {
+    background-image: url("/src/img/icons/icon-eye.svg");
+  }
+
+  .icon-copy {
+    background-image: url("/src/img/icons/copy.svg");
+    background-repeat: no-repeat;
+  }
+
+  // @include respond-to($xm-tablet) {
+
+  // }
+}
+
+.order-transaction {
+  display: none;
+  overflow: hidden;
+
+  &__order-table {
+    min-width: 600px;
+  }
+
+  &__text {
+    font-weight: 800;
+    text-align: end;
+    margin-top: 35px;
+  }
+
+  td {
+    position: relative;
+  }
+
+  &__icon-eye {
+    position: absolute;
+    top: 50%;
+   right: 14%;
+   cursor: pointer;
+      transform: translate(-50%, -50%);
+      filter: brightness(0) saturate(100%) invert(63%) sepia(3%) saturate(99%) hue-rotate(139deg) brightness(86%) contrast(89%);
+  }
+
+  &__icon::after {
+    content: "Просмотреть заказ";
+      display: none;
+      position: absolute;
+      bottom: 80%;
+      left: 75%;
+      transform: translateX(-50%);
+     background: rgba(51, 125, 90, 0.9);
+      color: white;
+      padding: 8px 12px;
+      border-radius: 1px;
+      white-space: normal;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+
+    &__icon:hover:after {
+display: block;
+    }
+
+  &__icon:hover {
+
+    .order-transaction__icon-eye {
+    filter: brightness(0) saturate(100%) invert(40%) sepia(55%) saturate(412%)
+      hue-rotate(99deg) brightness(91%) contrast(89%);
+
+    }
+      
+  }
+
+    @include respond-to($l-desktop) {
+
+      &__icon-eye {
+        right: 0;
+      }
+    }
+}
+
+.start-content {
+  .contact-info__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+
+  &__sale {
+    font-size: 16px;
+    font-weight: 600;
+    color: $amazon-color;
+  }
+
+    @include respond-to($l-mobile) {
+
+      .contact-info__wrapper {
+        display: block;
+      }
+
+            &__sale {
+              margin-top: 30px;
+            }
+    }
+}

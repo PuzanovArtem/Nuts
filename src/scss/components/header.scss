@@ -354,6 +354,7 @@
     margin: 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+
   }
 
   &__close {
@@ -368,7 +369,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 37px;
+    margin-top: 35px;
     gap: 40px;
   }
 
@@ -422,8 +423,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
     transition: background-color 0.3s ease;
-    // height: 0;
-    // overflow: hidden;
+    
   }
 
   &--close {
@@ -448,7 +448,9 @@
       display: block;
       padding-top: 14px;
       transition: transform 0.5s ease;
-      z-index: 2;
+      z-index: 10;
+      overflow-y: auto;
+        max-height: 100vh;
     }
 
     &__list {

@@ -10,20 +10,18 @@
   <body>
     <div class="wrapper">
       {{> _header }}
-
       <main>
         {{> breadcrumb firstPage = "Главная" secondPage = "Адрес и реквизиты"}}
         <div class="account-container container">
-          {{> sidebar }} 
-          {{> account-content }}
+          {{> sidebar }} {{> account-content-simple }}
         </div>
         {{> _map }}
       </main>
       {{> _footer }}
     </div>
 
+    <script type="module" src="/main.js"></script>
     <script type="module" src="/registration/registration.js"></script>
     <script type="module" src="/account/account.js"></script>
-    <script type="module" src="/main.js"></script>
   </body>
 </html>

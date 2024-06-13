@@ -12,6 +12,7 @@
      <div class="wrapper">
     {{> _header }}
     <main>
+       {{> breadcrumb firstPage = "Главная" secondPage = "Магазин" secondClass="breadscrum-banner"}}
       {{> secondaryBanner title="Каталог продукции" }}
       {{> _filter }}
       {{> catalogePage/catalogPageProduct }}
@@ -25,6 +26,6 @@
 
      <script type="module" src="/main.js"></script>
     <script type="module" src="/catalogPage/catalogPage.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
   </body>
 </html>

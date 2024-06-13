@@ -14,6 +14,11 @@
   &__list {
     display: flex;
     overflow: auto;
+    max-width: 770px;
+   justify-content: space-between;
+   margin-left: auto;
+   margin-right: auto;
+
   }
 
   &__item {
@@ -21,9 +26,9 @@
     font-size: 18px;
     position: relative;
     text-align: center;
-    width: 114px;
+    width: 144px;
     padding-bottom: 20px;
-    width: 33.33%;
+    // width: 33.33%;
     
 
     &:hover {

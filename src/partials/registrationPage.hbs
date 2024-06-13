@@ -27,7 +27,7 @@
 
 <h4 class="registration__subtitle">2. Адрес</h4>
 
-<div class="registration__form-container">
+<div class="registration__form-container registration__form-container-sec">
     <form >
         <div class="select">
         <div class="header-top__custom-select filter__custom-select">
@@ -65,7 +65,7 @@
 
 <h4 class="registration__subtitle">3. Пароль</h4>
 
-<div class="registration__form-container form-container" >
+<div class="registration__form-container form-container registration__form-container-sec" >
     <form>
         <div class="registration__form-group form-group">
             <input type="password" id="password" name="password" placeholder="Пароль*" required>
@@ -80,7 +80,8 @@
             <span></span>
             Я согласен с <a href="#">Условиями регистрации</a>
         </label>
-        <button type="submit" class="registration__submit-button main--btn">Продолжить</button>
+        <a href="/account/account-simple.html" id="submit-simple" class="registration__submit-button main--btn active">Продолжить</a>
+        <a href="/account/account.html" id="submit-fop" class="registration__submit-button main--btn">Продолжить</a>
         </div>
 
     </form>
@@ -133,7 +134,7 @@
 
 <h4 class="registration__subtitle">2. Юридический адрес</h4>
 
-<div class="registration__form-container">
+<div class="registration__form-container registration__form-container-sec">
     <form>
         <div class="select">
         <div class="header-top__custom-select filter__custom-select">
@@ -147,7 +148,7 @@
         </div>
         </div>
 
-<div class="select">
+      <div class="select">
         <div class="header-top__custom-select filter__custom-select filter__custom-select-second">
             <div class="header-top__select-selected filter__select-selected filter__select-selected-second">Область
             </div>
@@ -167,11 +168,11 @@
             <input type="address" id="address" name="address" placeholder="Адрес">
         </div>
         <div class="registration__form-group form-group">
-            <input type="address" id="address" name="address" placeholder="Индекс">
+            <input type="index" id="index" name="index" placeholder="Индекс">
         </div>
     </form>
 </div>
-</div>
+{{!-- </div> --}}
 
 <div class="registration__content1" id="content2" style="display: none;">
 

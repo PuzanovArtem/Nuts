@@ -1,3 +1,7 @@
+
+import Swiper from "swiper";
+
+
 const swiperfreshnews = new Swiper('.news__swiper', {
     // Optional parameters
     direction: 'horizontal',
