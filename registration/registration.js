@@ -78,7 +78,8 @@ function loadFile(event) {
 
 const regNavs = document.querySelectorAll(".registration__nav-item");
 const regSections = document.querySelectorAll(".registration__upload-wrapper");
-
+const submitSimple = document.getElementById('submit-simple');
+    const submitFop = document.getElementById('submit-fop');
 
 regNavs.forEach(regNav => {
     regNav.addEventListener("click", () => {
@@ -91,5 +92,13 @@ regNavs.forEach(regNav => {
         document.getElementById(targetReg).classList.add('active');
         
         regNav.classList.add("active");
+
+        if (targetReg === 'fisface') {
+                submitSimple.classList.add('active');
+                submitFop.classList.remove('active');
+            } else if (targetReg === 'yurface') {
+                submitSimple.classList.remove('active');
+                submitFop.classList.add('active');
+            }
     });
 })

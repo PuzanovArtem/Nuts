@@ -114,6 +114,8 @@
     width: 235px;
 }
 
+
+
    @include respond-to($LapTop) {
     &__list {
            display: grid;

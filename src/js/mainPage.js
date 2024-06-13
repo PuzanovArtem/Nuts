@@ -1,23 +1,23 @@
-const swiper = new Swiper('.swiper-container-product', {
-        // Optional parameters
-        loop: true,
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-       
-});
     
- document.addEventListener('DOMContentLoaded', () => {
+
+
+    const swiperProduct = new Swiper(".swiper-container-product", {
+       
+       loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+
+
     var galleryThumbs = new Swiper('.gallery-thumbs', {
         spaceBetween: 10,
         slidesPerView: 3,
@@ -36,4 +36,25 @@ const swiper = new Swiper('.swiper-container-product', {
             swiper: galleryThumbs,
         },
     });
+
+
+      const swiperAbout = new Swiper(".swiper-container-about", {
+       
+       loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
+
+
+
+
+
+
+
+

@@ -9,4 +9,12 @@
         &__wrapper {
             padding-top: 80px;
         }
+
+                                 .main-page-product__popup-content {
+                     border: 5px solid $olivine-color;
+                 }
+        
+                 .main-page-product__gallery-top {
+                     background: rgba(196, 196, 196, 0.1) !important;
+                 }
 }

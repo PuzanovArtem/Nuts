@@ -1,14 +1,24 @@
 <section class="sidebar">
-    <div class="sidebar__wrapper">
+
+<div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>
+</div>
+
+
+    
+    <div class="sidebar__wrapper" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h2 class="sidebar__title auth-title">Учетная запись</h2>
-
         <p class="sidebar__subtitle">Мои заказы</p>
-        <button class="sidebar__item">История заказов</button>
-        <button class="sidebar__item">История транзакций</button>
-
-        <p class="sidebar__subtitle"></p>
-        <button class="sidebar__item"></button>
-        <button class="sidebar__item"></button>
-        <button class="sidebar__item"></button>
+        <ul class="sidebar__list sidebar__list-first">
+            <li class="sidebar__item" data-target="order-history">История заказов</li>
+            <li class="sidebar__item" data-target="order-transaction">История транзакций</li>
+        </ul>
+        <p class="sidebar__subtitle">Моя учетная запись</p>
+        <ul class="sidebar__list">
+            <li class="sidebar__item" data-target="contact-info">Контактная информация</li>
+            <li class="sidebar__item"><a href="/password/password.html">Пароль</a></li>
+            <li class="sidebar__item" data-target="address-setting">Адрес реквизиты</li>
+        </ul>
     </div>
 </section>
