@@ -99,7 +99,7 @@
         margin: 10px 0 0 0px;
     }
 
-    button {
+   .delivery__next-page{
         display: block;
     width: 245px;
     padding: 14px 20px 14px 17px;
@@ -110,8 +110,46 @@
     cursor: pointer;
     font-size: 1.2em;
     margin-top: 37px;
+    text-align: center;
         &:hover {
             background-color: #218838;
         }
     }
 }
+
+
+
+@include respond-to($m-mobile) { 
+   .delivery-form{
+    .order-form{
+        width: 380px;
+
+        .delivery-method{
+            width: 358px;
+        }
+    }
+   }
+}
+@include respond-to($s-mobile) { 
+    .delivery-form{
+     .order-form{
+         width: 330px;
+ 
+         .delivery-method{
+             width: 308px;
+         }
+     }
+    }
+ }
+
+ @include respond-to($mobile) { 
+    .delivery-form{
+     .order-form{
+         width: 310px;
+ 
+         .delivery-method{
+             width: 288px;
+         }
+     }
+    }
+ }
