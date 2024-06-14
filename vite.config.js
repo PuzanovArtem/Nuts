@@ -85,7 +85,7 @@ export default defineConfig({
         newsPage: resolve(__dirname, 'newsPage/index.html'),
         newPage: resolve(__dirname, 'newPage/index.html'),
         account: resolve(__dirname, 'account/index.html'),
-        accountSimple: resolve(__dirname, 'account-simple/index.html'),
+        accountSimplePage: resolve(__dirname, 'account-simplePage/index.html'),
         login: resolve(__dirname, 'loginPage/index.html'),
         password: resolve(__dirname, 'password/index.html'),
         resetPassword: resolve(__dirname, 'reset-password/index.html'),
