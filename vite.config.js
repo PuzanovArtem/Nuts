@@ -88,7 +88,7 @@ export default defineConfig({
         accountSimplePage: resolve(__dirname, 'account-simplePage/index.html'),
         login: resolve(__dirname, 'loginPage/index.html'),
         password: resolve(__dirname, 'password/index.html'),
-        resetPassword: resolve(__dirname, 'reset-password/index.html'),
+        resetPassword: resolve(__dirname, 'reset-passwordPage/index.html'),
         checkout: resolve(__dirname, 'checkout/index.html'),
         error: resolve(__dirname, 'errorPage/index.html'),
         basket: resolve(__dirname, 'basketPage/index.html'),
