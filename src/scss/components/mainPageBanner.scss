@@ -61,8 +61,13 @@
     }
   }
 
+  @include respond-to($tablet) {
+    background-image: url(/src/img/banner-main-page-tab.jpg);
+  }
+
   @include respond-to($m-mobile) {
     height: 400px;
+    background-image: url(/src/img/banner-main-page-mob.jpg);
 
     &__title {
       font-size: 22px;
@@ -77,18 +82,18 @@
     &__btn {
       width: 41px;
       height: 41px;
-    }
   }
-}
+  }
+  }
 
 .main-page-thesis {
   background-image: url(/src/img/main-page-thesis.jpg);
-position: relative;
-height: 740px;
+  position: relative;
+  height: 740px;
 
-.main-page-baner__wrapper {
-  padding-top: 240px;
-}
+  .main-page-baner__wrapper {
+    padding-top: 240px;
+  }
 
   .main-page-baner__title {
     font-size: 45px;
@@ -99,39 +104,52 @@ height: 740px;
   }
 
   .main-page-baner__subtitle {
-   font-style: italic;
-   font-size: 24px;
-   position: absolute;
-   bottom: 205px;
-   letter-spacing: 0;
-   left: 50%;
-   transform: translateX(-50%);
+    font-style: italic;
+    font-size: 24px;
+    position: absolute;
+    bottom: 205px;
+    letter-spacing: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
-  
-.main-page-baner__btn {
-  margin-top: 70px;
-}
 
-@include respond-to($m-desktop) {
-height: 540px;
+  .main-page-baner__btn {
+    margin-top: 70px;
+  }
 
-.main-page-baner__title {
-    font-size: 25px;
-}
+  @include respond-to($m-desktop) {
+    height: 540px;
+
+    .main-page-baner__title {
+      font-size: 25px;
+    }
     .main-page-baner__wrapper {
-        padding-top: 140px;
-      }
+      padding-top: 140px;
+    }
 
-            .main-page-baner__subtitle {
-              bottom: 50px;
-              font-size: 14px;
-            }
-  
-}
+    .main-page-baner__subtitle {
+      bottom: 50px;
+      font-size: 14px;
+    }
+  }
+
+    @include respond-to($tablet) {
+      background-image: url(/src/img/main-page-thesis-tab.jpg);
+    }
+
+         @include respond-to($l-mobile) {
+           background-image: url(/src/img/main-page-thesis-mob.jpg);
+         }
 }
 
 .about-page-banner {
   background-image: url(/src/img/about-banner.jpg);
 
+  @include respond-to($tablet) {
+      background-image: url(/src/img/about-banner-tab.jpg);
+    }
   
+    @include respond-to($l-mobile) {
+      background-image: url(/src/img/about-banner-mob.jpg);
+    }
 }
