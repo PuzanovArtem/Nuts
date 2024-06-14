@@ -69,7 +69,7 @@ menuShadow.addEventListener('click', (event) => {
 
 var popup = document.getElementById("popup");
 var btn = document.querySelector(".header-main__busket-wrapper");
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close-btn")[0];
 
 btn.onclick = function() {
     popup.style.display = "block";

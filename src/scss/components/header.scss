@@ -530,6 +530,7 @@
       font-weight: bold;
       color: #aaa;
       cursor: pointer;
+      margin: -21px -21px 0 0;
     }
     .popup__inner {
       display: flex;
@@ -640,7 +641,7 @@
 
 @include respond-to($xm-tablet) {
   .header {
-    .popup {
+    .popup-basket {
       left: 65%;
       top: 235px;
       width: 464px;
@@ -652,12 +653,93 @@
 
 @include respond-to($s-tablet) {
   .header {
-    .popup {
-      left: 65%;
+    .popup-basket {
+      left: 50%;
       top: 235px;
       width: 464px;
       height: 228px;
       padding: 20px 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 490px){
+  .header {
+    .popup-basket {
+      left: 50%;
+        top: 235px;
+        width: 375px;
+        height: 210px;
+        padding: 10px 15px;
+
+        .close-btn{
+          margin: -15px -13px 0 0;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .header {
+    .popup-basket {
+      left: 50%;
+        top: 235px;
+        width: 310px;
+        height: 210px;
+        padding: 10px 10px;
+
+        .popup-content{
+          .close-btn{
+            display: none;
+          }
+          .popup__inner{
+
+            .popup__inner--item {
+              .popup__item--number {
+                .number-box {
+                  #number {
+                    width: 25px;
+                  }
+      
+                }
+              }
+            }
+            .make__order {
+              .make__order--price {
+                .make__price--text {
+                  font-family: $fontFamilyRaleway;
+                  font-size: 16px;
+                  font-weight: 700;
+                  line-height: 1.77;
+                }
+      
+                .make__price--price {
+                  display: flex;
+                  gap: 5px;
+      
+                  .make__price--nubmer {
+                    color: $amazon-color;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 1.45;
+                    margin: 4px 0 0 0;
+                  }
+      
+                  .make__price--text {
+                    color: $amazon-color;
+                    font-weight: 600;
+                    line-height: 2.28;
+                  }
+                }
+              }
+            }
+            .make__order--btn {
+              width: 150px;
+              font-size: 14px;
+            }
+          }
+        }
+        
     }
   }
 }

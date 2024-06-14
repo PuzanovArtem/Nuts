@@ -123,19 +123,19 @@
     margin-right: auto;
     margin-left: auto;
   }
-  @include respond-to($m-desktop) {
-    height: 540px;
+  // @include respond-to($m-desktop) {
+  //   height: 540px;
 
-    .customer-page-baner__title {
-      font-size: 25px;
-    }
-    .customer-page-baner__wrapper {
-      padding-top: 140px;
-    }
+  //   .customer-page-baner__title {
+  //     font-size: 25px;
+  //   }
+  //   .customer-page-baner__wrapper {
+  //     padding-top: 140px;
+  //   }
 
-    .customer-page-baner__subtitle {
-      bottom: 50px;
-      font-size: 14px;
-    }
-  }
+  //   .customer-page-baner__subtitle {
+      
+  //     font-size: 14px;
+  //   }
+  // }
 }
