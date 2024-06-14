@@ -11,6 +11,7 @@
   <body>
     {{> _header }}
     <main>
+      {{> breadcrumb firstPage = "Главная" secondPage = "Оплата и доставка " secondClass="breadscrum-banner"}}
       {{> paymentPage/_paymentPageBanner additionalClass='.payment-page-baner '}}
       {{> paymentPage/_paymentPageMenu}}
       {{> _mainPageNumber }}

@@ -11,8 +11,8 @@
     <div class="wrapper">
       {{> _header }}
       <main>
-        {{> customersPage/_customerPageBanner additionalClass='gallery-page-banner' link-1="Главная
-        " link-2="Галерея" title="Галерея" subtitle="Кадры социальной активности компании" }}
+        {{> breadcrumb firstPage = "Главная" secondPage = "Галерея " secondClass="breadscrum-banner"}}
+        {{> customersPage/_customerPageBanner additionalClass='gallery-page-banner'  title="Галерея" subtitle="Кадры социальной активности компании" }}
        {{> galleryPage/_galleryPageGallery}}
         
         {{>_map}}

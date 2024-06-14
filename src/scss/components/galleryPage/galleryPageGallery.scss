@@ -1,4 +1,4 @@
-.about-page-gallery {
+.galleryPage-gallery {
     &__b {
       background: #fbfbfb;
       padding-top: 90px;
@@ -26,13 +26,15 @@
         opacity: 1;
       }
   
-      &:hover .about-page-gallery__item-content {
+      &:hover .galleryPage-gallery__item-content {
         opacity: 1;
       }
     }
   
     &__item:nth-child(6):hover::after,
-    &__item:nth-child(3):hover::after {
+    &__item:nth-child(3):hover::after,
+    &__item:nth-child(9):hover::after,
+    &__item:nth-child(12):hover::after {
       opacity: 0;
     }
   
