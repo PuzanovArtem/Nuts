@@ -2,15 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="All about Nut`s company">
     <link rel="icon" type="image/svg+xml" href="../assets/logo-icon-BdZXZZog.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <title>About us</title>
+    <title>New password</title>
     <script type="module" crossorigin src="../assets/header-BsCelfQm.js"></script>
     <script type="module" crossorigin src="../assets/main-CI56ZuRX.js"></script>
+    <script type="module" crossorigin src="../assets/registration-CZPfEn8R.js"></script>
     <link rel="stylesheet" crossorigin href="../assets/main-Du3mw4TU.css">
-    <link rel="stylesheet" crossorigin href="../assets/aboutPage-COVd9sVv.css">
+    <link rel="stylesheet" crossorigin href="../assets/login-BS2CVm9y.css">
   </head>
   <body>
      <div class="wrapper">
@@ -271,474 +270,40 @@
     
     </header>
     <main>
-      <nav aria-label="breadcrumb breadscrum-banner">
+      <nav aria-label="breadcrumb ">
           <div class="container">
-          <ol class="breadcrumb breadscrum-banner">
+          <ol class="breadcrumb ">
               <li class="breadcrumb-item"><a href="/Nuts/">Главная</a></li>
-              <li class="breadcrumb-item inactive" ><a href="">О производстве</a></li>
+              <li class="breadcrumb-item inactive" ><a href="">Вход</a></li>
           </ol>
           </div>
-      </nav>      <section class="main-page-baner about-page-banner">
-          <div class="main-page-baner__wrapper">
-          <h1 class="main-page-baner__title">Орех Причерноморья</h1>
-          <p class="main-page-baner__subtitle">Единственный в Украине сад совместного 
-      выращивание фундука и грецкого ореха</p>
-          <button class="main-page-baner__btn open-popup-btn" data-popup="popup1">
-              <img src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='30.5'%20cy='30.5'%20r='29.5'%20stroke='white'%20stroke-width='2'/%3e%3cpath%20d='M38.2745%2030.5001L27.5098%2038.2688V22.7313L38.2745%2030.5001Z'%20fill='white'/%3e%3c/svg%3e" alt="play" width="61" height="61">
-          </button>
-          </div>
+      </nav>      
+      <section class="password">
+          <div class="login__wrapper">
+              <h2 class="login__title auth-title">Пароль</h2>
       
-          <div id="popup1" class="popup">
-              <div class="popup__content">
-                  <span class="popup__close-btn">&times;</span>
-                  
-              </div>
-          </div>
-      </section>      <section class="main-page-about about-page">
-        <div class="main-page-about__block">
-          <div class="container">
-            <div class="main-page-about__wrapper">
-      
-              <div class="main-page-about__wrapper-info">
-                <h2 class="main-page-about__title title">О производителе</h2>
-                <p class="main-page-about__subtitle"><span
-                    class="main-page-about__subtitle-first"
-                  >Сельскохозяйственный обслуживающий кооператив “Орех Причерноморья”</span>выращивает
-                  смешанные сады ореха грецкого с фундуком, а также ореха грецкого с
-                  шиповником, на площади более 150 гектаров.</p>
-                <p
-                  class="main-page-about__subtitle-second main-page-about__subtitle"
-                >Помимо этого кооператив занимается выращиванием посадочного
-                  материала, саженцов привитого и непривитого грецкого ореха, фундука
-                  и шиповника.</p>
-      
-                  <p class="main-page-about__subtitle-third main-page-about__subtitle">Предприятие укомплектовано всей необходимой техникой
-                  и оборудованием для выращивания интенсивного сада, воспроизводства саженцев в питомнике и выращивания трюфеля.</p>
-                <a
-                  href="/Nuts/aboutPage" class="main-page-about__btn button__white-bg"
-                >Подробнее</a>
-              </div>
-      
-              <div class="swiper-container swiper-container-about">
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide swiper-slide-first open-popup-btn"
-                    data-popup="popupAbout"
-                  ><img
-                      src="../assets/about-video-first-BUek0-ne.jpg"
-                      class="main-page-about__img"
-                      width="243"
-                      height="191"
-                      alt="Image 1"
-      
-                    />
-                    <img
-                      src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='30.5'%20cy='30.5'%20r='29.5'%20stroke='white'%20stroke-width='2'/%3e%3cpath%20d='M38.2745%2030.5001L27.5098%2038.2688V22.7313L38.2745%2030.5001Z'%20fill='white'/%3e%3c/svg%3e"
-                      alt="play"
-                      class="main-page-about__play-icon open-popup-btn"
-                      data-popup="popupAbout"
-                      width="61"
-                      height="61"
-                      loading="lazy"
-                    />
+              <form>
+                  <div class="registration__form-group form-group">
+                      <input type="current-password" id="current-password" name="current-password" placeholder="Текущий пароль*" required>
+                  </div>
+                  <div class="registration__form-group form-group">
+                      <input type="new-password" id="new-password" name="new-password" placeholder="Новый пароль*" required>
                   </div>
       
-                  <div class="swiper-slide open-popup-btn" data-popup="popupAbout"><img
-                      src="../assets/about-video-second-C-Mcl8E3.jpg"
-                      class="main-page-about__img"
-                      width="243"
-                      height="191"
-                      alt="Image 1"
-                      loading="lazy"
-                    />
-                    <img
-                      src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='30.5'%20cy='30.5'%20r='29.5'%20stroke='white'%20stroke-width='2'/%3e%3cpath%20d='M38.2745%2030.5001L27.5098%2038.2688V22.7313L38.2745%2030.5001Z'%20fill='white'/%3e%3c/svg%3e"
-                      alt="play"
-                      class="main-page-about__play-icon open-popup-btn"
-                      data-popup="popupAbout"
-                      width="61"
-                      height="61"
-                    />
+                  <div class="registration__form-group form-group">
+                      <input type="ag-password" id="ag-password" name="ag-password" placeholder="Подтвердить пароль*" required>
                   </div>
       
-                  <div class="swiper-slide open-popup-btn" data-popup="popupAbout"><img src="../assets/about-video-first-BUek0-ne.jpg"
-                      class="main-page-about__img" width="243" height="191" alt="Image 1" />
-                    <img src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='30.5'%20cy='30.5'%20r='29.5'%20stroke='white'%20stroke-width='2'/%3e%3cpath%20d='M38.2745%2030.5001L27.5098%2038.2688V22.7313L38.2745%2030.5001Z'%20fill='white'/%3e%3c/svg%3e" alt="play" class="main-page-about__play-icon open-popup-btn"
-                      data-popup="popupAbout" width="61" height="61" />
-                  </div>
-                </div>
-      
-                <div
-                  class="swiper-button-next main-page-about__swiper-button-next"
-                ><img
-                    src="data:image/svg+xml,%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M13.4167%2021.0833L12.075%2019.7417L19.3584%2012.4583H0V10.5417H19.3584L12.075%203.25831L13.4167%201.91668L23%2011.5L13.4167%2021.0833Z'%20fill='%23C4C4C4'/%3e%3c/svg%3e"
-                    alt="arrow"
-                    width="23"
-                    height="23"
-                    class="main-page-about__btn-arrow"
-                  />
-                </div>
-      
-                <div
-                  class="swiper-button-prev main-page-about__swiper-button-prev"
-                ><img
-                    src="data:image/svg+xml,%3csvg%20width='23'%20height='23'%20viewBox='0%200%2023%2023'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M9.58332%2021.0833L10.925%2019.7417L3.64164%2012.4583H23V10.5417H3.64164L10.925%203.25831L9.58332%201.91668L0%2011.5L9.58332%2021.0833Z'%20fill='%23C4C4C4'/%3e%3c/svg%3e"
-                    alt="arrow"
-                    width="23"
-                    height="23"
-                    class="main-page-about__btn-arrow"
-                  />
-                </div>
-              
-              </div>
-      
-              <div id="popupAbout" class="popup">
-                <div class="popup__content">
-                  <span class="popup__close-btn">&times;</span>
+                  <button type="submit" class="login__submit-button main--btn">Продолжить</button>
       
       
-                </div>
-              </div>
-            </div>
+      
+              </form>
+      
+      
           </div>
-        </div>
-      </section>      <section class="about-page-history">
-        <div class="about-page-history-w">
-          <div class="container">
-            <div class="about-page-history__wrapper">
-              <img
-                src="../assets/about-page-man-B_Df0WUt.jpg"
-                alt="man"
-                class="about-page-history__photo"
-                height="493"
-                width="342"
-                loading="lazy"
-              />
-      
-              <div class="about-page-history__content">
-                <h2 class="about-page-history__name">Павел Тулба</h2>
-                <p class="about-page-history__text">Учередитель и владелец предприятия
-                  “Орех Причерноморья”</p>
-                <div class="about-page-history__quote-wrapper">
-                  <img
-                    src="data:image/svg+xml,%3csvg%20width='26'%20height='18'%20viewBox='0%200%2026%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M5.70732%206.56489C8.84538%206.56489%2011.3893%209.10883%2011.3893%2012.2468C11.3893%2015.3848%208.84538%2017.9288%205.70732%2017.9288C2.56926%2017.9288%200.0253659%2015.3848%200.0253659%2012.2468L0%2011.4351C0%205.15901%205.08778%200.071228%2011.3639%200.071228V3.31806C9.19578%203.31806%207.15738%204.16239%205.62427%205.6955C5.32916%205.99066%205.05983%206.30468%204.81687%206.63454C5.10701%206.58888%205.40435%206.56489%205.70732%206.56489ZM20.318%206.56489C23.4561%206.56489%2026%209.10883%2026%2012.2468C26%2015.3848%2023.4561%2017.9288%2020.318%2017.9288C17.18%2017.9288%2014.6361%2015.3848%2014.6361%2012.2468L14.6107%2011.4351C14.6107%205.15901%2019.6985%200.071228%2025.9746%200.071228V3.31806C23.8066%203.31806%2021.7681%204.16239%2020.235%205.6955C19.9398%205.99066%2019.6705%206.30468%2019.4276%206.63454C19.7177%206.58888%2020.015%206.56489%2020.318%206.56489Z'%20fill='%23337D5A'/%3e%3c/svg%3e"
-                    alt="qoute"
-                    width="26"
-                    height="26"
-                    loading="lazy"
-                  />
-                  <p class="about-page-history__quote">Главная наша цель – получить
-                    максимальную прибыль с одного гектара.</p>
-                </div>
-      
-                <button class="about-page-history__btn button__white-bg">Написать нам</button>
-              </div>
-      
-              <div class="about-page-history__block">
-                <h2 class="about-page-history__block-title">История предприятия</h2>
-                <p
-                  class="about-page-history__block-text-first about-page-history__block-text"
-                >Наше предприятие основано в 2012 году для закладки смешанного сада
-                  грецкого ореха и фундука.</p>
-                <p
-                  class="about-page-history__block-text-second about-page-history__block-text"
-                >На сегодня мы уже заложили более 100 гектаров сада и продолжаем
-                  расширять свои насаждения. Кроме выращивания грецкого ореха и
-                  фундука, мы занимаемся выращиванием саженцев, разведением и
-                  выращиванием овец, а также являемся первой в Украине компанией,
-                  приступившей к промышленному выращиванию трюфелей на корнях фундука.</p>
-                <p
-                  class="about-page-history__block-text-third about-page-history__block-text"
-                >Земля, которой пользуется кооператив, является собственностью членов
-                  нашего кооператива.</p>
-                <img
-                  src="../assets/vector-logo-CrR9ytXs.svg"
-                  alt="logo"
-                  width="322"
-                  height="299"
-                  loading="lazy"
-                />
-              </div>
-      
-            </div>
-          </div>
-        </div>
-      </section>       <section class="main-page-number">
-           <div class="container">
-               <div class="main-page-number__wrapper">
-                   <ul class="main-page-number__list">
-                       <li class="main-page-number__item">
-                           <div class="main-page-number__item-numb-wrapper">
-                           <p class="main-page-number__item-numb">240 <span class="main-page-number__item-numb-span">Га</span></p>
-                           
-                           </div>
-                           <p class="main-page-number__text">Cмешанных
-                           садов</p>
-                       </li>
-       
-                       <li class="main-page-number__item">
-                           <div class="main-page-number__item-numb-wrapper">
-                           <p class="main-page-number__item-numb">1
-                               <span class="main-page-number__item-numb-span">Га</span>
-                           </p>
-                           
-                           </div>
-                           <p class="main-page-number__text">Тепличного
-                           комплекса</p>
-                       </li>
-       
-                       <li class="main-page-number__item">
-                           <div class="main-page-number__item-numb-wrapper">
-                           <p class="main-page-number__item-numb">10
-                               <span class="main-page-number__item-numb-span">Га</span>
-                           </p>
-                           
-                           </div>
-       
-                           <p class="main-page-number__text">Первая промышленная плантация
-                           шиповника в Украине</p>
-                       </li>
-       
-                       <li class="main-page-number__item">
-                           <div class="main-page-number__item-numb-wrapper">
-                           <p class="main-page-number__item-numb">80
-                               <span class="main-page-number__item-numb-span">%</span>
-                           </p>
-                          
-                           </div>
-                           
-                           <p class="main-page-number__text">Приживаемости
-                           саженцев</p>
-                       </li>
-                   </ul>
-               </div>
-           </div>
-       </section>       <section class="about-page-gallery">
-           <div class="about-page-gallery__b">
-               <div class="container">
-       <h2 class="about-page-gallery__title title">Галерея</h2>
-       <p class="about-page-gallery__subtitle sub-title">Кадры социальной активности компании</p>
-             
-             <ul class="about-page-gallery__list">
-               <li class="about-page-gallery__item about-page-gallery__item--first">
-                   <img src="../assets/gallery-first-9IVCfqgN.jpg" alt="gallery" class="about-page-gallery__img" width="739" height="556" loading="lazy">
-                   <div class="about-page-gallery__item-content">
-                   <h3 class="about-page-gallery__item-title">SIAL Paris 2018</h3>
-                   <p class="about-page-gallery__item-subtitle">В этом Году при поддержке проекта International Trade Centre Ukraine, и финансировании правительства Швеции, мы побывали
-                   на крупнейшей продовольственной выставке Европы <span>SIAL Paris 2018</span></p>
-                   </div>
-               </li>
-       
-               <li class="about-page-gallery__item about-page-gallery__item--second">
-                   <img src="../assets/gallery-second-VK5cmiyV.jpg" alt="gallery" class="about-page-gallery__img" width="520" height="526" loading="lazy">
-                   <div class="about-page-gallery__item-content">
-                       <h3 class="about-page-gallery__item-title">SIAL Paris 2018</h3>
-                       <p class="about-page-gallery__item-subtitle">В этом Году при поддержке проекта International Trade Centre Ukraine, и
-                           финансировании правительства Швеции, мы побывали
-                           на крупнейшей продовольственной выставке Европы <span>SIAL Paris 2018</span></p>
-                   </div>
-               </li>
-       
-               <li class="about-page-gallery__item about-page-gallery__item--third open-popup-btn" data-popup="popup1">
-                   <img src="../assets/gallery-third-CtfdzF6q.jpg" alt="gallery" class="about-page-gallery__img" width="1290" height="526" loading="lazy">
-                   <img src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='30.5'%20cy='30.5'%20r='29.5'%20stroke='white'%20stroke-width='2'/%3e%3cpath%20d='M38.2745%2030.5001L27.5098%2038.2688V22.7313L38.2745%2030.5001Z'%20fill='white'/%3e%3c/svg%3e" alt="play" class="about-page-gallery__item-play open-popup-btn" data-popup="popup1">
-       
-               </li>
-       
-               <li class="about-page-gallery__item about-page-gallery__item--forth">
-                   <img src="../assets/gallery-forth-DiqDFdCL.jpg" alt="gallery" class="about-page-gallery__img" width="410" height="405" loading="lazy">
-                   <div class="about-page-gallery__item-content">
-                       <h3 class="about-page-gallery__item-title">SIAL Paris 2018</h3>
-                       <p class="about-page-gallery__item-subtitle">В этом Году при поддержке проекта International Trade Centre Ukraine, и
-                           финансировании правительства Швеции, мы побывали
-                           на крупнейшей продовольственной выставке Европы <span>SIAL Paris 2018</span></p>
-                   </div>
-               </li>
-       
-               <li class="about-page-gallery__item about-page-gallery__item-fifth">
-                   <img src="../assets/gallery-fifth-B5DwAtWn.jpg" alt="gallery" class="about-page-gallery__img" width="409" loading="lazy">
-                   <div class="about-page-gallery__item-content">
-                       <h3 class="about-page-gallery__item-title">SIAL Paris 2018</h3>
-                       <p class="about-page-gallery__item-subtitle">В этом Году при поддержке проекта International Trade Centre Ukraine, и
-                           финансировании правительства Швеции, мы побывали
-                           на крупнейшей продовольственной выставке Европы <span>SIAL Paris 2018</span></p>
-                   </div>
-               </li>
-       
-               <li class="about-page-gallery__item about-page-gallery__item--sixth open-popup-btn" data-popup="popup1">
-                   <img src="../assets/gallery-sixth-BVqHPEBd.jpg" alt="gallery" class="about-page-gallery__img" loading="lazy">
-                   <img src="data:image/svg+xml,%3csvg%20width='61'%20height='61'%20viewBox='0%200%2061%2061'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='30.5'%20cy='30.5'%20r='29.5'%20stroke='white'%20stroke-width='2'/%3e%3cpath%20d='M38.2745%2030.5001L27.5098%2038.2688V22.7313L38.2745%2030.5001Z'%20fill='white'/%3e%3c/svg%3e" alt="play" class="about-page-gallery__item-play open-popup-btn" data-popup="popup1">
-               </li>
-             </ul>
-       
-           <a href="/Nuts/galleryPage/" class="about-page-gallery__btn button__white-bg">Смотреть всю галерею</a>
-               </div>
-           </div>
-       </section>       <section class="eko-main eko-about">
-         <div class="eko__inner">
-           <div class="eko__inner__img">
-               <img src="../assets/eco-Bir6EEOw.svg" alt="eko" width="70" height="74">
-            
-           </div>
-           <div class="eko__inner__title">Эко продукция</div>
-           <div class="eko__inner__subtitle">
-             Выращиваем каждое деревцо с любовью, на экологически чистой земле, без
-             использования пестицидов и химии
-           </div>
-         </div>
-       </section>
-       
-       
-       <section class="news">
-         <div class="container">
-           <div class="swiper news__swiper">
-             <div class="news__title title">Новости</div>
-             <div class="news__sub-title sub-title">
-               Свежие новости и полезная информация
-             </div>
-             <div class="swiper-wrapper news__swiper__wrapper">
-               <div class="swiper-slide news__swiper__slide">
-                 <div class="content__smlbox__item">
-                   <img src="../assets/pic%20(1)-CpVt1m9e.png" alt="" />
-                   <div class="content__bigbox__desc">
-                     <div class="bigbox__desc__data">12.04.2019</div>
-                     <div class="bigbox__desc__slogan">
-                       Центр поддержки экспорта, в студии
-                       <br />
-                       Павел Тулба
-                     </div>
-                     <div class="bigbox__desc__text">
-                       Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура
-                       очень недооценена среди наших садоводов, не смотря на большой
-                       спрос в Европе и отличную...
-                     </div>
-                     <a class="bigbox__desc__link" href="/Nuts/newsPage">
-                       Читать
-                       <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_160_24)'%3e%3cpath%20d='M23.7938%2015.4977C23.7936%2015.4979%2023.7934%2015.4982%2023.7931%2015.4984L20.1192%2019.1546C19.8439%2019.4285%2019.3988%2019.4275%2019.1248%2019.1522C18.8508%2018.877%2018.8519%2018.4318%2019.1271%2018.1579L21.5938%2015.7031H6.70312C6.31479%2015.7031%206%2015.3883%206%2015C6%2014.6117%206.31479%2014.2969%206.70312%2014.2969H21.5938L19.1272%2011.8421C18.8519%2011.5682%2018.8509%2011.123%2019.1248%2010.8478C19.3988%2010.5725%2019.844%2010.5715%2020.1192%2010.8454L23.7932%2014.5016C23.7934%2014.5018%2023.7936%2014.5021%2023.7938%2014.5023C24.0692%2014.7771%2024.0683%2015.2238%2023.7938%2015.4977Z'%20fill='%23337D5A'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_160_24'%3e%3crect%20width='18'%20height='18'%20fill='white'%20transform='matrix(1%200%200%20-1%206%2024)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="arrow" width="24" height="24" />
-                     </a>
-                   </div>
-                 </div>
-               </div>
-               <div class="swiper-slide news__swiper__slide">
-                 <div class="content__smlbox__item">
-                   <img src="../assets/pic%20(2)-D7KT9-p9.png" alt="" />
-                   <div class="content__bigbox__desc">
-                     <div class="bigbox__desc__data">12.04.2019</div>
-                     <div class="bigbox__desc__slogan">
-                       В Одесской области состоялся масштабный
-                       <br />
-                       торгово - экспортный форум
-                     </div>
-                     <div class="bigbox__desc__text">
-                       Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура
-                       очень недооценена среди наших садоводов, не смотря на большой
-                       спрос в Европе и отличную...
-                     </div>
-                     <a class="bigbox__desc__link" href="/Nuts/newsPage">
-                       Читать
-                       <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_160_24)'%3e%3cpath%20d='M23.7938%2015.4977C23.7936%2015.4979%2023.7934%2015.4982%2023.7931%2015.4984L20.1192%2019.1546C19.8439%2019.4285%2019.3988%2019.4275%2019.1248%2019.1522C18.8508%2018.877%2018.8519%2018.4318%2019.1271%2018.1579L21.5938%2015.7031H6.70312C6.31479%2015.7031%206%2015.3883%206%2015C6%2014.6117%206.31479%2014.2969%206.70312%2014.2969H21.5938L19.1272%2011.8421C18.8519%2011.5682%2018.8509%2011.123%2019.1248%2010.8478C19.3988%2010.5725%2019.844%2010.5715%2020.1192%2010.8454L23.7932%2014.5016C23.7934%2014.5018%2023.7936%2014.5021%2023.7938%2014.5023C24.0692%2014.7771%2024.0683%2015.2238%2023.7938%2015.4977Z'%20fill='%23337D5A'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_160_24'%3e%3crect%20width='18'%20height='18'%20fill='white'%20transform='matrix(1%200%200%20-1%206%2024)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="arrow" width="24" height="24" />
-                     </a>
-                   </div>
-                 </div>
-               </div>
-               <div class="swiper-slide news__swiper__slide">
-                 <div class="content__smlbox__item">
-                   <img src="../assets/pic%20(3)-Oo6fR0Pi.png" alt="" />
-                   <div class="content__bigbox__desc">
-                     <div class="bigbox__desc__data">12.04.2019</div>
-                     <div class="bigbox__desc__slogan">
-                       Сертификация органического
-                       <br />производителя
-                     </div>
-                     <div class="bigbox__desc__text">
-                       Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура
-                       очень недооценена среди наших садоводов, не смотря на большой
-                       спрос в Европе и отличную...
-                     </div>
-                     <a class="bigbox__desc__link" href="/Nuts/newsPage">
-                       Читать
-                       <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_160_24)'%3e%3cpath%20d='M23.7938%2015.4977C23.7936%2015.4979%2023.7934%2015.4982%2023.7931%2015.4984L20.1192%2019.1546C19.8439%2019.4285%2019.3988%2019.4275%2019.1248%2019.1522C18.8508%2018.877%2018.8519%2018.4318%2019.1271%2018.1579L21.5938%2015.7031H6.70312C6.31479%2015.7031%206%2015.3883%206%2015C6%2014.6117%206.31479%2014.2969%206.70312%2014.2969H21.5938L19.1272%2011.8421C18.8519%2011.5682%2018.8509%2011.123%2019.1248%2010.8478C19.3988%2010.5725%2019.844%2010.5715%2020.1192%2010.8454L23.7932%2014.5016C23.7934%2014.5018%2023.7936%2014.5021%2023.7938%2014.5023C24.0692%2014.7771%2024.0683%2015.2238%2023.7938%2015.4977Z'%20fill='%23337D5A'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_160_24'%3e%3crect%20width='18'%20height='18'%20fill='white'%20transform='matrix(1%200%200%20-1%206%2024)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="arrow" width="24" height="24" />
-                     </a>
-                   </div>
-                 </div>
-               </div>
-               <div class="swiper-slide news__swiper__slide">
-                 <div class="content__smlbox__item">
-                   <img src="../assets/pic%20(1)-CpVt1m9e.png" alt="" />
-                   <div class="content__bigbox__desc">
-                     <div class="bigbox__desc__data">12.04.2019</div>
-                     <div class="bigbox__desc__slogan">
-                       Центр поддержки экспорта, в студии
-                       <br />
-                       Павел Тулба
-                     </div>
-                     <div class="bigbox__desc__text">
-                       Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура
-                       очень недооценена среди наших садоводов, не смотря на большой
-                       спрос в Европе и отличную...
-                     </div>
-                     <a class="bigbox__desc__link" href="/Nuts/newsPage">
-                       Читать
-                       <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_160_24)'%3e%3cpath%20d='M23.7938%2015.4977C23.7936%2015.4979%2023.7934%2015.4982%2023.7931%2015.4984L20.1192%2019.1546C19.8439%2019.4285%2019.3988%2019.4275%2019.1248%2019.1522C18.8508%2018.877%2018.8519%2018.4318%2019.1271%2018.1579L21.5938%2015.7031H6.70312C6.31479%2015.7031%206%2015.3883%206%2015C6%2014.6117%206.31479%2014.2969%206.70312%2014.2969H21.5938L19.1272%2011.8421C18.8519%2011.5682%2018.8509%2011.123%2019.1248%2010.8478C19.3988%2010.5725%2019.844%2010.5715%2020.1192%2010.8454L23.7932%2014.5016C23.7934%2014.5018%2023.7936%2014.5021%2023.7938%2014.5023C24.0692%2014.7771%2024.0683%2015.2238%2023.7938%2015.4977Z'%20fill='%23337D5A'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_160_24'%3e%3crect%20width='18'%20height='18'%20fill='white'%20transform='matrix(1%200%200%20-1%206%2024)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="arrow" width="24" height="24" />
-                     </a>
-                   </div>
-                 </div>
-               </div>
-               <div class="swiper-slide news__swiper__slide">
-                 <div class="content__smlbox__item">
-                   <img src="../assets/pic%20(2)-D7KT9-p9.png" alt="" />
-                   <div class="content__bigbox__desc">
-                     <div class="bigbox__desc__data">12.04.2019</div>
-                     <div class="bigbox__desc__slogan">
-                       В Одесской области состоялся масштабный
-                       <br />
-                       торгово - экспортный форум
-                     </div>
-                     <div class="bigbox__desc__text">
-                       Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура
-                       очень недооценена среди наших садоводов, не смотря на большой
-                       спрос в Европе и отличную...
-                     </div>
-                     <a class="bigbox__desc__link" href="/Nuts/newsPage">
-                       Читать
-                       <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_160_24)'%3e%3cpath%20d='M23.7938%2015.4977C23.7936%2015.4979%2023.7934%2015.4982%2023.7931%2015.4984L20.1192%2019.1546C19.8439%2019.4285%2019.3988%2019.4275%2019.1248%2019.1522C18.8508%2018.877%2018.8519%2018.4318%2019.1271%2018.1579L21.5938%2015.7031H6.70312C6.31479%2015.7031%206%2015.3883%206%2015C6%2014.6117%206.31479%2014.2969%206.70312%2014.2969H21.5938L19.1272%2011.8421C18.8519%2011.5682%2018.8509%2011.123%2019.1248%2010.8478C19.3988%2010.5725%2019.844%2010.5715%2020.1192%2010.8454L23.7932%2014.5016C23.7934%2014.5018%2023.7936%2014.5021%2023.7938%2014.5023C24.0692%2014.7771%2024.0683%2015.2238%2023.7938%2015.4977Z'%20fill='%23337D5A'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_160_24'%3e%3crect%20width='18'%20height='18'%20fill='white'%20transform='matrix(1%200%200%20-1%206%2024)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="arrow" width="24" height="24" />
-                     </a>
-                   </div>
-                 </div>
-               </div>
-               <div class="swiper-slide news__swiper__slide">
-                 <div class="content__smlbox__item">
-                   <img src="../assets/pic%20(3)-Oo6fR0Pi.png" alt="" />
-                   <div class="content__bigbox__desc">
-                     <div class="bigbox__desc__data">12.04.2019</div>
-                     <div class="bigbox__desc__slogan">
-                       Сертификация органического
-                       <br />производителя
-                     </div>
-                     <div class="bigbox__desc__text">
-                       Как уже упоминал Павел Тулба, шиповник цветёт. Эта культура
-                       очень недооценена среди наших садоводов, не смотря на большой
-                       спрос в Европе и отличную...
-                     </div>
-                     <a class="bigbox__desc__link" href="/Nuts/newsPage">
-                       Читать
-                       <img src="data:image/svg+xml,%3csvg%20width='24'%20height='24'%20viewBox='0%200%2024%2024'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_160_24)'%3e%3cpath%20d='M23.7938%2015.4977C23.7936%2015.4979%2023.7934%2015.4982%2023.7931%2015.4984L20.1192%2019.1546C19.8439%2019.4285%2019.3988%2019.4275%2019.1248%2019.1522C18.8508%2018.877%2018.8519%2018.4318%2019.1271%2018.1579L21.5938%2015.7031H6.70312C6.31479%2015.7031%206%2015.3883%206%2015C6%2014.6117%206.31479%2014.2969%206.70312%2014.2969H21.5938L19.1272%2011.8421C18.8519%2011.5682%2018.8509%2011.123%2019.1248%2010.8478C19.3988%2010.5725%2019.844%2010.5715%2020.1192%2010.8454L23.7932%2014.5016C23.7934%2014.5018%2023.7936%2014.5021%2023.7938%2014.5023C24.0692%2014.7771%2024.0683%2015.2238%2023.7938%2015.4977Z'%20fill='%23337D5A'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_160_24'%3e%3crect%20width='18'%20height='18'%20fill='white'%20transform='matrix(1%200%200%20-1%206%2024)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e" alt="arrow" width="24" height="24" />
-                     </a>
-                   </div>
-                 </div>
-               </div>
-             </div>
-             <div class="swiper-button-prev news__swiper__btnprev"></div>
-             <div class="swiper-button-next news__swiper__btnnext"></div>
-           </div>
-       
-           <div class="news__button button__white-bg">
-             <a href="/Nuts/newsPage">Смотреть все новости </a>
-           </div>
-       
-         </div>
-       
-       </section>      <section class="map">
+      </section>
+      <section class="map">
         <div class="container ">
           <div class="map__content">
             <div class="map__content__info">
@@ -934,6 +499,6 @@
 
      </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   
   </body>
 </html>

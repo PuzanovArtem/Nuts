@@ -5,11 +5,11 @@
     <link rel="icon" type="image/svg+xml" href="../assets/logo-icon-BdZXZZog.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
-    <script type="module" crossorigin src="../assets/header-CSjSYZpF.js"></script>
-    <script type="module" crossorigin src="../assets/main-CnKfxomE.js"></script>
+    <script type="module" crossorigin src="../assets/header-BsCelfQm.js"></script>
+    <script type="module" crossorigin src="../assets/main-CI56ZuRX.js"></script>
     <script type="module" crossorigin src="../assets/registration-CZPfEn8R.js"></script>
     <link rel="stylesheet" crossorigin href="../assets/main-Du3mw4TU.css">
-    <link rel="stylesheet" crossorigin href="../assets/login-QgbFSM2X.css">
+    <link rel="stylesheet" crossorigin href="../assets/login-BS2CVm9y.css">
   </head>
   <body>
      <div class="wrapper">
@@ -128,7 +128,7 @@
     </div>
             <div id="popup" class="popup popup-basket">
                 <div class="popup-content">
-                    <span class="close">&times;</span>
+                    <span class="close-btn">&times;</span>
     
                     <div class="popup__inner">
                         <div class="popup__inner--item">
@@ -273,7 +273,7 @@
       <nav aria-label="breadcrumb ">
           <div class="container">
           <ol class="breadcrumb ">
-              <li class="breadcrumb-item"><a href="/index.html">Главная</a></li>
+              <li class="breadcrumb-item"><a href="/Nuts/">Главная</a></li>
               <li class="breadcrumb-item inactive" ><a href="">Вход</a></li>
           </ol>
           </div>
@@ -291,13 +291,13 @@
                   </div>
       
       <div class="login__link-wrapper login__password-wrapper">
-                  <a href="/reset-password/reset-password.html" class="login__link">Забыли пароль?</a>
+                  <a href="/Nuts/resetPassword" class="login__link">Забыли пароль?</a>
       </div>
       
                   <button type="submit" class="login__submit-button main--btn">Войти</button>
       
       <div class="login__link-wrapper">
-                  <a href="/registration/registration.html" class="login__registration login__link">Регистрация</a>
+                  <a href="/Nuts/registrationPage/" class="login__registration login__link">Регистрация</a>
       </div>
               
               </form>
@@ -362,13 +362,16 @@
           </div>
       
           <div class="map__content__map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8035.823998872902!2d35.05441687688492!3d48.46900182491045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3283af45205%3A0x6a1b9ec2c5948cd4!2zTWNEb25hbGTigJlz!5e0!3m2!1suk!2sua!4v1716295663440!5m2!1suk!2sua" 
+            <iframe data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8035.823998872902!2d35.05441687688492!3d48.46900182491045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe3283af45205%3A0x6a1b9ec2c5948cd4!2zTWNEb25hbGTigJlz!5e0!3m2!1suk!2sua!4v1716295663440!5m2!1suk!2sua" 
             width="739.77" 
             height="518" 
             style="border:0;" 
             allowfullscreen="" 
             loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
+            referrerpolicy="no-referrer-when-downgrade"
+            class="lazy"
+            title="McDonalds-Dnepr-city">
+            
             </iframe>
           </div>
           </div>
@@ -383,6 +386,8 @@
                     class="footer__logo--img"
                     src="data:image/avif;base64,AAAAHGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZgAAAZhtZXRhAAAAAAAAACFoZGxyAAAAAAAAAABwaWN0AAAAAAAAAAAAAAAAAAAAAA5waXRtAAAAAAABAAAANGlsb2MAAAAAREAAAgACAAAAAAG8AAEAAAAAAAAAFQABAAAAAAHRAAEAAAAAAAACvQAAADhpaW5mAAAAAAACAAAAFWluZmUCAAAAAAEAAGF2MDEAAAAAFWluZmUCAAAAAAIAAGF2MDEAAAAA12lwcnAAAACxaXBjbwAAABNjb2xybmNseAACAAIABoAAAAAMYXYxQ4EAHAAAAAAUaXNwZQAAAAAAAAA2AAAANQAAAA5waXhpAAAAAAEIAAAAOGF1eEMAAAAAdXJuOm1wZWc6bXBlZ0I6Y2ljcDpzeXN0ZW1zOmF1eGlsaWFyeTphbHBoYQAAAAAMYXYxQ4EADAAAAAAUaXNwZQAAAAAAAAA2AAAANQAAABBwaXhpAAAAAAMICAgAAAAeaXBtYQAAAAAAAAACAAEEgYYHiAACBIIDhIUAAAAaaXJlZgAAAAAAAAAOYXV4bAACAAEAAQAAAtptZGF0EgAKBhgVddGFQDIJGAAAAQAOTTL5EgAKCRgVddGCBAQNCDKtBRgAFVSChQDdK1IamcKNJkEKWVQS+DSY3aAG5ZJmfVAkIjP+tWBt2lFrR9DAB5GwcocPeNqPEyyMTyoANggKYxCWQ/UL3C6ak6D6c6kf/LMXQd7rzfsB3eSE7SSifasiX1vZNHWDBvmUgW6AG7xiyYsopMJZWRp7UYCzSaP+MluqYvuCKPmdIaE7/iowBo59p/F7SknSdCXdnMD9mBU0vJdeYtzAgErvfioQeMgYe5AGJu2O97qyIaKCM1RssMG5YyaVyJqrNnvzO/w/DWIllB2xJ4wuoQTR7gnnIYBhqL6Yo3qkyWKVok6h+sNCsaiezPpF4e/5QrqEhZbfI8vzA6AaDNXVmoxIY7hIxnEjwqE2Dkf7vk5sLn/cUfr/pPb7Y1fSpKEj1XIFiCiLwv8m653GA7cS2UvzDLtGb6wn85MgOMeXLqNhqF6rHIsDeI7rKsCQjhPnzEHnA+59ImXPEfx1hPhCeWiYSd7dszJE4YlVNbmt7nwZ5e+8SzO5pGLShSn93uTOzCFFaCDqsqtF01+JFaFaKo4o7Ac7Krao5iYhMDISbOrAkSbjOx5wLGpogRNJ2uh/nAHt7+nyF89eP63ZAM7IFvTQx7S9kuluWsg+a8UfI5SaDx60NhllcPA+riFfs3sDp07o5DhVd+qAV375cbYEHeE5HOlLrXbIleP478Szcsa6uBYODx1OSnFBSPtD1TjZgbGnutGiVYdwyIDTTiYhPGEqmDgyY38zpdw/fwBHqKNPI/KI2TGfZrx61kjshyYDrS/1TuZvEpp9gv3nT3mx25EuzmHl4znHUyhB5NBKJizTwc/uUwULHetIRK7hoPMc83Sl4nzp7HCmx3NCfn5fH5196FiqjrHlDtzuTF7NRBxlP1fuVTatbCSrOYVGpqKj7H1ZJJOa9+A="
                     alt=""
+                    width="54"
+                    height="53"
                 />
                 <div class="footer__logo--title">
                     ОРЕХ <br />
@@ -422,7 +427,7 @@
         <div class="content__top--social">
           <ul class="top__social--items">
             <li class="social__items--icon">
-              <a href="">
+              <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="13"
@@ -438,7 +443,7 @@
               </a>
             </li>
             <li class="social__items--icon">
-              <a href="">
+              <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="13"
@@ -469,13 +474,14 @@
               </a>
             </li>
             <li class="social__items--icon">
-              <a href="">
+              <a href="#">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
                   viewBox="0 0 16 16"
                   fill="none"
+                  
                 >
                   <path
                     d="M15.3764 12.6635C14.7988 13.35 13.7325 13.6301 11.6961 13.6301H4.30379C2.22075 13.6301 1.13636 13.3319 0.560981 12.601C0 11.8883 0 10.8383 0 9.38496V6.61494C0 3.79941 0.6656 2.36988 4.30379 2.36988H11.6961C13.4621 2.36988 14.4407 2.61701 15.0738 3.22289C15.723 3.84421 16 4.85866 16 6.61494V9.38496C16 10.9176 15.9566 11.9739 15.3764 12.6635ZM10.2721 7.61752L6.91525 5.86315C6.84021 5.82392 6.75814 5.80447 6.67618 5.80447C6.58338 5.80447 6.49079 5.82945 6.40877 5.8791C6.25435 5.97267 6.16005 6.14005 6.16005 6.32059V9.81809C6.16005 9.99832 6.25409 10.1655 6.40821 10.2592C6.56237 10.3528 6.75412 10.3592 6.91406 10.2761L10.2709 8.53303C10.4417 8.44436 10.5489 8.26805 10.5492 8.07569C10.5494 7.88318 10.4426 7.70661 10.2721 7.61752Z"
