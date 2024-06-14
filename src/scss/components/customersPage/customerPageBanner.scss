@@ -45,6 +45,7 @@
 
   @include respond-to($l-tablet) {
     height: 500px;
+    background-image: url(/src/img/customerBanner-tab.png);
 
     &__title {
       font-size: 42px;
@@ -63,6 +64,7 @@
 
   @include respond-to($m-mobile) {
     height: 400px;
+    background-image: url(/src/img/customerBanner-mob.png);
 
     &__title {
       font-size: 22px;
