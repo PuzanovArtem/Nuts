@@ -54,7 +54,7 @@ export default defineConfig({
         newPage: resolve(__dirname, 'newPage/index.html'),
         account: resolve(__dirname, 'account/account.html'),
         accountSimple: resolve(__dirname, 'account/account-simple.html'),
-        login: resolve(__dirname, 'login/login.html'),
+        login: resolve(__dirname, 'loginPage/index.html'),
         password: resolve(__dirname, 'password/password.html'),
         resetPassword: resolve(__dirname, 'reset-password/reset-password.html'),
         checkout: resolve(__dirname, 'checkout/index.html'),
