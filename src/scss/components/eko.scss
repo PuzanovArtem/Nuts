@@ -40,10 +40,15 @@
             letter-spacing: 0.22px;
         }
     }
+
+        @include respond-to($l-mobile) {
+            background-image: url(/src/img/eko-main-mob.png);
+        }
 }
 
 @include respond-to($tablet){
     .eko-main{
+        background-image: url(/src/img/eko-main-tab.png);
         .eko__inner {
             height: 540px;
             .eko__inner__title {
@@ -106,6 +111,14 @@
             letter-spacing: 0.22px;
         }
     }
+
+        @include respond-to($tablet) {
+            background-image: url(/src/img/eko-about-tab.png);
+        }
+
+                 @include respond-to($l-mobile) {
+                     background-image: url(/src/img/eko-about-mob.png);
+                 }
 }
 
 .eko-customers{
@@ -150,7 +163,17 @@
             letter-spacing: 0.22px;
         }
     }
+
+        @include respond-to($tablet) {
+            background-image: url(/src/img/eko-customers-tab.png);
+        }
+    
+        @include respond-to($l-mobile) {
+            background-image: url(/src/img/eko-customers-mob.png);
+        }
 }
+
+
 @include respond-to($tablet){
     .eko-about{
         .eko__inner {

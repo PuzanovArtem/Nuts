@@ -25,7 +25,15 @@
     font-size: 62px;
   }
 
+    @include respond-to($tablet) {
+      background-image: url(/src/img/catalog-banner-tab.jpg);
+    }
+  
+   
+
   @include respond-to($l-mobile) {
+background-image: url(/src/img/catalog-banner-mob.jpg);
+
     &__wrapper {
       padding-top: 70px;
     }

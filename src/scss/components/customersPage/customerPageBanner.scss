@@ -125,6 +125,14 @@
     margin-right: auto;
     margin-left: auto;
   }
+
+    @include respond-to($tablet) {
+      background-image: url(/src/img/galleryPageBanner-tab.png);
+    }
+
+         @include respond-to($l-mobile) {
+           background-image: url(/src/img/galleryPageBanner-mob.png);
+         }
   // @include respond-to($m-desktop) {
   //   height: 540px;
 
