@@ -146,6 +146,6 @@ import 'swiper/css/bundle';
 
 
 
-//   
+  
 //   fetchProducts();
 
