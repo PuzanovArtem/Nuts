@@ -37,7 +37,7 @@
     &__item:nth-child(12):hover::after {
       opacity: 0;
     }
-  
+    
     &__item-play {
       position: absolute;
       top: 50%;
@@ -123,6 +123,13 @@
               align-self: flex-end;
               justify-content: center;
           }
+          // .galleryPage-gallery__item {
+          //   .galleryPage-gallery__img{
+              
+          //     height: 435px;
+
+          //   }
+          // }
      }
   
      @include respond-to($l-mobile) {

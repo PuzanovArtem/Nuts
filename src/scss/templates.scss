@@ -228,13 +228,13 @@
  }
 
 
- ///lazy
+//  /lazy
  
-//  .lazy {
-//     opacity: 0;
-//     transition: opacity 0.3s;
-//   }
+ .lazy {
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
   
-//   .lazy-loaded {
-//     opacity: 1;
-//   }
+  .lazy-loaded {
+    opacity: 1;
+  }
