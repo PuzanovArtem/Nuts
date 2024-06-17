@@ -1,5 +1,5 @@
 import "../src/js/header.js";
-
+import "/registrationPage/registration.js";
 
 document.addEventListener('DOMContentLoaded', function() {
     const deliveryMethods = document.querySelectorAll('input[name="delivery"]');
@@ -42,3 +42,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     showDetails();
 });
+

@@ -1,66 +1,157 @@
 <section class="delivery-form">
-    <div class="container">
-        <div class="order-form">
-        
-        <h2>1. Контактные данные</h2>
-        <form id="orderForm">
-            <label><input type="company" name="company" placeholder="Компания" id="company" required></label>
-            <label><input type="contact-name" name="contact-name" placeholder="Контактное лицо" id="contact-name" required></label>
-            <label><input type="text" name="name" placeholder="ФИО*" id="name" required></label>
-            <label><input type="email" name="email" placeholder="Email*" id="email" required></label>
-            <label><input type="tel" name="phone" placeholder="Телефон*" id="phone" required></label>
+  <div class="container">
+    <div class="order-form">
 
-            <h2 class="delivery-form__second-title">2. Способ доставки</h2>
-            <div class="delivery-method">
-                <label>
-                    <input type="radio" name="delivery" value="post" required>
-                   Новая почта (по Украине, оплата за счет Клиента)
-                </label>
-                <div class="delivery-details" id="post-details">
-                    <label><select name="country" required>
-                        <option value="">Страна</option>
-                        <option value="Украина">Украина</option>
-                    </select></label>
-                    <label><select name="region" required>
-                        <option value="">Область</option>
-                        <option value="Киевская">Киевская</option>
-                        <option value="Одесская">Одесская</option>
-                        <option value="Львовская">Львовская</option>
-                        <option value="Днепропитровская">Днепропитровская</option>
-                    </select></label>
+      <h2>1. Контактные данные</h2>
+      <form id="orderForm">
+        <label><input
+            type="company"
+            name="company"
+            placeholder="Компания"
+            id="company"
+            required
+          /></label>
+        <label><input
+            type="contact-name"
+            name="contact-name"
+            placeholder="Контактное лицо"
+            id="contact-name"
+            required
+          /></label>
+        <label><input
+            type="text"
+            name="name"
+            placeholder="ФИО*"
+            id="name"
+            required
+          /></label>
+        <label><input
+            type="email"
+            name="email"
+            placeholder="Email*"
+            id="email"
+            required
+          /></label>
+        <label><input
+            type="tel"
+            name="phone"
+            placeholder="Телефон*"
+            id="phone"
+            required
+          /></label>
+
+        <h2 class="delivery-form__second-title">2. Способ доставки</h2>
+        <div class="delivery-method">
+          <label>
+            <input type="radio" name="delivery" value="post" required />
+            Новая почта (по Украине, оплата за счет Клиента)
+          </label>
+          <div class="delivery-details" id="post-details">
+            <div
+              class="registration__form-container registration__form-container-sec"
+            >
+              <form>
+                <div class="select">
+                  <div class="header-top__custom-select filter__custom-select">
+                    <div
+                      class="header-top__select-selected filter__select-selected"
+                    >Страна</div>
+                    <div class="header-top__select-items filter__select-items">
+                      <div
+                        data-value="nut1"
+                        class="filter__select-item"
+                      >Україна</div>
+                      <div
+                        data-value="nut2"
+                        class="filter__select-item"
+                      >Польща</div>
+                      <div
+                        data-value="nut3"
+                        class="filter__select-item"
+                      >Франція</div>
+                    </div>
+                    <img
+                      src="/src/img/icons/arrow-lang.svg"
+                      class="header-top__select-arrow"
+                    />
+                  </div>
                 </div>
 
-                <label>
-                    <input type="radio" name="delivery" value="courier">
-                    Курьер по Одессе <span class="badge">БЕСПЛАТНО</span>
-                </label>
-                <div class="delivery-details" id="courier-details">
-                    <label><input type="tel" name="address" placeholder="Адрес*" required></label>
+                <div class="select">
+                  <div
+                    class="header-top__custom-select filter__custom-select filter__custom-select-second"
+                  >
+                    <div
+                      class="header-top__select-selected filter__select-selected filter__select-selected-second"
+                    >Область</div>
+                    <div
+                      class="header-top__select-items filter__select-items filter__select-items-second"
+                    >
+                      <div
+                        data-value="nut1"
+                        class="filter__select-item"
+                      >Одеська</div>
+                      <div
+                        data-value="nut2"
+                        class="filter__select-item"
+                      >Київська</div>
+                      <div
+                        data-value="nut3"
+                        class="filter__select-item"
+                      >Львівська</div>
+                    </div>
+                    <img
+                      src="/src/img/icons/arrow-lang.svg"
+                      class="header-top__select-arrow"
+                    />
+                  </div>
                 </div>
-                <label>
-                    <input type="radio" name="delivery" value="pickup">
-                    Самовывоз со склада
-                </label>
-            </div>
 
-            <h2 class="delivery-form__third-title">3. Способ оплаты</h2>
-            <div class="payment-method">
-                <label>
-                    <input type="radio" name="payment" value="bank" required>
-                    Безналичный расчет
-                </label>
-                <label>
-                    <input type="radio" name="payment" value="liqpay">
-                    LiqPay / Приват24
-                </label>
-                <label>
-                    <input type="radio" name="payment" value="cash">
-                    Наличными при получении (Наложенным платежом)
-                </label>
+              </form>
             </div>
+          </div>
 
-            <a href="/Nuts/orderPage/" class="delivery__next-page" type="submit" >Продолжить</a>
-        </form>
+          <label>
+            <input type="radio" name="delivery" value="courier" />
+            Курьер по Одессе
+            <span class="badge">БЕСПЛАТНО</span>
+          </label>
+          <div class="delivery-details" id="courier-details">
+            <label><input
+                type="tel"
+                name="address"
+                placeholder="Адрес*"
+                required
+              /></label>
+          </div>
+          <label>
+            <input type="radio" name="delivery" value="pickup" />
+            Самовывоз со склада
+          </label>
+        </div>
+
+        <h2 class="delivery-form__third-title">3. Способ оплаты</h2>
+        <div class="payment-method">
+          <label>
+            <input type="radio" name="payment" value="bank" required />
+            Безналичный расчет
+          </label>
+          <label>
+            <input type="radio" name="payment" value="liqpay" />
+            LiqPay / Приват24
+          </label>
+          <label>
+            <input type="radio" name="payment" value="cash" />
+            Наличными при получении (Наложенным платежом)
+          </label>
+        </div>
+
+        <a
+          href="/Nuts/orderPage/"
+          class="delivery__next-page"
+          type="submit"
+        >Продолжить</a>
+      </form>
     </div>
-    </div>
+  </div>
 </section>

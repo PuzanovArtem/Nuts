@@ -8,7 +8,9 @@
         width="12"
         height="12"
       />
-      <a href="#" class="order__link">Корзина </a>
+      <a href="#" class="order__link">Личный кабинет
+
+</a>
     </div>
     <div class="avatar__headline">
       <div class="avatar__headline--title">Заказ №1245</div>
@@ -27,10 +29,10 @@
         </div>
       </div>
     </div>
-
-    <div class="order__header">
-      <div class="order__header__item">
-        Товар
+    <div class="order__table table-order">
+      <div class="order__header">
+        <div class="order__header__item">
+          Товар
           <img
             src="/src/img/icons/arrow-lang.svg"
             alt="arrow-down"
@@ -38,106 +40,151 @@
             width="10"
             height="8"
           />
+        </div>
+        <div class="order__header__item">
+          Кол - во
+          <img
+            src="/src/img/icons/basket__arrow-down.svg"
+            class="order__line__item-arrow"
+            alt="arrow-down"
+            width="10"
+            height="8"
+          />
+        </div>
+        <div class="order__header__item">
+          Цена за товар
+          <img
+            src="/src/img/icons/basket__arrow-down.svg"
+            class="order__line__item-arrow"
+            alt="arrow-down"
+            width="10"
+            height="8"
+          />
+        </div>
+        <div class="order__header__item">
+          Итоговая стоимость
+          <img
+            src="/src/img/icons/basket__arrow-down.svg"
+            class="order__header__item--arrow"
+            alt="arrow-down"
+            width="10"
+            height="8"
+          />
+        </div>
       </div>
-      <div class="order__header__item">
-        Кол - во
-            <img
-              src="/src/img/icons/basket__arrow-down.svg"
-              class="order__line__item-arrow"
-              alt="arrow-down"
-              width="10"
-              height="8"
-            />
-      </div>
-      <div class="order__header__item">
-        Цена за товар
-            <img
-              src="/src/img/icons/basket__arrow-down.svg"
-              class="order__line__item-arrow"
-              alt="arrow-down"
-              width="10"
-              height="8"
-            />
-      </div>
-      <div class="order__header__item">
-        Итоговая стоимость
-            <img
-              src="/src/img/icons/basket__arrow-down.svg"
-              class="order__header__item--arrow"
-              alt="arrow-down"
-              width="10"
-              height="8"
-            />
-      </div>
-    </div>
 
-    <div class="order__item">
-      <div class="order__item-product">
-        Орех соленый 80г.
-      </div>
-      <div class="number-box">
-              <button id="prev-button">
-                <img src="/src/img/icons/cart-arrow-left.svg" alt="arrow-left" width="8" height="10">
-              </button>
-              <div id="number">4</div>
-              <button id="next-button">
-                <img src="/src/img/icons/cart-arrow-right.svg" alt="arrow-left" width="8" height="10">
-              </button>
-            </div>
-      <div class="order__price">25 грн.</div>
-      <div class="order__total">100 грн.</div>
-    </div>
+      <div class="order__list">
 
-    <div class="order__item">
-      <div class="order__item-product">
-        Орех соленый 80г.
-      </div>
-      <div class="number-box">
-              <button id="prev-button">
-                <img src="/src/img/icons/cart-arrow-left.svg" alt="arrow-left" width="8" height="10">
-              </button>
-              <div id="number">1</div>
-              <button id="next-button">
-                <img src="/src/img/icons/cart-arrow-right.svg" alt="arrow-left" width="8" height="10">
-              </button>
-            </div>
-      <div class="order__price">25 грн.</div>
-      <div class="order__total">25 грн.</div>
-    </div>
-    <div class="order__item">
-      <div class="order__item-product">
-        Орех соленый 80г.
-      </div>
-      <div class="number-box">
-              <button id="prev-button">
-                <img src="/src/img/icons/cart-arrow-left.svg" alt="arrow-left" width="8" height="10">
-              </button>
-              <div id="number">1</div>
-              <button id="next-button">
-                <img src="/src/img/icons/cart-arrow-right.svg" alt="arrow-left" width="8" height="10">
-              </button>
-            </div>
-      <div class="order__price">25 грн.</div>
-      <div class="order__total">25 грн.</div>
-    </div>
+        <div class="order__item">
 
-    <div class="order__item">
-      <div class="order__item-product">
-        Орех соленый 80г.
-      </div>
-      <div class="number-box">
-              <button id="prev-button">
-                <img src="/src/img/icons/cart-arrow-left.svg" alt="arrow-left" width="8" height="10">
-              </button>
-              <div id="number">1</div>
-              <button id="next-button">
-                <img src="/src/img/icons/cart-arrow-right.svg" alt="arrow-left" width="8" height="10">
-              </button>
-            </div>
-      <div class="order__price">25 грн.</div>
-      <div class="order__total">25 грн.</div>
-    </div>
+          <div class="order__item-product">
+            Орех соленый 80г.
+          </div>
+          <div class="number-box">
+            <button id="prev-button">
+              <img
+                src="/src/img/icons/cart-arrow-left.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+            </button>
+            <div id="number">4</div>
+            <button id="next-button">
+              <img
+                src="/src/img/icons/cart-arrow-right.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+            </button>
+          </div>
+          <div class="order__price">25 грн.</div>
+          <div class="order__total">100 грн.</div>
+        </div>
 
+        <div class="order__item">
+          <div class="order__item-product">
+            Орех соленый 80г.
+          </div>
+          <div class="number-box">
+            <button id="prev-button">
+              <img
+                src="/src/img/icons/cart-arrow-left.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+            </button>
+            <div id="number">1</div>
+            <button id="next-button">
+              <img
+                src="/src/img/icons/cart-arrow-right.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+            </button>
+          </div>
+          <div class="order__price">25 грн.</div>
+          <div class="order__total">25 грн.</div>
+        </div>
+        <div class="order__item">
+          <div class="order__item-product">
+            Орех соленый 80г.
+          </div>
+          <div class="number-box">
+            <button id="prev-button">
+              <img
+                src="/src/img/icons/cart-arrow-left.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+            </button>
+            <div id="number">1</div>
+            <button id="next-button">
+              <img
+                src="/src/img/icons/cart-arrow-right.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+            </button>
+          </div>
+          <div class="order__price">25 грн.</div>
+          <div class="order__total">25 грн.</div>
+        </div>
+
+        <div class="order__item">
+          <div class="order__item-product">
+            Орех соленый 80г.
+          </div>
+          <div class="number-box">
+            <button id="prev-button">
+              <img
+                src="/src/img/icons/cart-arrow-left.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+            </button>
+            <div id="number">1</div>
+            <button id="next-button">
+              <img
+                src="/src/img/icons/cart-arrow-right.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+            </button>
+          </div>
+          <div class="order__price">25 грн.</div>
+          <div class="order__total">25 грн.</div>
+        </div>
+
+      </div>
+    </div>
     <div class="order__bnt">
       
       <div class="make__order">
@@ -149,10 +196,10 @@
           </div>
         </div>
         <button class="make__order--btn">
-          <a href="/checkout/">Оформить заказ</a>
+          <a href="/Nuts/deliveryPage/">Оформить заказ</a>
         </button>
       </div>
     </div>
-
+    
   </div>
-</section>
+</section> 

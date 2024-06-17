@@ -125,7 +125,7 @@
       padding: 0 0 0 30px;
     }
     .basket__total {
-      padding:0 0 0 55px;
+      padding: 0 0 0 55px;
     }
   }
   .basket__bnt {
@@ -240,120 +240,133 @@
 }
 
 @media screen and (max-width: 600px) {
-    .basket {
-        
-        .avatar__headline {
-            flex-direction: column;
-            gap: 50px;
-        }
+  .basket {
+    .avatar__headline {
+      flex-direction: column;
+      gap: 50px;
     }
+  }
 }
 
 @media screen and (max-width: 885px) {
-    .basket {
-        .basket__header,
-  .basket__item {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    height: 68px;
-
-    padding: 0 10px 0 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  }
+  .basket {
+    .basket__header,
+    .basket__item {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      height: 68px;
+      line-height: 16px;
+      padding: 0 10px 0 15px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
+  }
 }
-
 
 @media screen and (max-width: 670px) {
-    .basket {
-        .basket__header,
-        .basket__item {
-            gap: 10px;
-            .basket__price {
-                padding-left: 10px;
-              }
-              .basket__total {
-                padding-left: 25px;
-              }
-        }
-        .basket__bnt {
-            .continue {
-                width: 180px;
-            }
-            .make__order {
-                .make__order--btn {
-                    width: 180px;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .basket {
-        
-        .avatar__headline {
-            flex-direction: column;
-            gap: 50px;
-        }
-    }
-}
-
-@media screen and (max-width: 520px) {
-    .basket {
-        .basket__header,
-  .basket__item {
-    grid-template-columns: 1fr 1fr;
-    height: 100px;
-    gap: 5px;
-  }
-  .basket__header {
-    margin: 33px 0 0 0;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 25px;
-    .basket__header__item{
-        margin: 0 auto;
-        text-align: center;
-    }
-  }
-  .basket__item {
-    .basket__item-product{
-        margin: 0 auto;
-    }
-    .number-box{
-        margin: 0 auto;
-    }
-    .basket__price {
-        padding: 0 ;
-        margin: 0 auto;
+  .basket {
+    .basket__header,
+    .basket__item {
+      gap: 10px;
+      .basket__price {
+        padding-left: 10px;
       }
       .basket__total {
-        padding :0;
-        margin: 0 auto;
+        padding-left: 25px;
       }
+    }
+    .basket__bnt {
+      .continue {
+        width: 180px;
+      }
+      .make__order {
+        .make__order--btn {
+          width: 180px;
+        }
+      }
+    }
   }
-        .basket__bnt {
-            .make__order {
-                flex-direction: column;
-            }
-        }
-        
-        .basket__link {
-            .basket__link--item {
-                font-size: 15px;
-            }
-        }
-    }
 }
 
-@media screen and (max-width: 450px) {
-    .basket {
-        .basket__bnt {
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
+@media (max-width: 600px) {
+  .basket {
+    .avatar__headline {
+      flex-direction: column;
+      gap: 50px;
     }
+    .basket__bnt {
+      align-items: center;
+      .make__order {
+        display: flex;
+        .make__order--price {
+          display: block;
+        }
+      }
+    }
+  }
 }
 
+@media screen and (max-width: 500px) {
+  .basket {
+    //       .basket__header,
+    // .basket__item {
+    //   grid-template-columns: 1fr 1fr;
+    //   height: 100px;
+    //   gap: 5px;
+    // }
+    // .basket__header {
+    //   margin: 33px 0 0 0;
+    //   font-size: 14px;
+    //   font-weight: 700;
+    //   line-height: 25px;
+    //   .basket__header__item{
+    //       margin: 0 auto;
+    //       text-align: center;
+    //   }
+    // }
+    // .basket__item {
+    //   .basket__item-product{
+    //       margin: 0 auto;
+    //   }
+    //   .number-box{
+    //       margin: 0 auto;
+    //   }
+    //   .basket__price {
+    //       padding: 0 ;
+    //       margin: 0 auto;
+    //     }
+    //     .basket__total {
+    //       padding :0;
+    //       margin: 0 auto;
+    //     }
+    // }
+    .basket__bnt {
+      .make__order {
+        flex-direction: column;
+      }
+    }
+
+    .basket__link {
+      .basket__link--item {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .basket {
+    .basket__bnt {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.basket__table {
+  overflow: auto;
+  .basket__header,
+  .basket__list {
+    min-width: 500px;
+  }
+}
