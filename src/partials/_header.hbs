@@ -163,25 +163,25 @@
               <div class="popup__inner--item">
                 <div class="popup__item--name">Орех соленый 80г.</div>
                 <div class="popup__item--number">
-                  <div class="number-box">
-                    <button id="prev-button">
-                      <img
-                        src="/src/img/icons/cart-arrow-left.svg"
-                        alt="arrow-left"
-                        width="8"
-                        height="10"
-                      />
-                    </button>
-                    <div id="number">4</div>
-                    <button id="next-button">
-                      <img
-                        src="/src/img/icons/cart-arrow-right.svg"
-                        alt="arrow-left"
-                        width="8"
-                        height="10"
-                      />
-                    </button>
-                  </div>
+                  <div class="counter-container">
+        <span class="arrow" onclick="decrement('counter1')">
+          <img
+                src="/src/img/icons/cart-arrow-left.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+        </span>
+        <div id="counter1" class="number-display">4</div>
+        <span class="arrow" onclick="increment('counter1')">
+          <img
+                src="/src/img/icons/cart-arrow-right.svg"
+                alt="arrow-left"
+                width="8"
+                height="10"
+              />
+              </span>
+    </div>
                 </div>
                 <div class="popup__item--price">100 грн.</div>
                 <div class="popup__item--cross">
@@ -196,25 +196,23 @@
               <div class="popup__inner--item">
                 <div class="popup__item--name">Орех соленый 80г.</div>
                 <div class="popup__item--number">
-                  <div class="number-box">
-                    <button id="prev-button">
+                  <div class="counter-container">
+                    <span class="arrow" onclick="decrement('counter2')"><img
+                            src="/src/img/icons/cart-arrow-left.svg"
+                            alt="arrow-left"
+                            width="8"
+                            height="10"
+                          /></span>
+                    <div id="counter2" class="number-display">4</div>
+                    <span class="arrow" onclick="increment('counter2')">
                       <img
-                        src="/src/img/icons/cart-arrow-left.svg"
-                        alt="arrow-left"
-                        width="8"
-                        height="10"
-                      />
-                    </button>
-                    <div id="number">8</div>
-                    <button id="next-button">
-                      <img
-                        src="/src/img/icons/cart-arrow-right.svg"
-                        alt="arrow-left"
-                        width="8"
-                        height="10"
-                      />
-                    </button>
-                  </div>
+                            src="/src/img/icons/cart-arrow-right.svg"
+                            alt="arrow-left"
+                            width="8"
+                            height="10"
+                          />
+                          </span>
+                </div>
                 </div>
                 <div class="popup__item--price">80 грн.</div>
                 <div class="popup__item--cross">
@@ -234,9 +232,10 @@
                     <div class="make__price--text">грн.</div>
                   </div>
                 </div>
-                <button class="make__order--btn">
-                  <a href="/Nuts/basketPage/">Перейти в корзину</a>
-                </button>
+                <div class="make__order__btn">
+                  <a href="/Nuts/basketPage/" class="make__order__btn-link">Перейти в корзину </a>
+                </div>
+
               </div>
             </div>
           </div>
@@ -334,3 +333,33 @@
   </div>
 
 </header>
+
+ <script>
+        // Счетчики для каждого блока
+        const counters = {
+            counter1: 4,
+            counter2: 4
+        };
+
+        // Функция обновления отображаемого значения
+        function updateDisplay(id) {
+            document.getElementById(id).innerText = counters[id];
+        }
+
+        // Функция увеличения значения
+        function increment(id) {
+            counters[id]++;
+            updateDisplay(id);
+        }
+
+        // Функция уменьшения значения
+        function decrement(id) {
+            counters[id]--;
+            updateDisplay(id);
+        }
+
+        // Инициализация отображаемого значения при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            Object.keys(counters).forEach(updateDisplay);
+        });
+    </script>

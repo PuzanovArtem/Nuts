@@ -103,6 +103,16 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr 1fr;
                     place-items: center;
+                    gap: 5px 0;
+                    .menu__list--item {
+                        
+    
+                        &:hover {
+                            color: #337D5A;
+                            border-bottom: 3px solid #337D5A;
+                            padding-bottom: 0px;
+                        }
+                    }
                 }
             }
         }
@@ -123,6 +133,15 @@
                     display: grid;
                     grid-template-columns: 1fr 1fr ;
                     place-items: center;
+                    .menu__list--item {
+                    color: $blue-whale-color;
+                    font-family: $fontFamilyRaleway;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.3px;
+
+                }
                 }
             }
         }
@@ -163,6 +182,7 @@
                 .footer__menu--list{
                     grid-template-columns: 1fr  ;
                     place-items: center;
+                    gap: 5px 0;
                 }
             }
         }

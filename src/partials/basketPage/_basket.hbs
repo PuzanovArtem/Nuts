@@ -1,7 +1,7 @@
 <section class="basket">
   <div class="container">
     <div class="basket__main--links">
-      <a href="index.html" class="basket__link">Главная </a>
+      <a href="/Nuts/" class="basket__link">Главная </a>
       <img
         src="/src/img/icons/right-arrow-white.svg"
         alt=""
@@ -71,117 +71,97 @@
         </div>
       </div>
 
-      <div class="basket__list">
-
+    <div class="basket__list">
         <div class="basket__item">
-
-          <div class="basket__item-product">
-            Орех соленый 80г.
-          </div>
-          <div class="number-box">
-            <button id="prev-button">
-              <img
-                src="/src/img/icons/cart-arrow-left.svg"
-                alt="arrow-left"
-                width="8"
-                height="10"
-              />
-            </button>
-            <div id="number">4</div>
-            <button id="next-button">
-              <img
-                src="/src/img/icons/cart-arrow-right.svg"
-                alt="arrow-left"
-                width="8"
-                height="10"
-              />
-            </button>
-          </div>
-          <div class="basket__price">25 грн.</div>
-          <div class="basket__total">100 грн.</div>
-        </div>
-
-        <div class="basket__item">
-          <div class="basket__item-product">
-            Орех соленый 80г.
-          </div>
-          <div class="number-box">
-            <button id="prev-button">
-              <img
-                src="/src/img/icons/cart-arrow-left.svg"
-                alt="arrow-left"
-                width="8"
-                height="10"
-              />
-            </button>
-            <div id="number">1</div>
-            <button id="next-button">
-              <img
-                src="/src/img/icons/cart-arrow-right.svg"
-                alt="arrow-left"
-                width="8"
-                height="10"
-              />
-            </button>
-          </div>
-          <div class="basket__price">25 грн.</div>
-          <div class="basket__total">25 грн.</div>
+            <div class="basket__item-product">Орех соленый 80г.</div>
+            <div class="number-container">
+                <span class="arrow" onclick="decrement('counter1')"><img
+                    src="/src/img/icons/cart-arrow-left.svg"
+                    alt="arrow-left"
+                    width="8"
+                    height="10"
+                /></span>
+                <div id="counter1" class="number-display">1</div>
+                <span class="arrow" onclick="increment('counter1')">
+                    <img
+                        src="/src/img/icons/cart-arrow-right.svg"
+                        alt="arrow-right"
+                        width="8"
+                        height="10"
+                    />
+                </span>
+            </div>
+            <div class="basket__price">25 грн.</div>
+            <div class="basket__total" id="total1">100 грн.</div>
         </div>
         <div class="basket__item">
-          <div class="basket__item-product">
-            Орех соленый 80г.
-          </div>
-          <div class="number-box">
-            <button id="prev-button">
-              <img
-                src="/src/img/icons/cart-arrow-left.svg"
-                alt="arrow-left"
-                width="8"
-                height="10"
-              />
-            </button>
-            <div id="number">1</div>
-            <button id="next-button">
-              <img
-                src="/src/img/icons/cart-arrow-right.svg"
-                alt="arrow-left"
-                width="8"
-                height="10"
-              />
-            </button>
-          </div>
-          <div class="basket__price">25 грн.</div>
-          <div class="basket__total">25 грн.</div>
+            <div class="basket__item-product">Орех соленый 80г.</div>
+            <div class="number-container">
+                <span class="arrow" onclick="decrement('counter2')"><img
+                    src="/src/img/icons/cart-arrow-left.svg"
+                    alt="arrow-left"
+                    width="8"
+                    height="10"
+                /></span>
+                <div id="counter1" class="number-display">1</div>
+                <span class="arrow" onclick="increment('counter2')">
+                    <img
+                        src="/src/img/icons/cart-arrow-right.svg"
+                        alt="arrow-right"
+                        width="8"
+                        height="10"
+                    />
+                </span>
+            </div>
+            <div class="basket__price">25 грн.</div>
+            <div class="basket__total" id="total2">100 грн.</div>
         </div>
-
         <div class="basket__item">
-          <div class="basket__item-product">
-            Орех соленый 80г.
-          </div>
-          <div class="number-box">
-            <button id="prev-button">
-              <img
-                src="/src/img/icons/cart-arrow-left.svg"
-                alt="arrow-left"
-                width="8"
-                height="10"
-              />
-            </button>
-            <div id="number">1</div>
-            <button id="next-button">
-              <img
-                src="/src/img/icons/cart-arrow-right.svg"
-                alt="arrow-left"
-                width="8"
-                height="10"
-              />
-            </button>
-          </div>
-          <div class="basket__price">25 грн.</div>
-          <div class="basket__total">25 грн.</div>
+            <div class="basket__item-product">Орех соленый 80г.</div>
+            <div class="number-container">
+                <span class="arrow" onclick="decrement('counter3')"><img
+                    src="/src/img/icons/cart-arrow-left.svg"
+                    alt="arrow-left"
+                    width="8"
+                    height="10"
+                /></span>
+                <div id="counter3" class="number-display">1</div>
+                <span class="arrow" onclick="increment('counter3')">
+                    <img
+                        src="/src/img/icons/cart-arrow-right.svg"
+                        alt="arrow-right"
+                        width="8"
+                        height="10"
+                    />
+                </span>
+            </div>
+            <div class="basket__price">25 грн.</div>
+            <div class="basket__total" id="total3">100 грн.</div>
         </div>
+        <div class="basket__item">
+            <div class="basket__item-product">Орех соленый 80г.</div>
+            <div class="number-container">
+                <span class="arrow" onclick="decrement('counter4')"><img
+                    src="/src/img/icons/cart-arrow-left.svg"
+                    alt="arrow-left"
+                    width="8"
+                    height="10"
+                /></span>
+                <div id="counter4" class="number-display">1</div>
+                <span class="arrow" onclick="increment('counter4')">
+                    <img
+                        src="/src/img/icons/cart-arrow-right.svg"
+                        alt="arrow-right"
+                        width="8"
+                        height="10"
+                    />
+                </span>
+            </div>
+            <div class="basket__price">25 грн.</div>
+            <div class="basket__total" id="total4">100 грн.</div>
+        </div>
+    </div>
 
-      </div>
     </div>
     <div class="basket__bnt">
       <button class="continue">
@@ -214,4 +194,82 @@
       <a class="basket__link--item" href="#">Зарегистрироваться</a>
     </div>
   </div>
-</section>
+<script>
+        // Переменные для каждого счетчика
+        let counter1 = 1;
+        let counter2 = 1;
+        let counter3 = 1;
+        let counter4 = 1;
+
+        const pricePerItem = 25; // Цена за один товар
+
+        // Функция обновления отображаемого значения и общей стоимости
+        function updateDisplay(id) {
+            const counter = document.getElementById(id);
+            const total = document.getElementById('total' + id.replace('counter', ''));
+            switch(id) {
+                case 'counter1':
+                    counter.innerText = counter1;
+                    total.innerText = (counter1 * pricePerItem) + ' грн.';
+                    break;
+                case 'counter2':
+                    counter.innerText = counter2;
+                    total.innerText = (counter2 * pricePerItem) + ' грн.';
+                    break;
+                case 'counter3':
+                    counter.innerText = counter3;
+                    total.innerText = (counter3 * pricePerItem) + ' грн.';
+                    break;
+                case 'counter4':
+                    counter.innerText = counter4;
+                    total.innerText = (counter4 * pricePerItem) + ' грн.';
+                    break;
+            }
+        }
+
+        // Функция увеличения значения
+        function increment(id) {
+            switch(id) {
+                case 'counter1':
+                    counter1++;
+                    break;
+                case 'counter2':
+                    counter2++;
+                    break;
+                case 'counter3':
+                    counter3++;
+                    break;
+                case 'counter4':
+                    counter4++;
+                    break;
+            }
+            updateDisplay(id);
+        }
+
+        // Функция уменьшения значения
+        function decrement(id) {
+            switch(id) {
+                case 'counter1':
+                    if (counter1 > 0) counter1--;
+                    break;
+                case 'counter2':
+                    if (counter2 > 0) counter2--;
+                    break;
+                case 'counter3':
+                    if (counter3 > 0) counter3--;
+                    break;
+                case 'counter4':
+                    if (counter4 > 0) counter4--;
+                    break;
+            }
+            updateDisplay(id);
+        }
+
+        // Инициализация отображаемого значения при загрузке страницы
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDisplay('counter1');
+            updateDisplay('counter2');
+            updateDisplay('counter3');
+            updateDisplay('counter4');
+        });
+    </script>
