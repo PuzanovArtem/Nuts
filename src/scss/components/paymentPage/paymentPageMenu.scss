@@ -118,9 +118,7 @@
     }
   }
 
-  #tab1 {
-    display: flex;
-  }
+  
   .tab__content {
     display: none;
 
@@ -128,6 +126,10 @@
       display: flex;
     }
   }
+
+  
+  
+
 }
 
 @media screen and (max-width: 1224x) {
