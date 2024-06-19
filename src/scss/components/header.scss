@@ -512,8 +512,8 @@
   display: none;
   position: absolute;
   z-index: 1000;
-  left: 70.5%;
-  top: 235px;
+  left: 78.5%;
+  top: 184px;
   transform: translate(-50%, -50%);
   width: 464px;
   height: 228px;
@@ -653,12 +653,27 @@
     }
   }
 }
-
+@media screen and (max-width: 1125px){
+  .header {
+    .popup-basket {
+      left: 74%;
+      top: 184px;
+    }
+  }
+}
+@include respond-to($xl-tablet) {
+  .header {
+    .popup-basket {
+      left: 70%;
+      top: 184px;
+    }
+  }
+}
 @include respond-to($xm-tablet) {
   .header {
     .popup-basket {
       left: 65%;
-      top: 235px;
+      top: 184px;
       width: 464px;
       height: 228px;
       padding: 20px 26px;
@@ -670,7 +685,7 @@
   .header {
     .popup-basket {
       left: 50%;
-      top: 235px;
+      top: 184px;
       width: 464px;
       height: 228px;
       padding: 20px 26px;
@@ -682,7 +697,7 @@
   .header {
     .popup-basket {
       left: 50%;
-        top: 235px;
+      top: 184px;
         width: 375px;
         height: 210px;
         padding: 10px 15px;
@@ -698,7 +713,7 @@
   .header {
     .popup-basket {
       left: 50%;
-        top: 235px;
+      top: 184px;
         width: 310px;
         height: 210px;
         padding: 10px 10px;
