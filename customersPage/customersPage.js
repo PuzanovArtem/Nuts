@@ -1,8 +1,4 @@
-// import "@/src/js/header.js";
-
-// import "/src/js/customersPage/customersPageMenu.js";
-
-
+import '/src/js/header.js';
 
 document.addEventListener("DOMContentLoaded", function () {
     // Получаем все кнопки вкладок и контенты вкладок
