@@ -1,5 +1,5 @@
 .customer-page-baner {
-  background-image: url(/src/img/customerBanner.png);
+  background-image: url(/src/img/customerBanner.jpg);
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
@@ -45,7 +45,7 @@
 
   @include respond-to($l-tablet) {
     height: 500px;
-    background-image: url(/src/img/customerBanner-tab.png);
+    background-image: url(/src/img/customerBanner-tab.jpg);
 
     &__title {
       font-size: 42px;
@@ -64,7 +64,7 @@
 
   @include respond-to($m-mobile) {
     height: 400px;
-    background-image: url(/src/img/customerBanner-mob.png);
+    background-image: url(/src/img/customerBanner-mob.jpg);
 
     &__title {
       font-size: 22px;
@@ -84,7 +84,7 @@
 }
 
 .gallery-page-banner {
-  background-image: url(/src/img/galleryPageBanner.png);
+  background-image: url(/src/img/galleryPageBanner.jpg);
   position: relative;
   height: 600px;
 
@@ -127,11 +127,11 @@
   }
 
     @include respond-to($tablet) {
-      background-image: url(/src/img/galleryPageBanner-tab.png);
+      background-image: url(/src/img/galleryPageBanner-tab.jpg);
     }
 
          @include respond-to($l-mobile) {
-           background-image: url(/src/img/galleryPageBanner-mob.png);
+           background-image: url(/src/img/galleryPageBanner-mob.jpg);
          }
   // @include respond-to($m-desktop) {
   //   height: 540px;

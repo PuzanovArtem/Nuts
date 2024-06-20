@@ -1,5 +1,5 @@
 .eko-main{
-    background-image: url(/src/img/eko-main.png);
+    background-image: url(/src/img/eko-main.jpg);
     position: relative;
     z-index: 0;
     width: 100%;
@@ -42,13 +42,13 @@
     }
 
         @include respond-to($l-mobile) {
-            background-image: url(/src/img/eko-main-mob.png);
+            background-image: url(/src/img/eko-main-mob.jpg);
         }
 }
 
 @include respond-to($tablet){
     .eko-main{
-        background-image: url(/src/img/eko-main-tab.png);
+        background-image: url(/src/img/eko-main-tab.jpg);
         .eko__inner {
             height: 540px;
             .eko__inner__title {
@@ -70,7 +70,7 @@
 }
 
 .eko-about{
-    background-image: url(/src/img/eko-about.png);
+    background-image: url(/src/img/eko-about.jpg);
     position: relative;
     z-index: 0;
     width: 100%;
@@ -113,16 +113,16 @@
     }
 
         @include respond-to($tablet) {
-            background-image: url(/src/img/eko-about-tab.png);
+            background-image: url(/src/img/eko-about-tab.jpg);
         }
 
                  @include respond-to($l-mobile) {
-                     background-image: url(/src/img/eko-about-mob.png);
+                     background-image: url(/src/img/eko-about-mob.jpg);
                  }
 }
 
 .eko-customers{
-    background-image: url(/src/img/eko-customers.png);
+    background-image: url(/src/img/eko-customers.jpg);
     position: relative;
     z-index: 0;
     width: 100%;
@@ -165,11 +165,11 @@
     }
 
         @include respond-to($tablet) {
-            background-image: url(/src/img/eko-customers-tab.png);
+            background-image: url(/src/img/eko-customers-tab.jpg);
         }
     
         @include respond-to($l-mobile) {
-            background-image: url(/src/img/eko-customers-mob.png);
+            background-image: url(/src/img/eko-customers-mob.jpg);
         }
 }
 

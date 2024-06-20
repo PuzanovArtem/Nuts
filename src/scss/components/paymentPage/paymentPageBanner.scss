@@ -1,5 +1,5 @@
 .payment-page-baner {
-    background-image: url(/src/img/paymentPageBanner.png);
+    background-image: url(/src/img/paymentPageBanner.jpg);
     width: 100%;
     max-width: 1920px;
     margin: 0 auto;
@@ -73,7 +73,7 @@
     }
   
     @include respond-to($l-tablet) {
-      background-image: url(/src/img/paymentPageBanner-tab.png);
+      background-image: url(/src/img/paymentPageBanner-tab.jpg);
   
       &__title {
         font-size: 42px;
@@ -91,7 +91,7 @@
     }
   
     @include respond-to($m-mobile) {
-      background-image: url(/src/img/paymentPageBanner-mob.png);
+      background-image: url(/src/img/paymentPageBanner-mob.jpg);
   
       &__title {
         font-size: 22px;
