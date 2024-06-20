@@ -263,6 +263,7 @@
     border-radius: 50%;
     background: $amazon-color;
     transition: background 0.3s ease;
+    position: relative;
   }
 
   &__social-item:hover {
@@ -270,7 +271,10 @@
   }
 
   &__social-icon {
-    margin: 7px auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__tel-wrapper {
@@ -287,6 +291,10 @@
 
   &__tel:hover {
     color: $amazon-color;
+  }
+
+  &__tel-first {
+    margin-bottom: 5px;
   }
 
   &__btn {

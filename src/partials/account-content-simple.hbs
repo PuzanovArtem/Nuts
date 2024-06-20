@@ -84,14 +84,14 @@
             <td>3.05.2019</td>
             <td>Платеж принят</td>
             <td class="order-transaction__icon">2500 грн.
-              <img src="/src/img/icons/icon-eye.svg" class="order-transaction__icon-eye" />
+              <img src="/src/img/icons/icon-eye.svg" alt="icon-eye" class="order-transaction__icon-eye" />
             </td>
           </tr>
           <tr>
             <td>10.05.2019</td>
             <td>Платеж принят</td>
           <td class="order-transaction__icon">2500 грн.
-            <img src="/src/img/icons/icon-eye.svg" class="order-transaction__icon-eye" />
+            <img src="/src/img/icons/icon-eye.svg" alt="icon-eye" class="order-transaction__icon-eye" />
           </td>
           </tr>
         </tbody>
@@ -133,6 +133,7 @@
               <img
                 src="/src/img/icons/arrow-lang.svg"
                 class="header-top__select-arrow"
+                alt="arrow"
               />
             </div>
           </div>
@@ -162,6 +163,7 @@
               <img
                 src="/src/img/icons/arrow-lang.svg"
                 class="header-top__select-arrow"
+                alt="arrow"
               />
             </div>
           </div>
@@ -227,9 +229,9 @@
             </form>
             <div class="contact-info__upload">
                 <div class="upload__container" onclick="document.getElementById('fileInput').click();">
-                    <div class="upload__text">Загрузить фото</div>
-                    <img id="uploadedImage" src="/src/img/load-man.jpg" alt="Uploaded Image">
-                    <input type="file" id="fileInput" accept="image/*" onchange="loadFile(event)">
+                  <div class="upload__text">Загрузить фото</div>
+                  <img id="uploadedImage" src="/src/img/load-img.png" alt="Uploaded Image">
+                  <input type="file" id="fileInput" accept="image/*" style="display: none;">
                 </div>
             </div>
         </div>

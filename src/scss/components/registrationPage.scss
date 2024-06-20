@@ -120,13 +120,14 @@ padding-bottom: 60px;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        
 
     }
 }
 
 
 
-    &__container:hover .upload-text {
+    &__container:hover .upload__text {
         color: #fff;
     }
 

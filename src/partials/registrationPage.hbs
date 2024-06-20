@@ -13,13 +13,13 @@
 <div class="registration__form-container form-container">
     <form>
         <div class="registration__form-group form-group">
-            <input id="fio" name="fio" placeholder="ФИО*" required>
+            <input type="text" id="fio" name="fio" placeholder="ФИО*" required>
         </div>
         <div class="registration__form-group form-group">
-            <input id="email" name="email" placeholder="Email*" required>
+            <input type="email" id="email" name="email" placeholder="Email*" required>
         </div>
         <div class="registration__form-group form-group">
-            <input id="phone" name="phone" placeholder="Телефон*" required>
+            <input type="tel" id="phone" name="phone" placeholder="Телефон*" required>
         </div>
     </form>
 </div>
@@ -37,7 +37,7 @@
                 <div data-value="nut2" class="filter__select-item">Польща</div>
                 <div data-value="nut3" class="filter__select-item">Франція</div>
             </div>
-            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" alt="arrow" />
         </div>
         </div>
         
@@ -49,15 +49,15 @@
                 <div data-value="nut2" class="filter__select-item">Київська</div>
                 <div data-value="nut3" class="filter__select-item">Львівська</div>
             </div>
-            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" alt="arrow" />
         </div>
         </div>
 
         <div class="registration__form-group form-group">
-            <input id="city" name="city" placeholder="Город*" required>
+            <input name="city" placeholder="Город*" required>
         </div>
         <div class="registration__form-group form-group">
-            <input id="address" name="address" placeholder="Адрес" required>
+            <input name="address" placeholder="Адрес" required>
         </div>
     </form>
 </div>
@@ -68,15 +68,15 @@
 <div class="registration__form-container form-container registration__form-container-sec" >
     <form>
         <div class="registration__form-group form-group">
-            <input id="password" name="password" placeholder="Пароль*" required>
+            <input name="password" placeholder="Пароль*" required>
         </div>
         <div class="registration__form-group form-group">
-            <input id="password-rep" name="password-rep" placeholder="Подтвердите пароль*" required>
+            <input name="password-rep" placeholder="Подтвердите пароль*" required>
         </div>
 
         <div class="registration__forg-group-wrapper">
         <label class="checkbox__group form-group">
-            <input id="agreement" name="agreement" required>
+            <input type="checkbox" id="agreement" name="agreement" required>
             <span></span>
             Я согласен с <a href="#">Условиями регистрации</a>
         </label>
@@ -91,14 +91,16 @@
         
 <div class="registration__upload-wrapper hidden active" id="fisface">
     <div class="registration__upload">
+       
+
         <div class="upload__container" onclick="document.getElementById('fileInput').click();">
             <div class="upload__text">Загрузить фото</div>
             <img id="uploadedImage" src="/src/img/load-img.png" alt="Uploaded Image">
-            <input type="file" id="fileInput" accept="image/*" onchange="loadFile(event)">
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
         </div>
 
         <label class="checkbox__group form-group">
-            <input id="agreement" name="agreement" required>
+            <input type="checkbox" id="agreement" name="agreement" required>
             <span></span>
         Являюсь ФОП
         </label>
@@ -108,18 +110,18 @@
 <div class="registration__upload-wrapper registration__upload-wrapper-sec hidden" id="yurface">
    
    <div class="registration__upload">
-    <div class="upload__container" onclick="document.getElementById('fileInput').click();">
+    <div class="upload__container" onclick="document.getElementById('fileInputSec').click();">
         <div class="upload__text">Загрузить фото</div>
-        <img id="uploadedImage" src="/src/img/load-img.png" alt="Uploaded Image">
-        <input id="fileInput" accept="image/*" onchange="loadFile(event)">
+        <img id="uploadedImageSec" src="/src/img/load-img.png" alt="Uploaded Image">
+        <input type="file" id="fileInputSec" accept="image/*" style="display: none;">
     </div>
     <div>
-        <input id="huey" name="option" value="1" checked />
+        <input type="radio" id="huey" name="option" value="1" checked />
         <label for="huey">Юр. лицо</label>
     </div>
     
     <div>
-        <input id="dewey" name="option" value="2" />
+        <input type="radio" id="dewey" name="option" value="2" />
         <label for="dewey">ФОП</label>
     </div>
    </div>
@@ -129,7 +131,7 @@
     <h4 class="registration__subtitle registration__subtitle-sec">1. Реквизиты</h4>
 
     <div class="registration__form-group form-group registration__form-group-sec">
-        <input id="okp" name="okp" placeholder="ОКПО">
+        <input type="okp" id="okp" name="okp" placeholder="ОКПО">
     </div>
 
 <h4 class="registration__subtitle">2. Юридический адрес</h4>
@@ -144,7 +146,7 @@
                 <div data-value="nut2" class="filter__select-item">Польща</div>
                 <div data-value="nut3" class="filter__select-item">Франція</div>
             </div>
-            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" alt="arrow" />
         </div>
         </div>
 
@@ -157,18 +159,18 @@
                 <div data-value="nut2" class="filter__select-item">Київська</div>
                 <div data-value="nut3" class="filter__select-item">Львівська</div>
             </div>
-            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+            <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" alt="arrow" />
         </div>
 </div>
 
         <div class="registration__form-group form-group">
-            <input id="city" name="city" placeholder="Город*" required>
+            <input type="city" id="city" name="city" placeholder="Город*" required>
         </div>
         <div class="registration__form-group form-group">
-            <input id="address" name="address" placeholder="Адрес">
+            <input type="address" id="address" name="address" placeholder="Адрес">
         </div>
         <div class="registration__form-group form-group">
-            <input id="index" name="index" placeholder="Индекс">
+            <input type="index" id="index" name="index" placeholder="Индекс">
         </div>
     </form>
 </div>
@@ -179,7 +181,7 @@
     <h4 class="registration__subtitle registration__subtitle-sec">1. Реквизиты</h4>
 
     <div class="registration__form-group form-group registration__form-group-sec">
-        <input id="okp" name="okp" placeholder="ЕДРПО">
+        <input type="okp" id="okp" name="okp" placeholder="ЕДРПО">
     </div>
 
     <h4 class="registration__subtitle">2. Юридический адрес</h4>
@@ -194,7 +196,7 @@
                         <div data-value="nut2" class="filter__select-item">Польща</div>
                         <div data-value="nut3" class="filter__select-item">Франція</div>
                     </div>
-                    <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+                    <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" alt="arrow" />
                 </div>
             </div>
 
@@ -208,15 +210,15 @@
                         <div data-value="nut2" class="filter__select-item">Київська</div>
                         <div data-value="nut3" class="filter__select-item">Львівська</div>
                     </div>
-                    <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" />
+                    <img src="/src/img/icons/arrow-lang.svg" class="header-top__select-arrow" alt="arrow" />
                 </div>
             </div>
 
             <div class="registration__form-group form-group">
-                <input id="city" name="city" placeholder="Город*" required>
+                <input type="city" id="city" name="city" placeholder="Город*" required>
             </div>
             <div class="registration__form-group form-group">
-                <input id="address" name="address" placeholder="Адрес">
+                <input type="address" id="address" name="address" placeholder="Адрес">
             </div>
            
         </form>
