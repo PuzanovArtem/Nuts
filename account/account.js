@@ -77,13 +77,15 @@ window.addEventListener('resize', () => {
 });
 
 
-
-function loadFile(event) {
-            var image = document.getElementById('uploadedImage');
-            image.src = URL.createObjectURL(event.target.files[0]);
-            image.style.display = 'block';
-            document.querySelector('.upload-text').style.display = 'none';
-};
+document.getElementById('fileInput').addEventListener('change', function(event) {
+      var file = event.target.files[0];
+      if (file) {
+        var image = document.getElementById('uploadedImage');
+        image.src = URL.createObjectURL(file);
+        image.style.display = 'block';
+        document.querySelector('.upload__text').style.display = 'none';
+      }
+});
         
 
    

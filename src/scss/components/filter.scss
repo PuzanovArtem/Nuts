@@ -80,6 +80,10 @@
     margin-right: 15px;
   }
 
+     &__btn-wrapper {
+      cursor: pointer;
+     }
+
   &__btn-wrapper:hover {
     .filter__btn-false {
       color: $amazon-color;

@@ -6,11 +6,12 @@
       <div class="header-top">
 
         <div class="header-top__tel-mob-wrapper">
-          <a href="tel:380447505011">
+          <a href="tel:380447505011" aria-label="phone">
             <img
               src="/src/img/icons/telephone.svg"
               alt="tel"
               class="header-top__telephone-mob"
+              loading="lazy"
             />
           </a>
 
@@ -25,19 +26,19 @@
         <ul class="header-top__social-list">
           <li class="header-top__social-item">
             <a href="#" aria-label="facebook">
-              <img src="/src/img/icons/facebook.svg" alt="facebook" />
+              <img src="/src/img/icons/facebook.svg" width="13" height="13" alt="facebook" loading="lazy" />
             </a>
           </li>
 
           <li class="header-top__social-item">
             <a href="#" aria-label="instagram">
-              <img src="/src/img/icons/instagram.svg" alt="instagram" />
+              <img src="/src/img/icons/instagram.svg" width="13" height="13" alt="instagram" loading="lazy" />
             </a>
           </li>
 
           <li class="header-top__social-item">
             <a href="#" aria-label="youtube">
-              <img src="/src/img/icons/youtube.svg" alt="youtube" />
+              <img src="/src/img/icons/youtube.svg" width="16" height="16" alt="youtube" loading="lazy" />
             </a>
           </li>
         </ul>
@@ -47,7 +48,7 @@
         <ul class="header-top__login-list">
           <li class="header-top__login-item">
             <a href="/Nuts/loginPage/">
-              <img src="/src/img/icons/man-user.svg" alt="men" />
+              <img src="/src/img/icons/man-user.svg" width="11" height="11" alt="men" loading="lazy" />
               Вход
             </a>
           </li>
@@ -69,6 +70,8 @@
                 src="/src/img/icons/arrow-lang.svg"
                 class="header-top__select-arrow"
                 alt="arrow"
+                width="8" height="6"
+                loading="lazy"
               />
             </div>
           </li>
@@ -81,8 +84,8 @@
     <div class="header-main">
       <div class="header-main__wrapper">
 
-        <button class="menu__button">
-          <img src="/src/img/icons/menu.svg" alt="menu" />
+        <button class="menu__button" aria-label="menu">
+          <img src="/src/img/icons/menu.svg" alt="menu" width="19" height="17" loading="lazy"/>
         </button>
 
         <a
@@ -95,6 +98,7 @@
             class="header-main__logo-icon"
             width="54"
             height="53"
+            loading="lazy"
           />
           ОРЕХ ПРИЧЕРНОМОРЬЯ
         </a>
@@ -109,6 +113,7 @@
                   width="16"
                   height="17"
                   class="header-main__social-icon"
+                  loading="lazy"
                 />
               </a>
             </li>
@@ -124,6 +129,7 @@
                   width="14"
                   height="14"
                   class="header-main__social-icon"
+                   loading="lazy"
                 />
               </a>
             </li>
@@ -135,13 +141,14 @@
                   width="15"
                   height="15"
                   class="header-main__social-icon"
+                   loading="lazy"
                 />
               </a>
             </li>
           </ul>
 
           <div class="header-main__tel-wrapper">
-            <a href="tel:380447505011" class="header-main__tel"><span>+38 (044)</span>
+            <a href="tel:380447505011" class="header-main__tel header-main__tel-first"><span>+38 (044)</span>
               750-50-11</a>
             <a href="tel:380977755051" class="header-main__tel"><span>+38 (097)</span>
               775-50-51</a>
@@ -152,7 +159,7 @@
           <p class="header-main__text">Ждем Вашего звонка ежедневно с 9 до 18</p>
 
           <a href="#" aria-label="busket" class="header-main__busket-wrapper">
-            <img src="/src/img/icons/bag.svg" alt="bag" />
+            <img src="/src/img/icons/bag.svg" alt="bag"  loading="lazy" width="24" height="24" />
           </a>
         </div>
         <div id="popup" class="popup popup-basket">
@@ -259,11 +266,12 @@
               class="header-main__logo-icon"
               width="54"
               height="53"
+              loading="lazy"
             />
             ОРЕХ ПРИЧЕРНОМОРЬЯ
           </a>
           <button class="menu__close-btn">
-            <img src="/src/img/icons/close-button.svg" alt="Close cross" />
+            <img src="/src/img/icons/close-button.svg" alt="Close cross"  loading="lazy" width="16" height="16" />
           </button>
         </li>
 
@@ -271,7 +279,7 @@
           <ul class="header-top__login-list">
             <li class="header-top__login-item header-top__login-item-menu">
               <a href="/Nuts/loginPage/">
-                <img src="/src/img/icons/man-user.svg" alt="men" />
+                <img src="/src/img/icons/man-user.svg" alt="men"  width="11" height="11" alt="men" loading="lazy"/>
                 Вход
               </a>
             </li>
@@ -286,46 +294,46 @@
           <ul class="header-top__social-list-menu">
             <li class="header-top__social-item">
               <a href="#" aria-label="facebook">
-                <img src="/src/img/icons/facebook.svg" alt="facebook" />
+                <img src="/src/img/icons/facebook.svg" alt="facebook" width="13" height="13" loading="lazy" />
               </a>
             </li>
 
             <li class="header-top__social-item">
               <a href="#" aria-label="instagram">
-                <img src="/src/img/icons/instagram.svg" alt="instagram" />
+                <img src="/src/img/icons/instagram.svg" alt="instagram" width="13" height="13" loading="lazy" />
               </a>
             </li>
 
             <li class="header-top__social-item">
               <a href="#" aria-label="youtube">
-                <img src="/src/img/icons/youtube.svg" alt="youtube" />
+                <img src="/src/img/icons/youtube.svg" alt="youtube" width="16" height="16" loading="lazy" />
               </a>
             </li>
           </ul>
         </li>
 
-        <li class="menu__item active">
+        <li class="menu__item {{firstclass}}">
           <a href="/Nuts/catalogPage/" class="menu__link">Магазин</a>
         </li>
 
-        <li class="menu__item">
+        <li class="menu__item {{secondclass}}">
           <a href="/Nuts/aboutPage/" class="menu__link">О производстве</a>
         </li>
 
-        <li class="menu__item">
+        <li class="menu__item {{thirdclass}}">
           <a href="/Nuts/paymentPage/" class="menu__link">Оплата и доставка</a>
         </li>
 
-        <li class="menu__item">
+        <li class="menu__item {{forthclass}}">
           <a href="/Nuts/customersPage/" class="menu__link">Оптовым и
             корпоративным клиентам</a>
         </li>
 
-        <li class="menu__item">
+        <li class="menu__item {{fifthclass}}">
           <a href="/Nuts/newsPage/" class="menu__link">Новости и статьи</a>
         </li>
 
-        <li class="menu__item">
+        <li class="menu__item {{sixthclass}}">
           <a href="/Nuts/galleryPage/" class="menu__link">Контакты</a>
         </li>
 
