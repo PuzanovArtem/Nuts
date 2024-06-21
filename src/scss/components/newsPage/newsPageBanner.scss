@@ -181,5 +181,28 @@
         font-size: 35px;
       }
     }
+
+    .news__content{
+      .news__content-banner{
+        .banner__img{
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px){
+  .news-page-banner {
+    
+    .news__content{
+      .news__content-banner{
+        .banner__img{
+          width: 290px;
+          height: 193px;
+          margin: 10px auto 0;
+        }
+      }
+    }
   }
 }

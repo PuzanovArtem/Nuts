@@ -322,3 +322,31 @@
     }
         
 }
+
+
+@media screen and (max-width:355px) {
+    .export {
+        .export__container--inner{
+            .export__content{
+                .export__sadjenets,
+                .export__tractor{
+                    width: 290px;
+                    height: 175px;
+                }
+            }
+            
+            .export__content--aside{
+                .export__aside--column{
+                    .export__column--item{
+                        .aside__content-img{
+                            width: 220px;
+                            height: 163px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+        
+}
