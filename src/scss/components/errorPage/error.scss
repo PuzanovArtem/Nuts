@@ -1,10 +1,10 @@
 .error {
   &__content {
     flex: 0 0 auto;
-    .error__404{
+    .error__404 {
       margin: 105px auto 36px;
-    //   width: 552px;
-    //   height: 180px;
+      //   width: 552px;
+      //   height: 180px;
     }
 
     .error__text {
@@ -16,38 +16,44 @@
       text-align: center;
     }
     .error__button {
-        margin-top: 17px;
-        margin-bottom: 94px;
+      margin-top: 17px;
+      margin-bottom: 94px;
       width: 332px;
       height: 50px;
-      .error__button-btn{
-        .error__arrow-btn{
-            height: 50px;
-            margin-right: 15px;
+      .error__button-btn {
+        .error__arrow-btn {
+          height: 50px;
+          margin-right: 15px;
         }
         align-items: center;
         display: flex;
-        
       }
     }
   }
   @include respond-to($m-mobile) {
-    .error__404{
-        margin: 55px auto 36px;
-      }
+    .error__404 {
+      margin: 55px auto 36px;
+    }
     .error__button {
-        margin-top: 17px;
-        margin-bottom: 20px;
+      margin-top: 17px;
+      margin-bottom: 20px;
       width: 285px;
       height: 50px;
-      .error__button-btn{
-        .error__arrow-btn{
-            margin-right: 5px;
+      .error__button-btn {
+        .error__arrow-btn {
+          margin-right: 5px;
         }
         align-items: center;
         display: flex;
-        
       }
     }
-   }
+  }
+
+  @include respond-to($mobile) {
+    .error__404 {
+      margin: 55px auto 36px;
+      width: 280px;
+      height: 95px;
+    }
+  }
 }

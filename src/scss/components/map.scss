@@ -165,3 +165,16 @@
     }
 }
 
+
+@include respond-to($s-mobile){
+    .map {
+        .map__content{
+    
+            .map__info-title {
+                font-size: 35px;
+                
+            }
+        }
+    }
+    
+}
