@@ -1,15 +1,15 @@
 import "../src/js/header.js";
-import "/registrationPage/registration.js";
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const deliveryMethods = document.querySelectorAll('input[name="delivery"]');
     const postDetails = document.getElementById('post-details');
     const courierDetails = document.getElementById('courier-details');
-    const companyField = document.getElementById('company').parentNode;
-    const contactNameField = document.getElementById('contact-name').parentNode;
-    const nameField = document.getElementById('name').parentNode;
-    const emailField = document.getElementById('email').parentNode;
-    const phoneField = document.getElementById('phone').parentNode;
+    const companyField = document.getElementById('company').closest('label');
+    const contactNameField = document.getElementById('contact-name').closest('label');
+    const nameField = document.getElementById('name').closest('label');
+    const emailField = document.getElementById('email').closest('label');
+    const phoneField = document.getElementById('phone').closest('label');
 
     function showDetails() {
         postDetails.style.display = 'none';
